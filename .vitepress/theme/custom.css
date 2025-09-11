@@ -1,0 +1,585 @@
+:root {
+  --vp-c-white: #ffffff;
+  --vp-c-black: #000000;
+
+  --vp-c-gray: #8e8e93;
+
+  --vp-c-text-light-1: #1f2328;
+  --vp-c-text-light-2: #454545;
+  --vp-c-text-light-3: #959595;
+
+  --vp-c-text-dark-1: rgba(255, 255, 245, 0.86);
+  --vp-c-text-dark-2: rgba(235, 235, 245, 0.6);
+  --vp-c-text-dark-3: rgba(235, 235, 245, 0.38);
+
+  /* Shelly 主色调 - 蓝色主题 */
+  --vp-c-shelly-primary: #2491ff;
+  --vp-c-shelly-primary-20: #1a3b5d;
+  --vp-c-shelly-primary-10: #182f45;
+  --vp-c-shelly-secondary: #bbdcf8;
+  
+  /* Shelly 暗色系统 */
+  --vp-c-shelly-base: #151617;
+  --vp-c-shelly-0: #1b1d21;
+  --vp-c-shelly-1: #242527;
+  --vp-c-shelly-2: #303235;
+  --vp-c-shelly-3: #5b5f66;
+  --vp-c-shelly-muted: #a1a2a2;
+  --vp-c-shelly-blur: rgba(52, 55, 58, 0.3);
+  
+  /* Shelly 功能色 */
+  --vp-c-shelly-success: #66d092;
+  --vp-c-shelly-warning: #ffbd6f;
+  --vp-c-shelly-danger: #ff4a50;
+  
+  /* Shelly 圆角系统 */
+  --vp-radius-small: 8px;
+  --vp-radius-medium: 16px;
+  --vp-radius-big: 24px;
+  --vp-radius-extra-big: 32px;
+
+  --vp-c-orange: #e36002;
+  --vp-c-orange-soft: rgba(227, 96, 2, 0.1);
+  --vp-c-orange-light: #ff861d;
+  --vp-c-orange-lighter: #ff9c24;
+  --vp-c-orange-dark: #e07700;
+  --vp-c-orange-darker: #d68e22;
+
+  --vp-c-badge-green-light: #66d092;
+  --vp-c-badge-green-light-bg: #bff8d7;
+  --vp-c-badge-green-dark: #66d092;
+  --vp-c-badge-green-dark-bg: rgba(102, 208, 146, 0.2);
+}
+
+/**
+ * Colors Theme - Shelly 风格
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* 浅色主题 - 保持原有的浅色配置但融入 Shelly 元素 */
+  --vp-c-bg: #ffffff;
+
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-elv-up: #ffffff;
+  --vp-c-bg-elv-down: #f6f6f7;
+  --vp-c-bg-elv-mute: #f6f6f7;
+
+  --vp-c-bg-soft: #f6f6f7;
+  --vp-c-bg-soft-up: #ffffff;
+  --vp-c-bg-soft-down: #e3e3e5;
+  --vp-c-bg-soft-mute: #e3e3e5;
+
+  --vp-c-bg-alt: #f6f6f7;
+
+  --vp-c-border: rgba(60, 60, 67, 0.29);
+  --vp-c-divider: rgba(60, 60, 67, 0.12);
+  --vp-c-gutter: rgba(60, 60, 67, 0.12);
+
+  --vp-c-neutral: var(--vp-c-black);
+  --vp-c-neutral-inverse: var(--vp-c-white);
+
+  --vp-c-text-1: var(--vp-c-text-light-1);
+  --vp-c-text-2: var(--vp-c-text-light-2);
+  --vp-c-text-3: var(--vp-c-text-light-3);
+
+  --vp-c-text-inverse-1: var(--vp-c-text-dark-1);
+  --vp-c-text-inverse-2: var(--vp-c-text-dark-2);
+  --vp-c-text-inverse-3: var(--vp-c-text-dark-3);
+
+  --vp-c-text-code: #4a4a4a;
+
+  /* 使用 Shelly 蓝色作为主色调 */
+  --vp-c-brand: var(--vp-c-shelly-primary);
+  --vp-c-brand-light: #47a3ff;
+  --vp-c-brand-lighter: #66b3ff;
+  --vp-c-brand-dark: #1a7de8;
+  --vp-c-brand-darker: #0066cc;
+
+  --vp-c-mute: #f6f6f7;
+  --vp-c-mute-light: #f9f9fc;
+  --vp-c-mute-lighter: #ffffff;
+  --vp-c-mute-dark: #e3e3e5;
+  --vp-c-mute-darker: #d7d7d9;
+
+  --vp-c-bg-alt: #ffffff;
+  --vp-sidebar-bg-color: var(--vp-c-bg-alt);
+  --vp-code-copy-code-bg: var(--vp-code-block-bg);
+  --vp-code-copy-code-hover-bg: var(--vp-code-block-bg);
+
+  --vp-badge-info-text: var(--vp-c-badge-green-light);
+  --vp-badge-info-bg: var(--vp-c-badge-green-light-bg);
+}
+
+:root {
+  --vp-font-family-base: -apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji;
+  --vp-font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+}
+
+
+/**
+ * Colors: Function - Shelly 风格
+ *
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-c-brand-1: var(--vp-c-shelly-primary);
+  --vp-c-brand-2: #47a3ff;
+  --vp-c-brand-3: #66b3ff;
+  --vp-c-brand-soft: rgba(36, 145, 255, 0.1);
+  --vp-code-color: var(--vp-c-text-light-2);
+}
+
+/**
+ * Component: Code - Shelly 风格
+ * -------------------------------------------------------------------------- */
+:root {
+  --vp-code-block-color: var(--vp-c-text-1);
+  --vp-code-block-bg: #f8f9fb;
+
+  --vp-code-tab-divider: var(--vp-c-text-light-3);
+  --vp-code-tab-text-color: var(--vp-c-text-light-2);
+  --vp-code-tab-bg: var(--vp-code-block-bg);
+  --vp-code-tab-hover-text-color: var(--vp-c-text-light-1);
+  --vp-code-tab-active-text-color: var(--vp-c-text-light-1);
+  --vp-code-tab-active-bar-color: var(--vp-c-shelly-primary);
+
+  --vp-code-line-highlight-color: rgba(36, 145, 255, 0.1);
+}
+
+
+.dark {
+  /* Shelly 深色主题 */
+  --vp-c-bg: var(--vp-c-shelly-base);
+
+  --vp-c-bg-elv: var(--vp-c-shelly-1);
+  --vp-c-bg-elv-up: var(--vp-c-shelly-2);
+  --vp-c-bg-elv-down: var(--vp-c-shelly-0);
+  --vp-c-bg-elv-mute: var(--vp-c-shelly-2);
+
+  --vp-c-bg-soft: var(--vp-c-shelly-1);
+  --vp-c-bg-soft-up: var(--vp-c-shelly-2);
+  --vp-c-bg-soft-down: var(--vp-c-shelly-0);
+  --vp-c-bg-soft-mute: var(--vp-c-shelly-2);
+
+  --vp-c-bg-alt: var(--vp-c-shelly-0);
+
+  --vp-c-border: rgba(91, 95, 102, 0.68);
+  --vp-c-divider: rgba(91, 95, 102, 0.32);
+  --vp-c-gutter: var(--vp-c-shelly-base);
+
+  --vp-c-neutral: var(--vp-c-white);
+  --vp-c-neutral-inverse: var(--vp-c-black);
+
+  --vp-c-text-1: var(--vp-c-text-dark-1);
+  --vp-c-text-2: var(--vp-c-text-dark-2);
+  --vp-c-text-3: var(--vp-c-text-dark-3);
+
+  --vp-c-text-inverse-1: var(--vp-c-text-light-1);
+  --vp-c-text-inverse-2: var(--vp-c-text-light-2);
+  --vp-c-text-inverse-3: var(--vp-c-text-light-3);
+
+  --vp-c-mute: var(--vp-c-shelly-2);
+  --vp-c-mute-light: var(--vp-c-shelly-3);
+  --vp-c-mute-lighter: #505053;
+  --vp-c-mute-dark: var(--vp-c-shelly-1);
+  --vp-c-mute-darker: var(--vp-c-shelly-0);
+
+  --vp-code-block-bg: var(--vp-c-shelly-1);
+  --vp-code-tab-hover-text-color: var(--vp-c-text-dark-2);
+  --vp-code-tab-active-text-color: var(--vp-c-text-dark-1);
+  
+  --vp-c-text-code: #e8e8e8;
+
+  --vp-code-color: var(--vp-c-text-dark-1);
+  --vp-code-tab-text-color: var(--vp-c-text-dark-2);
+
+  --vp-badge-info-text: var(--vp-c-badge-green-dark);
+  --vp-badge-info-bg: var(--vp-c-badge-green-dark-bg);
+}
+
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
+  font-weight: 700;
+}
+
+.title {
+  font-weight: 700 !important;
+  background: linear-gradient(270deg, var(--vp-c-shelly-primary) 0%, #47a3ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  max-width: 500px !important;
+  color: var(--vp-c-text-2) !important;
+}
+
+/* Hero 区域的 Shelly 风格 */
+.VPHero .main {
+  position: relative;
+}
+
+.VPHero .main::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(36, 145, 255, 0.05) 0%, transparent 70%);
+  z-index: -1;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.dark .VPHero .main::before {
+  background: radial-gradient(circle, rgba(36, 145, 255, 0.1) 0%, transparent 70%);
+}
+
+/* 调整 Hero 文字大小 */
+.VPHero .heading > span.text {
+  line-height: 1.4;
+  font-size: 40px;
+}
+
+.DocSearch-Button {
+  background-color: var(--vp-c-bg-soft);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--vp-radius-small);
+  border: 1px solid var(--vp-c-border);
+  transition: all 0.3s ease;
+}
+
+.dark .DocSearch-Button {
+  background-color: var(--vp-c-shelly-1);
+  border-color: var(--vp-c-shelly-3);
+}
+
+.DocSearch-Button:hover {
+  border-color: var(--vp-c-shelly-primary);
+  box-shadow: 0 4px 12px rgba(36, 145, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .DocSearch-Button {
+      width: 100%;
+      height: 40px;
+      border-radius: var(--vp-radius-small);
+  }
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Shelly 风格的卡片组件 */
+.shelly-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: var(--vp-radius-big);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark .shelly-card {
+  background: var(--vp-c-shelly-1);
+  border-color: var(--vp-c-shelly-3);
+}
+
+.shelly-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(36, 145, 255, 0.1);
+}
+
+.dark .shelly-card:hover {
+  box-shadow: 0 8px 32px rgba(36, 145, 255, 0.2);
+}
+
+/* Shelly 风格的状态指示器 */
+.shelly-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--vp-radius-small);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.shelly-status.online {
+  background: rgba(102, 208, 146, 0.1);
+  color: var(--vp-c-shelly-success);
+}
+
+.shelly-status.offline {
+  background: rgba(255, 74, 80, 0.1);
+  color: var(--vp-c-shelly-danger);
+}
+
+.shelly-status.warning {
+  background: rgba(255, 189, 111, 0.1);
+  color: var(--vp-c-shelly-warning);
+}
+
+.shelly-status::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Shelly 风格的背景模糊效果 */
+.shelly-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: var(--vp-c-shelly-blur);
+}
+
+/* Shelly 风格的渐变背景 */
+.shelly-gradient-primary {
+  background: linear-gradient(270deg, #91c8ff 0%, #075baf 100%);
+}
+
+.shelly-gradient-secondary {
+  background: linear-gradient(270deg, #B55CFF 0%, #47C8FF 100%);
+}
+
+.shelly-gradient-success {
+  background: linear-gradient(254.96deg, #00c9ff 0%, #92fe9d 100%);
+}
+
+/* Shelly 风格的设备卡片 */
+.device-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: var(--vp-radius-big);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.dark .device-card {
+  background: var(--vp-c-shelly-1);
+  border-color: var(--vp-c-shelly-3);
+}
+
+.device-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--vp-c-shelly-primary);
+}
+
+.device-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(36, 145, 255, 0.15);
+}
+
+.VPImage.image-src {
+  max-width: 640px;
+}
+
+@media screen and (max-width: 960px) {
+  .VPHero.has-image .image:not(:has(.kawaii)) {
+    display: none;
+  }
+}
+
+/* Shelly IoT 风格的特殊样式 */
+
+/* 侧边栏 Shelly 风格 */
+.VPSidebar {
+  background: var(--vp-c-bg-soft);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.dark .VPSidebar {
+  background: rgba(36, 37, 39, 0.95);
+}
+
+/* 导航栏 Shelly 风格 */
+.VPNavBar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.dark .VPNavBar {
+  background: rgba(21, 22, 23, 0.95);
+}
+
+/* Shelly 风格的按钮 */
+.shelly-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--vp-radius-small);
+  background: var(--vp-c-shelly-primary);
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.shelly-btn:hover {
+  background: #1a7de8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(36, 145, 255, 0.3);
+}
+
+.shelly-btn.secondary {
+  background: var(--vp-c-shelly-2);
+  color: var(--vp-c-text-1);
+}
+
+.dark .shelly-btn.secondary {
+  background: var(--vp-c-shelly-3);
+  color: var(--vp-c-text-dark-1);
+}
+
+.shelly-btn.secondary:hover {
+  background: var(--vp-c-shelly-3);
+  box-shadow: 0 4px 16px rgba(91, 95, 102, 0.2);
+}
+
+/* Shelly 风格的标签 */
+.shelly-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--vp-radius-small);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.shelly-tag.primary {
+  background: rgba(36, 145, 255, 0.1);
+  color: var(--vp-c-shelly-primary);
+}
+
+.shelly-tag.success {
+  background: rgba(102, 208, 146, 0.1);
+  color: var(--vp-c-shelly-success);
+}
+
+.shelly-tag.warning {
+  background: rgba(255, 189, 111, 0.1);
+  color: var(--vp-c-shelly-warning);
+}
+
+.shelly-tag.danger {
+  background: rgba(255, 74, 80, 0.1);
+  color: var(--vp-c-shelly-danger);
+}
+
+/* Shelly 风格的统计卡片 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: var(--vp-radius-big);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.dark .stat-card {
+  background: var(--vp-c-shelly-1);
+  border-color: var(--vp-c-shelly-3);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-shelly-primary);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--vp-c-shelly-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--vp-c-text-2);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Shelly 风格的代码块增强 */
+.vp-code-group {
+  border-radius: var(--vp-radius-big);
+  overflow: hidden;
+}
+
+.vp-code-group .tabs {
+  background: var(--vp-c-bg-soft);
+}
+
+.dark .vp-code-group .tabs {
+  background: var(--vp-c-shelly-2);
+}
+
+/* Shelly 风格的提示框 */
+.custom-block {
+  border-radius: var(--vp-radius-big);
+  border-left: 4px solid var(--vp-c-shelly-primary);
+}
+
+.custom-block.tip {
+  border-left-color: var(--vp-c-shelly-primary);
+}
+
+.custom-block.warning {
+  border-left-color: var(--vp-c-shelly-warning);
+}
+
+.custom-block.danger {
+  border-left-color: var(--vp-c-shelly-danger);
+}
+
+/* 动画效果 */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.shelly-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shelly-fade-in {
+  animation: fadeInUp 0.6s ease-out;
+}
