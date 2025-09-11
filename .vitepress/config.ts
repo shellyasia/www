@@ -7,6 +7,11 @@ import {
 import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
 import { createFileSystemTypesCache } from '@shikijs/vitepress-twoslash/cache-fs'
 
+
+const algoliaContent= '020BBEB17492C015'
+const algoAppId= 'LEF12KSIJN'
+const algoAppKey= '9f57cf109e7f595911c7da95d7f4e153'
+
 const sidebars = (): DefaultTheme.SidebarItem[] => [
   {
     text: 'Concepts',
@@ -371,8 +376,8 @@ export default defineConfig({
     logo: '/images/logo_160x.svg',
     siteTitle: '雪莉智能家居',
     algolia: {
-      appId: '1GIFSU1REV',
-      apiKey: 'c6a0f86b9a9f8551654600f28317a9e9',
+      appId: algoAppId,
+      apiKey: algoAppKey,
       indexName: 'hono',
     },
     socialLinks: [
@@ -385,7 +390,7 @@ export default defineConfig({
       text: '编辑此页',
     },
     footer: {
-      message: '粤ICP备2025380205号-3',
+      message: '<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">工业和信息化部备案管理系统网站 <span id="footer-message">粤ICP备2025380205号</span></a>',
       copyright:
         'Copyright © 2021-present 雪莉智能家居(深圳)',
     },
@@ -403,6 +408,7 @@ export default defineConfig({
     },
   },
   head: [
+    ['meta', { name: 'algolia-site-verification', content: algoliaContent }],
     [
       'meta',
       {
@@ -411,7 +417,7 @@ export default defineConfig({
       },
     ],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'twitter:domain', content: 'hono.dev' }],
+    ['meta', { property: 'twitter:domain', content: 'shellyiot.cn' }],
     [
       'meta',
       {
@@ -424,6 +430,7 @@ export default defineConfig({
       { property: 'twitter:card', content: 'summary_large_image' },
     ],
     ['link', { rel: 'shortcut icon', href: '/images/favicon.ico' }],
+    ['script', {}, `window.addEventListener('load', () => { const hostname = window.location.hostname; let message = '粤ICP备2025380205号';if (hostname.endsWith('.shellytech.net')) { message = '粤ICP备2025380205号-1'; } else if (hostname.endsWith('.shelly.asia')) { message = '粤ICP备2025380205号-2'; } else if (hostname.endsWith('.shellyiot.cn')) { message = '粤ICP备2025380205号-3'; } ; document.getElementById('footer-message').textContent = message; })`],
   ],
   titleTemplate: ':title - shellyiot.cn',
   vite: {
