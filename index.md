@@ -20,10 +20,10 @@ hero:
   actions:
     - theme: brand
       text: 产品中心
-      link: /docs/
+      link: /products/
     - theme: alt
       text: 帮助文档
-      link: https://github.com/honojs/hono
+      link: /docs/
 features:
   - icon: 🏠
     title: 智能家居控制

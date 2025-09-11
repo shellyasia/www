@@ -378,7 +378,7 @@ export default defineConfig({
     algolia: {
       appId: algoAppId,
       apiKey: algoAppKey,
-      indexName: 'hono',
+      indexName: 'shelly',
     },
     socialLinks: [
       { icon: 'wechat', link: 'https://mp.weixin.qq.com/s/OPFw9A6wBbjMOVUjiDN12g' },
@@ -390,12 +390,12 @@ export default defineConfig({
       text: '编辑此页',
     },
     footer: {
-      message: '<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">工业和信息化部备案管理系统网站 <span id="footer-message">粤ICP备2025380205号</span></a>',
+      message: '<span>工业和信息化部备案管理系统网站</span> <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" id="footer-message">粤ICP备2025380205号</a>',
       copyright:
         'Copyright © 2021-present 雪莉智能家居(深圳)',
     },
     nav: [
-      { text: '产品', link: '/examples/' },
+      { text: '产品', link: '/products/' },
       { text: '文档', link: '/docs/' },
       {
         text: '讨论',
@@ -445,4 +445,8 @@ export default defineConfig({
       allowedHosts: true,
     },
   },
+  sitemap: {
+    hostname: 'https://www.shellyiot.cn',
+    lastmodDateOnly: true
+  }
 })
