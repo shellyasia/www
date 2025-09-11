@@ -1,5 +1,5 @@
 ---
-title: Hono - Web framework built on Web Standards
+title: 雪莉智能家居
 titleTemplate: ':title'
 ---
 
