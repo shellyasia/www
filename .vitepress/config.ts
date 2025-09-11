@@ -375,10 +375,10 @@ export default defineConfig({
         ],
         sidebar: {
           '/': sidebars(),
-          '/examples/': sidebarsExamples(),
+          '/products/': sidebarsExamples(),
         },
         editLink: {
-          pattern: 'https://github.com/shellyasia/website/www/main/:path',
+          pattern: 'https://github.com/shellyasia/www/blob/main/:path',
           text: '编辑此页',
         },
         docFooter: {
@@ -458,12 +458,17 @@ export default defineConfig({
       apiKey: algoAppKey,
       indexName: 'shelly',
     },
+
+    // icons https://simpleicons.org/?q=shop
     socialLinks: [
       { icon: 'wechat', link: 'https://mp.weixin.qq.com/s/OPFw9A6wBbjMOVUjiDN12g' },
       { icon: 'x', link: 'https://x.com/shelly_IoT' },
       {icon:'youtube', link: 'https://www.youtube.com/@Shelly_IoT' },
       {icon:'facebook', link: 'https://www.facebook.com/Shelly.IoT' },
+      { icon: 'shopee', link: 'https://shellycloud.en.alibaba.com' },
+      { icon: 'shopify', link: 'https://mall.jd.com/index-20140293.html' },
       { icon: 'github', link: 'https://github.com/shellyasia/www.git' },
+
 
     ],
   },
