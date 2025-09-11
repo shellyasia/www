@@ -460,8 +460,11 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'wechat', link: 'https://mp.weixin.qq.com/s/OPFw9A6wBbjMOVUjiDN12g' },
-      { icon: 'github', link: 'https://github.com/shellyasia/www.git' },
       { icon: 'x', link: 'https://x.com/shelly_IoT' },
+      {icon:'youtube', link: 'https://www.youtube.com/@Shelly_IoT' },
+      {icon:'facebook', link: 'https://www.facebook.com/Shelly.IoT' },
+      { icon: 'github', link: 'https://github.com/shellyasia/www.git' },
+
     ],
   },
   head: [
