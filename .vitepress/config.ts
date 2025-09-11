@@ -389,6 +389,16 @@ export default defineConfig({
       pattern: 'https://github.com/shellyasia/website/www/main/:path',
       text: '编辑此页',
     },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    lastUpdated: {
+      text: '更新时间'
+    },
+    outline:{
+      label: '本页目录',
+    },
     footer: {
       message: '<span>工业和信息化部备案管理系统网站</span> <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" id="footer-message">粤ICP备2025380205号</a>',
       copyright:
