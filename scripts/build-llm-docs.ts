@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { glob } from 'node:fs/promises'
+import { execSync } from 'child_process'
 
 const frontmatterRegex = /^\n*---(\n.+)*?\n---\n/
 
@@ -19,6 +20,25 @@ function capitalizeDelimiter(str) {
     .split('-')
     .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
     .join('-')
+}
+
+function getGitInfo() {
+  try {
+    const commitHash = execSync('git rev-parse HEAD', { encoding: 'utf-8' }).trim()
+    const commitMessage = execSync('git log -1 --pretty=%B', { encoding: 'utf-8' }).trim()
+    const branch = execSync('git rev-parse --abbrev-ref HEAD', { encoding: 'utf-8' }).trim()
+    const author = execSync('git log -1 --pretty=%an', { encoding: 'utf-8' }).trim()
+    
+    return {
+      commitHash,
+      commitMessage,
+      branch,
+      author
+    }
+  } catch (error) {
+    console.error('Error getting git info:', error)
+    return null
+  }
 }
 
 async function generateLLMDocs() {
@@ -86,6 +106,22 @@ async function generateLLMDocs() {
 
   fs.writeFileSync(outputTinyFile, tinyContent, 'utf-8')
   console.log(`< Output '${outputTinyFile}' `)
+
+  // Generate version.txt
+  const gitInfo = getGitInfo()
+  if (gitInfo) {
+    const versionContent = [
+      `Commit Hash: ${gitInfo.commitHash}`,
+      `Commit Message: ${gitInfo.commitMessage}`,
+      `Branch: ${gitInfo.branch}`,
+      `Author: ${gitInfo.author}`,
+      `Build Date: ${new Date().toISOString()}`
+    ].join('\n')
+    
+    const versionFile = path.resolve('public/version.txt')
+    fs.writeFileSync(versionFile, versionContent, 'utf-8')
+    console.log(`< Output '${versionFile}' `)
+  }
 }
 
 async function generateContent(
