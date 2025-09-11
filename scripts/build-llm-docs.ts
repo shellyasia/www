@@ -28,12 +28,14 @@ function getGitInfo() {
     const commitMessage = execSync('git log -1 --pretty=%B', { encoding: 'utf-8' }).trim()
     const branch = execSync('git rev-parse --abbrev-ref HEAD', { encoding: 'utf-8' }).trim()
     const author = execSync('git log -1 --pretty=%an', { encoding: 'utf-8' }).trim()
+    const commitTime = execSync('git log -1 --pretty=%ci', { encoding: 'utf-8' }).trim()
     
     return {
       commitHash,
       commitMessage,
       branch,
-      author
+      author,
+      commitTime
     }
   } catch (error) {
     console.error('Error getting git info:', error)
@@ -115,6 +117,7 @@ async function generateLLMDocs() {
       `Commit Message: ${gitInfo.commitMessage}`,
       `Branch: ${gitInfo.branch}`,
       `Author: ${gitInfo.author}`,
+      `Commit Time: ${gitInfo.commitTime}`,
       `Build Date: ${new Date().toISOString()}`
     ].join('\n')
     
