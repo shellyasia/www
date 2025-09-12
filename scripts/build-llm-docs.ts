@@ -119,15 +119,15 @@ async function generateLLMDocs() {
   const gitInfo = getGitInfo();
   if (gitInfo) {
     const versionContent = [
-      `Commit Hash: "${gitInfo.commitHash}"`,
-      `Commit Message: "${gitInfo.commitMessage}"`,
+      `<a href="https://github.com/shellyasia/www/commit/${gitInfo.commitHash}">Commit Hash: "${gitInfo.commitHash}"</a>`,
+
       `Branch: "${gitInfo.branch}"`,
       `Author: "${gitInfo.author}"`,
       `Commit Time: "${gitInfo.commitTime}"`,
       `Build Date: "${new Date().toISOString()}"`,
-    ].join("\n");
+    ].join("<br>\n");
 
-    const versionFile = path.resolve("public/version.txt");
+    const versionFile = path.resolve("public/version");
     fs.writeFileSync(versionFile, versionContent, "utf-8");
     console.log(`< Output '${versionFile}' `);
   }
