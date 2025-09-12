@@ -1,4 +1,4 @@
-# www.shellyiot.cn
+# www.shelly.asia Hosted on GitHub Pages
 
 | Domain                    | CDN | Origin Site          | GitHub Pages of                  |
 | ------------------------- | --- | -------------------- | -------------------------------- |
