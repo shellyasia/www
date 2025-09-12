@@ -16,7 +16,3 @@ Hono.
   </section>
 </div>
 
-## GitHub repository
-
-You can also see the examples in the GitHub repository:
-[Hono Examples](https://github.com/honojs/examples)
