@@ -91,7 +91,7 @@ export default defineConfig({
         footer: {
           message:
             '<span>工业和信息化部备案管理系统网站</span> <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" id="footer-message">粤ICP备2025380205号</a>',
-          copyright: "Copyright © 2021-present 雪莉智能家居(深圳)",
+          copyright: "Copyright © 2021-present 雪莉智能家居(深圳) <a href=\"mailto:marketing.asia@shelly.com\" title=\"marketing.asia@shelly.com\">联系我们</a>",
         },
       },
     },
