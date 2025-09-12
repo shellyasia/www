@@ -1,14 +1,16 @@
 # Fastly Compute
 
-[Fastly Compute](https://www.fastly.com/products/edge-compute) is an advanced edge computing system that runs your code, in your favorite language, on our global edge network. Hono also works on Fastly Compute.
+[Fastly Compute](https://www.fastly.com/products/edge-compute) is an advanced
+edge computing system that runs your code, in your favorite language, on our
+global edge network. Hono also works on Fastly Compute.
 
-You can develop the application locally and publish it with a few commands using [Fastly CLI](https://www.fastly.com/documentation/reference/tools/cli/).
+You can develop the application locally and publish it with a few commands using
+[Fastly CLI](https://www.fastly.com/documentation/reference/tools/cli/).
 
 ## 1. Setup
 
-A starter for Fastly Compute is available.
-Start your project with "create-hono" command.
-Select `fastly` template for this example.
+A starter for Fastly Compute is available. Start your project with "create-hono"
+command. Select `fastly` template for this example.
 
 ::: code-group
 
@@ -66,19 +68,20 @@ Edit `src/index.ts`:
 
 ```ts
 // src/index.ts
-import { Hono } from 'hono'
-import { fire } from 'hono/service-worker'
+import { Hono } from "hono";
+import { fire } from "hono/service-worker";
 
-const app = new Hono()
+const app = new Hono();
 
-app.get('/', (c) => c.text('Hello Fastly!'))
+app.get("/", (c) => c.text("Hello Fastly!"));
 
-fire(app)
+fire(app);
 ```
 
 ## 3. Run
 
-Run the development server locally. Then, access `http://localhost:7676` in your Web browser.
+Run the development server locally. Then, access `http://localhost:7676` in your
+Web browser.
 
 ::: code-group
 
@@ -102,9 +105,12 @@ bun run start
 
 ## 4. Deploy
 
-To build and deploy your application to your Fastly account, type the following command. The first time you deploy the application, you will be prompted to create a new service in your account.
+To build and deploy your application to your Fastly account, type the following
+command. The first time you deploy the application, you will be prompted to
+create a new service in your account.
 
-If you don't have an account yet, you must [create your Fastly account](https://www.fastly.com/signup/).
+If you don't have an account yet, you must
+[create your Fastly account](https://www.fastly.com/signup/).
 
 ::: code-group
 

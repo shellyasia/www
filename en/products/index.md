@@ -4,7 +4,8 @@ import { data } from './menu.data.ts'
 
 # Examples
 
-In this section, you can see practical examples to create your application with Hono.
+In this section, you can see practical examples to create your application with
+Hono.
 
 <div v-for="sections of data">
   <section v-for="category of sections">
@@ -17,4 +18,5 @@ In this section, you can see practical examples to create your application with 
 
 ## GitHub repository
 
-You can also see the examples in the GitHub repository: [Hono Examples](https://github.com/honojs/examples)
+You can also see the examples in the GitHub repository:
+[Hono Examples](https://github.com/honojs/examples)

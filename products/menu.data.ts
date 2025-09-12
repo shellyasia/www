@@ -1,9 +1,9 @@
-import { sidebarsExamples } from '../.vitepress/sidebar'
+import { sidebarProducts } from "../.vitepress/sidebar";
 
 export default {
   load() {
     return {
-      sidebarsExamples: sidebarsExamples(),
-    }
+      sidebarProducts: sidebarProducts(),
+    };
   },
-}
+};

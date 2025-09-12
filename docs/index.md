@@ -5,18 +5,20 @@ titleTemplate: ':title'
 
 # Hono
 
-Hono - _**means flame🔥 in Japanese**_ - is a small, simple, and ultrafast web framework built on Web Standards.
-It works on any JavaScript runtime: Cloudflare Workers, Fastly Compute, Deno, Bun, Vercel, Netlify, AWS Lambda, Lambda@Edge, and Node.js.
+Hono - _**means flame🔥 in Japanese**_ - is a small, simple, and ultrafast web
+framework built on Web Standards. It works on any JavaScript runtime: Cloudflare
+Workers, Fastly Compute, Deno, Bun, Vercel, Netlify, AWS Lambda, Lambda@Edge,
+and Node.js.
 
 Fast, but not only fast.
 
 ```ts twoslash
-import { Hono } from 'hono'
-const app = new Hono()
+import { Hono } from "hono";
+const app = new Hono();
 
-app.get('/', (c) => c.text('Hono!'))
+app.get("/", (c) => c.text("Hono!"));
 
-export default app
+export default app;
 ```
 
 ## Quick Start
@@ -49,17 +51,22 @@ deno init --npm hono@latest
 
 ## Features
 
-- **Ultrafast** 🚀 - The router `RegExpRouter` is really fast. Not using linear loops. Fast.
-- **Lightweight** 🪶 - The `hono/tiny` preset is under 14kB. Hono has zero dependencies and uses only the Web Standards.
-- **Multi-runtime** 🌍 - Works on Cloudflare Workers, Fastly Compute, Deno, Bun, AWS Lambda, or Node.js. The same code runs on all platforms.
-- **Batteries Included** 🔋 - Hono has built-in middleware, custom middleware, third-party middleware, and helpers. Batteries included.
-- **Delightful DX** 😃 - Super clean APIs. First-class TypeScript support. Now, we've got "Types".
+- **Ultrafast** 🚀 - The router `RegExpRouter` is really fast. Not using linear
+  loops. Fast.
+- **Lightweight** 🪶 - The `hono/tiny` preset is under 14kB. Hono has zero
+  dependencies and uses only the Web Standards.
+- **Multi-runtime** 🌍 - Works on Cloudflare Workers, Fastly Compute, Deno, Bun,
+  AWS Lambda, or Node.js. The same code runs on all platforms.
+- **Batteries Included** 🔋 - Hono has built-in middleware, custom middleware,
+  third-party middleware, and helpers. Batteries included.
+- **Delightful DX** 😃 - Super clean APIs. First-class TypeScript support. Now,
+  we've got "Types".
 
 ## Use-cases
 
-Hono is a simple web application framework similar to Express, without a frontend.
-But it runs on CDN Edges and allows you to construct larger applications when combined with middleware.
-Here are some examples of use-cases.
+Hono is a simple web application framework similar to Express, without a
+frontend. But it runs on CDN Edges and allows you to construct larger
+applications when combined with middleware. Here are some examples of use-cases.
 
 - Building Web APIs
 - Proxy of backend servers
@@ -86,7 +93,8 @@ And the following.
 - [Drivly](https://driv.ly/) - Cloudflare Workers
 - [repeat.dev](https://repeat.dev/) - Cloudflare Workers
 
-Do you want to see more? See [Who is using Hono in production?](https://github.com/orgs/honojs/discussions/1510).
+Do you want to see more? See
+[Who is using Hono in production?](https://github.com/orgs/honojs/discussions/1510).
 
 ## Hono in 1 minute
 
@@ -111,7 +119,9 @@ See [more benchmarks](/docs/concepts/benchmarks).
 
 ## Lightweight
 
-**Hono is so small**. With the `hono/tiny` preset, its size is **under 14KB** when minified. There are many middleware and adapters, but they are bundled only when used. For context, the size of Express is 572KB.
+**Hono is so small**. With the `hono/tiny` preset, its size is **under 14KB**
+when minified. There are many middleware and adapters, but they are bundled only
+when used. For context, the size of Express is 572KB.
 
 ```
 $ npx wrangler dev --minify ./src/index.ts
@@ -127,9 +137,13 @@ Total Upload: 11.47 KiB / gzip: 4.34 KiB
 
 **Hono has multiple routers**.
 
-**RegExpRouter** is the fastest router in the JavaScript world. It matches the route using a single large Regex created before dispatch. With **SmartRouter**, it supports all route patterns.
+**RegExpRouter** is the fastest router in the JavaScript world. It matches the
+route using a single large Regex created before dispatch. With **SmartRouter**,
+it supports all route patterns.
 
-**LinearRouter** registers the routes very quickly, so it's suitable for an environment that initializes applications every time. **PatternRouter** simply adds and matches the pattern, making it small.
+**LinearRouter** registers the routes very quickly, so it's suitable for an
+environment that initializes applications every time. **PatternRouter** simply
+adds and matches the pattern, making it small.
 
 See [more information about routes](/docs/concepts/routers).
 
@@ -147,13 +161,15 @@ Thanks to the use of the **Web Standards**, Hono works on a lot of platforms.
 - Lambda@Edge
 - Others
 
-And by using [a Node.js adapter](https://github.com/honojs/node-server), Hono works on Node.js.
+And by using [a Node.js adapter](https://github.com/honojs/node-server), Hono
+works on Node.js.
 
 See [more information about Web Standards](/docs/concepts/web-standard).
 
 ## Middleware & Helpers
 
-**Hono has many middleware and helpers**. This makes "Write Less, do more" a reality.
+**Hono has many middleware and helpers**. This makes "Write Less, do more" a
+reality.
 
 Out of the box, Hono provides middleware and helpers for:
 
@@ -180,15 +196,16 @@ Out of the box, Hono provides middleware and helpers for:
 - [Sentry](https://github.com/honojs/middleware/tree/main/packages/sentry)
 - Others!
 
-For example, adding ETag and request logging only takes a few lines of code with Hono:
+For example, adding ETag and request logging only takes a few lines of code with
+Hono:
 
 ```ts
-import { Hono } from 'hono'
-import { etag } from 'hono/etag'
-import { logger } from 'hono/logger'
+import { Hono } from "hono";
+import { etag } from "hono/etag";
+import { logger } from "hono/logger";
 
-const app = new Hono()
-app.use(etag(), logger())
+const app = new Hono();
+app.use(etag(), logger());
 ```
 
 See [more information about Middleware](/docs/concepts/middleware).
@@ -197,14 +214,15 @@ See [more information about Middleware](/docs/concepts/middleware).
 
 Hono provides a delightful "**Developer Experience**".
 
-Easy access to Request/Response thanks to the `Context` object.
-Moreover, Hono is written in TypeScript. Hono has "**Types**".
+Easy access to Request/Response thanks to the `Context` object. Moreover, Hono
+is written in TypeScript. Hono has "**Types**".
 
 For example, the path parameters will be literal types.
 
 ![A screenshot showing Hono having proper literal typing when URL parameters. The URL "/entry/:date/:id" allows for request parameters to be "date" or "id"](/images/ss.png)
 
-And, the Validator and Hono Client `hc` enable the RPC mode. In RPC mode,
-you can use your favorite validator such as Zod and easily share server-side API specs with the client and build type-safe applications.
+And, the Validator and Hono Client `hc` enable the RPC mode. In RPC mode, you
+can use your favorite validator such as Zod and easily share server-side API
+specs with the client and build type-safe applications.
 
 See [Hono Stacks](/docs/concepts/stacks).

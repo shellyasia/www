@@ -81,10 +81,10 @@
 <div class="shelly-card">
   <h3>🔌 智能插座监控</h3>
   <p>实时监控家中所有 Shelly 智能插座的用电情况，支持远程控制和定时开关。</p>
-  
-  <div class="shelly-gradient-primary" style="height: 4px; border-radius: 2px; margin: 1rem 0;"></div>
-  
-  <div style="display: flex; justify-content: space-between; align-items: center;">
+
+<div class="shelly-gradient-primary" style="height: 4px; border-radius: 2px; margin: 1rem 0;"></div>
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
     <span>当前功率：<strong>156W</strong></span>
     <button class="shelly-btn">查看详情</button>
   </div>
@@ -93,10 +93,10 @@
 <div class="shelly-card">
   <h3>🌡️ 环境监控</h3>
   <p>通过 Shelly 温湿度传感器网络，实时监控各个房间的环境状况。</p>
-  
-  <div class="shelly-gradient-success" style="height: 4px; border-radius: 2px; margin: 1rem 0;"></div>
-  
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem; margin: 1rem 0;">
+
+<div class="shelly-gradient-success" style="height: 4px; border-radius: 2px; margin: 1rem 0;"></div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem; margin: 1rem 0;">
     <div style="text-align: center;">
       <div style="font-size: 1.5rem; font-weight: bold; color: var(--vp-c-shelly-primary);">23°C</div>
       <div style="font-size: 0.875rem; color: var(--vp-c-text-2);">客厅温度</div>
@@ -144,8 +144,8 @@
 interface ShellyDevice {
   id: string;
   name: string;
-  type: 'switch' | 'sensor' | 'dimmer';
-  status: 'online' | 'offline';
+  type: "switch" | "sensor" | "dimmer";
+  status: "online" | "offline";
   power?: number;
   temperature?: number;
   humidity?: number;
@@ -160,7 +160,7 @@ class ShellyController {
 
   async toggleSwitch(id: string): Promise<boolean> {
     const device = await this.getDevice(id);
-    if (device && device.type === 'switch') {
+    if (device && device.type === "switch") {
       // 切换开关状态
       return true;
     }
@@ -183,17 +183,12 @@ class ShellyController {
 }
 ```
 
-::: tip 提示
-这个主题完全基于 Shelly IoT 控制面板的设计风格，提供了现代化的用户界面和丰富的交互效果。
-:::
+::: tip 提示 这个主题完全基于 Shelly IoT
+控制面板的设计风格，提供了现代化的用户界面和丰富的交互效果。 :::
 
-::: warning 注意
-在使用深色主题时，某些颜色会自动调整以确保最佳的可读性。
-:::
+::: warning 注意 在使用深色主题时，某些颜色会自动调整以确保最佳的可读性。 :::
 
-::: danger 重要
-请确保在生产环境中测试所有组件的兼容性。
-:::
+::: danger 重要 请确保在生产环境中测试所有组件的兼容性。 :::
 
 ## 总结
 
