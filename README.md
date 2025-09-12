@@ -11,5 +11,7 @@
 
 - Theme: [vitepress-theme-shelly](https://www.shellyiot.cn/shelly-theme-demo)
 - VitePress: [https://vitepress.dev/](https://vitepress.dev/)
+- Show website version : [version.txt](https://www.shelly.asia/version.txt)
+
 
 https://github.com/honojs/website

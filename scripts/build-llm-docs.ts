@@ -62,7 +62,7 @@ async function generateLLMDocs() {
     optionals.push(
       `- [${
         capitalizeDelimiter(extractLabel(file)).replace(/-/, " ")
-      }](https://hono.dev/docs/${sliceExt(file)})`,
+      }](https://www.shelly.asia/docs/${sliceExt(file)})`,
     );
   }
 
@@ -119,15 +119,15 @@ async function generateLLMDocs() {
   const gitInfo = getGitInfo();
   if (gitInfo) {
     const versionContent = [
-      "- Commit Hash: `${gitInfo.commitHash}`",
-      "- Commit Message: `${gitInfo.commitMessage}`",
-      "- Branch: `${gitInfo.branch}`",
-      "- Author: `${gitInfo.author}`",
-      "- Commit Time: `${gitInfo.commitTime}`",
-      "- Build Date: `${new Date().toISOString()}`",
+      `Commit Hash: "${gitInfo.commitHash}"`,
+      `Commit Message: "${gitInfo.commitMessage}"`,
+      `Branch: "${gitInfo.branch}"`,
+      `Author: "${gitInfo.author}"`,
+      `Commit Time: "${gitInfo.commitTime}"`,
+      `Build Date: "${new Date().toISOString()}"`,
     ].join("\n");
 
-    const versionFile = path.resolve("docs/version.md");
+    const versionFile = path.resolve("public/version.txt");
     fs.writeFileSync(versionFile, versionContent, "utf-8");
     console.log(`< Output '${versionFile}' `);
   }
