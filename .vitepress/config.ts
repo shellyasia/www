@@ -169,7 +169,7 @@ export default defineConfig({
       { icon: "facebook", link: "https://www.facebook.com/Shelly.IoT" },
       { icon: "shopee", link: "https://shellycloud.en.alibaba.com" },
       { icon: "shopify", link: "https://mall.jd.com/index-20140293.html" },
-      { icon: "github", link: "https://github.com/shellyasia/www.git" },
+      // { icon: "github", link: "https://github.com/shellyasia/www.git" },
     ],
   },
   head: htmlHeads,

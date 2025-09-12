@@ -63,22 +63,22 @@ export const sidebarsDoc = (): DefaultTheme.SidebarItem[] => [
 ];
 export const sidebarProducts = (): DefaultTheme.SidebarItem[] => [
   {
-    text: "Applications",
+    text: "Shelly Gen3",
     items: [
       {
-        text: "Web API",
-        link: "/examples/web-api",
+        text: "Shelly 1 Gen3",
+        link: "/products/shelly-1-gen3",
       },
       {
-        text: "Proxy",
-        link: "/examples/proxy",
+        text: "Shelly 1 mini Gen3",
+        link: "/products/shelly-1-mini-gen3",
       },
 
     ],
   },
 
   {
-    text: "Integrations",
+    text: "Shelly Gen4",
     items: [
       {
         text: "Cloudflare Durable Objects",
