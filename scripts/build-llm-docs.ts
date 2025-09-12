@@ -69,18 +69,14 @@ async function generateLLMDocs() {
   fs.writeFileSync(
     outputListFile,
     [
-      "# Hono",
+      "# Shelly Asia LLM Documentation",
       "",
-      "> Hono - means flame🔥 in Japanese - is a small, simple, and ultrafast web framework built on Web Standards. It works on any JavaScript runtime: Cloudflare Workers, Fastly Compute, Deno, Bun, Vercel, Netlify, AWS Lambda, Lambda@Edge, and Node.js.",
+      "> Shelly - Smart Home for Everyone",
       "",
       "## Docs",
       "",
-      "- [Full Docs](https://hono.dev/llms-full.txt) Full documentation of Hono. (without examples)",
-      "- [Tiny Docs](https://hono.dev/llms-small.txt): Tiny documentation of Hono. (includes only desciption of core)",
-      "",
-      "## Examples",
-      "",
-      "- [Examples](https://github.com/honojs/website/tree/main/examples): List of example files.",
+      "- [Full Docs](https://www.shelly.asia/llms-full.txt) Full documentation of Shelly. (without examples)",
+      "- [Tiny Docs](https://www.shelly.asia/llms-small.txt): Tiny documentation of Shelly. (includes only desciption of core)",
       "",
       "## Optional",
       "",
@@ -96,7 +92,7 @@ async function generateLLMDocs() {
   const fullContent = await generateContent(
     files,
     docsDir,
-    "<SYSTEM>This is the full developer documentation for Hono.</SYSTEM>\n\n",
+    "<SYSTEM>This is the full developer documentation for Shelly IoT.</SYSTEM>\n\n",
   );
 
   fs.writeFileSync(outputFullFile, fullContent, "utf-8");
@@ -113,7 +109,7 @@ async function generateLLMDocs() {
   const tinyContent = await generateContent(
     tinyFiles,
     docsDir,
-    "<SYSTEM>This is the tiny developer documentation for Hono.</SYSTEM>\n\n",
+    "<SYSTEM>This is the tiny developer documentation for Shelly IoT.</SYSTEM>\n\n",
   );
 
   fs.writeFileSync(outputTinyFile, tinyContent, "utf-8");
@@ -123,15 +119,15 @@ async function generateLLMDocs() {
   const gitInfo = getGitInfo();
   if (gitInfo) {
     const versionContent = [
-      `Commit Hash: ${gitInfo.commitHash}`,
-      `Commit Message: ${gitInfo.commitMessage}`,
-      `Branch: ${gitInfo.branch}`,
-      `Author: ${gitInfo.author}`,
-      `Commit Time: ${gitInfo.commitTime}`,
-      `Build Date: ${new Date().toISOString()}`,
+      "- Commit Hash: `${gitInfo.commitHash}`",
+      "- Commit Message: `${gitInfo.commitMessage}`",
+      "- Branch: `${gitInfo.branch}`",
+      "- Author: `${gitInfo.author}`",
+      "- Commit Time: `${gitInfo.commitTime}`",
+      "- Build Date: `${new Date().toISOString()}`",
     ].join("\n");
 
-    const versionFile = path.resolve("public/version.txt");
+    const versionFile = path.resolve("docs/version.md");
     fs.writeFileSync(versionFile, versionContent, "utf-8");
     console.log(`< Output '${versionFile}' `);
   }
