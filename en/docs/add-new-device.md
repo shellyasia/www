@@ -1,4 +1,4 @@
-Add new device
+# Add new device
 
 You can add a device to Shelly Smart Control using the following methods:
 

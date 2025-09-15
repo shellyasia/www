@@ -1,11 +1,11 @@
-Add via Scan network
+# Add via Scan network
 
 使用此选项可添加位于您本地 Wi-Fi 网络中的设备。
 
 ## 先决条件
 
 - **Shelly Smart Control** 应用已安装在您的移动设备上  
-- Shelly Cloud 中已注册**活跃账户**。有关如何创建账户的更多信息，请访问 [账户注册](../knowledge-base/account-registration)。
+- **Shelly Cloud** 中已注册并激活的账户。有关创建账户的更多信息，请访问 [账户注册](../knowledge-base/account-registration)。
 
 ## 通过扫描网络添加设备
 
@@ -21,9 +21,9 @@ Add via Scan network
 ![Scan network option.jpg](https://kb.shelly.cloud/__attachments/1612775611/Scan%20network%20option.jpg?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *图 2*
 
-4. 从本地 Wi-Fi 网络中可用设备列表中选择目标设备。或者，您也可以通过 IP 地址添加设备：
+4. 从本地 Wi-Fi 网络中可用设备列表中选择目标设备。或者，也可通过 IP 地址查找设备：
 
-   - 点击 **通过 IP 添加** 按钮。  
+   - 点击 **通过 IP 添加** 按钮。
    - 输入设备的 IP 地址。 _(图 3)_
 
 ![Enter IP.jpg](https://kb.shelly.cloud/__attachments/1612775611/Enter%20IP.jpg?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
@@ -33,14 +33,14 @@ Add via Scan network
 
 5. 点击 **添加设备**。
 
-6. 为设备输入名称并选择一个图标。点击 **下一步**。
+6. 为设备输入名称并选择图标。点击 **下一步**。
 
-7. 选择以下任一选项继续：
+7. 选择以下任一选项继续操作：
 
-   - 从列表中选择一个现有房间，或使用 **搜索** 栏查找房间。  
+   - 从列表中选择一个现有房间，或使用 **搜索** 搜索栏查找房间。
    - 点击 **+ 添加房间** 创建新房间。 _(图 4)_
 
 ![Add device to a room.jpg](https://kb.shelly.cloud/__attachments/1612775611/Add%20device%20to%20a%20room.jpg?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *图 4*
 
-8. 点击 **保存**。设备现已成功添加至应用。
+8. 点击 **保存**。设备已成功添加至应用。

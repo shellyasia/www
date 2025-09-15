@@ -108,8 +108,8 @@ async function main() {
     await Promise.all(names.map(async (name) => {
         const doc = await fetchDoc(name);
         // Save to file mkdir by nodejs
-        fs.writeFileSync(path.join("./docs", name + '.md'), doc.title + '\n\n' + doc.contentMarkdownZh);
-        fs.writeFileSync(path.join("./en/docs", name + '.md'), doc.title + '\n\n' + doc.contentMarkdown);
+        fs.writeFileSync(path.join("./docs", name + '.md'), "# "+doc.title + '\n\n' + doc.contentMarkdownZh);
+        fs.writeFileSync(path.join("./en/docs", name + '.md'), "# "+doc.title + '\n\n' + doc.contentMarkdown);
     }));
 }
 
