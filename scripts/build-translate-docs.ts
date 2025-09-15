@@ -80,6 +80,11 @@ ${contentMarkdown}`
 
 
 const names = [
+    'add-new-device',
+    'add-via-bluetooth',
+    'add-via-wi-fi-ap-scan',
+    'add-via-scan-network',
+
     'shelly-plug-s', 
     'shelly-2l-gen3', 
     'shelly-1pm-gen3', 

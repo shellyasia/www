@@ -18,16 +18,16 @@ Shelly Plug S
 
 ### Wi-Fi Operated Power Outlet
 
-The Shelly Plug S allows you to automatically monitor and control lighting, heating, and any other connected electrical appliance at home—anytime, anywhere. Simply plug an appliance or lamp into the Shelly Plug S, and you can turn it on or off remotely via the Shelly Cloud app.
+Shelly Plug S allows you to automatically monitor and control lighting, heating, and any other connected electrical appliance at home—anytime, anywhere. When an appliance or lamp is plugged into Shelly Plug S, you can turn it on or off remotely using the Shelly Cloud app.
 
 ### Features
 
 - No hub required  
 - Control a wide range of devices and appliances  
 - Integrated precise power meter  
-- Seamlessly integrates with all other Shelly devices  
-- Compatible with Android, iOS, Amazon Alexa, Google Assistant, and home automation servers using MQTT, CoAP, and REST API  
-- Easily bring your Arduino projects online and integrate them into your automation system  
+- Seamless integration with all other Shelly devices  
+- Compatible with Android, iOS, Amazon Alexa, Google Assistant, and home automation servers via MQTT, CoAP, and REST API  
+- Easily incorporate into Arduino projects for smart home automation  
 
 ### Specification
 
@@ -49,8 +49,8 @@ The Shelly Plug S allows you to automatically monitor and control lighting, heat
 - Device power consumption: < 1 W  
 - Intelligent On/Off: Yes  
 - Local and remote control: Yes  
-- Sunrise/Sunset scheduling: Yes  
-- Weekly schedule: Yes  
+- Sunrise/Sunset support: Yes  
+- Weekly scheduling: Yes  
 
 **CONNECTIVITY**
 
