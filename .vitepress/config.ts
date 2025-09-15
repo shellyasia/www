@@ -71,7 +71,7 @@ export default defineConfig({
           },
         ],
         sidebar: {
-          "/": sidebarsDoc(),
+          "/docs/": sidebarsDoc(),
           "/products/": sidebarProducts(),
         },
         editLink: {
