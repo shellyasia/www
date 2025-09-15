@@ -7,6 +7,7 @@ import OpenAI from "openai";
 import TurndownService from 'turndown';
 import fs from "node:fs";
 import path from "node:path";
+import { DefaultTheme } from 'vitepress';
 
 interface Doc {
     title: string
@@ -38,6 +39,35 @@ async function ai(sys: string, user: string): Promise<string> {
     });
     return completion.choices[0].message.content || '';
 }
+// interface Link {
+//     link: string
+//     text: string
+// }
+// interface Category {
+//     text: string
+//     items: Link[]
+// }
+
+async function fetchCategory(name: string): Promise<DefaultTheme.SidebarItem> {
+    const docURL = `https://kb.shelly.cloud/knowledge-base/${encodeURIComponent(name)}`
+    console.log(`Fetching category: ${docURL}`);
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+    const htmlString = await fetch(docURL).then(res => res.text())
+    const $ = cheerio.load(htmlString)
+
+    let category = $('header > h1').text() || '';
+    //trim space
+    category = category.trim();
+
+    const links = $('span.vp-accordion-link-group__title-inner > a')
+    //for each link get href and text
+    const list = links.map((i, link) => {
+        const linkName = ($(link).attr('href') || '').replaceAll('../knowledge-base/', '')
+        const text = ($(link).text() || '').replaceAll('\n', '').trim().replaceAll('"', '')
+        return { link: linkName, text } as DefaultTheme.SidebarItem
+    })
+    return { text: category, items: list.toArray() } as DefaultTheme.SidebarItem
+}
 
 
 async function fetchDoc(name: string): Promise<Doc> {
@@ -53,6 +83,8 @@ async function fetchDoc(name: string): Promise<Doc> {
         codeBlockStyle: 'fenced'
     })
     let contentMarkdown = turndownService.turndown(contentHTML).replaceAll('../__attachments/', 'https://kb.shelly.cloud/__attachments/') //remove extra new lines
+    contentMarkdown = contentMarkdown.replaceAll('./../__theme/', 'https://kb.shelly.cloud/__theme/');
+    
     //ai to fix markdown format and remove empty content or headline without content
     contentMarkdown = await ai(
         "你是一个专业的技术文档编辑助手。你的任务是对用户提供的英文技术文档内容进行润色和修改。请确保：\n- 修复任何语法错误或markdown语法错误，使输出为有效的markdown格式。\n- 删除任何空内容或没有内容的标题。\n- 不要添加或删除内容，只进行润色和格式修复。",
@@ -79,44 +111,62 @@ ${contentMarkdown}`
 }
 
 
-const names = [
+const devices = [
     'add-new-device',
     'add-via-bluetooth',
     'add-via-wi-fi-ap-scan',
     'add-via-scan-network',
 
-    'shelly-plug-s',
-    'shelly-2l-gen3',
-    'shelly-h-t-gen3',
-    'shelly-dimmer-gen3',
+    // 'shelly-plug-s',
+    // 'shelly-2l-gen3',
+    // 'shelly-h-t-gen3',
+    // 'shelly-dimmer-gen3',
 
-    'shelly-1-gen3',
-    'shelly-1-gen4',
-    'shelly-1-mini-gen3',
-    'shelly-1-mini-gen4',
-    'shelly-1pm-gen3',
-    'shelly-1pm-gen4',
-    'shelly-1pm-mini-gen3',
-    'shelly-1pm-mini-gen4',
+    // 'shelly-1-gen3',
+    // 'shelly-1-gen4',
+    // 'shelly-1-mini-gen3',
+    // 'shelly-1-mini-gen4',
+    // 'shelly-1pm-gen3',
+    // 'shelly-1pm-gen4',
+    // 'shelly-1pm-mini-gen3',
+    // 'shelly-1pm-mini-gen4',
 
-    'shelly-2pm-gen3',
-    'shelly-2pm-gen4',
-    
-    'shelly-pro-3em',
+    // 'shelly-2pm-gen3',
+    // 'shelly-2pm-gen4',
+
+    // 'shelly-pro-3em',
 
 ];//add more
+
+const cates = [
+    'shelly-gen1-devices',
+    'shelly-plus-devices',
+    'shelly-gen3-devices',
+    'shelly-gen4-devices',
+]
 
 
 async function main() {
 
-
-
-    await Promise.all(names.map(async (name) => {
-        const doc = await fetchDoc(name);
-        // Save to file mkdir by nodejs
-        fs.writeFileSync(path.join("./docs", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdownZh);
-        fs.writeFileSync(path.join("./en/docs", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdown);
+    const categories = await Promise.all(cates.map(async (name) => {
+        const category = await fetchCategory(name);
+        for (const cate of category.items || []) {
+            cate.link && devices.push(cate.link);
+        }
+        return category;
     }));
+
+    fs.writeFileSync(path.join("./.vitepress", "categories.json"), JSON.stringify(categories, null, 4));
+
+    // console.log(JSON.stringify(categories, null, 2));
+
+    // await Promise.all(devices.map(async (name) => {
+    //     const doc = await fetchDoc(name);
+    //     // Save to file mkdir by nodejs
+    //     fs.writeFileSync(path.join("./docs", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdownZh);
+    //     fs.writeFileSync(path.join("./en/docs", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdown);
+    //     console.log(`Saved document: ${name}`);
+    // }));
 }
 
 main().then(() => {

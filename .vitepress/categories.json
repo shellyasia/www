@@ -1,0 +1,298 @@
+[
+    {
+        "text": "Shelly Gen1 devices",
+        "items": [
+            {
+                "link": "shelly-1",
+                "text": "Shelly 1"
+            },
+            {
+                "link": "shelly-1pm",
+                "text": "Shelly 1PM"
+            },
+            {
+                "link": "shelly-1l",
+                "text": "Shelly 1L"
+            },
+            {
+                "link": "shelly-2-5",
+                "text": "Shelly 2.5"
+            },
+            {
+                "link": "shelly-i3",
+                "text": "Shelly i3"
+            },
+            {
+                "link": "shelly-em",
+                "text": "Shelly EM"
+            },
+            {
+                "link": "shelly-3em",
+                "text": "Shelly 3EM"
+            },
+            {
+                "link": "shelly-uni",
+                "text": "Shelly Uni"
+            },
+            {
+                "link": "shelly-trv",
+                "text": "Shelly TRV"
+            },
+            {
+                "link": "shelly-button-1",
+                "text": "Shelly Button 1"
+            },
+            {
+                "link": "shelly-plug",
+                "text": "Shelly Plug"
+            },
+            {
+                "link": "shelly-plug-s",
+                "text": "Shelly Plug S"
+            },
+            {
+                "link": "shelly-plug-us",
+                "text": "Shelly Plug US"
+            },
+            {
+                "link": "shelly-rgbw2",
+                "text": "Shelly RGBW2"
+            },
+            {
+                "link": "shelly-dimmer-2",
+                "text": "Shelly Dimmer 2"
+            },
+            {
+                "link": "shelly-duo-duo-gu10",
+                "text": "Shelly Duo/Duo GU10"
+            },
+            {
+                "link": "shelly-vintage",
+                "text": "Shelly Vintage"
+            },
+            {
+                "link": "shelly-bulb-duo-rgbw",
+                "text": "Shelly Duo RGBW"
+            },
+            {
+                "link": "shelly-h-t",
+                "text": "Shelly H&T"
+            },
+            {
+                "link": "shelly-flood",
+                "text": "Shelly Flood"
+            },
+            {
+                "link": "shelly-door-window-2",
+                "text": "Shelly Door/Window 2"
+            },
+            {
+                "link": "shelly-gas",
+                "text": "Shelly Gas"
+            },
+            {
+                "link": "shelly-motion",
+                "text": "Shelly Motion"
+            },
+            {
+                "link": "shelly-motion-2",
+                "text": "Shelly Motion 2"
+            }
+        ]
+    },
+    {
+        "text": "Shelly Plus devices",
+        "items": [
+            {
+                "link": "shelly-plus-1",
+                "text": "Shelly Plus 1"
+            },
+            {
+                "link": "shelly-plus-1-ul",
+                "text": "Shelly Plus 1 UL"
+            },
+            {
+                "link": "shelly-plus-1pm",
+                "text": "Shelly Plus 1PM"
+            },
+            {
+                "link": "shelly-plus-1pm-ul",
+                "text": "Shelly Plus 1PM UL"
+            },
+            {
+                "link": "shelly-plus-2pm",
+                "text": "Shelly Plus 2PM"
+            },
+            {
+                "link": "shelly-plus-2pm-ul",
+                "text": "Shelly Plus 2PM UL"
+            },
+            {
+                "link": "shelly-plus-i4",
+                "text": "Shelly Plus i4"
+            },
+            {
+                "link": "shelly-plus-i4dc",
+                "text": "Shelly Plus i4DC"
+            },
+            {
+                "link": "shelly-plus-h-t",
+                "text": "Shelly Plus H&T"
+            },
+            {
+                "link": "shelly-plus-plug-it",
+                "text": "Shelly Plus Plug IT"
+            },
+            {
+                "link": "shelly-plus-plug-s-1",
+                "text": "Shelly Plus Plug S"
+            },
+            {
+                "link": "shelly-plus-plug-uk",
+                "text": "Shelly Plus Plug UK"
+            },
+            {
+                "link": "shelly-plus-plug-us",
+                "text": "Shelly Plus Plug US"
+            },
+            {
+                "link": "shelly-plus-smoke",
+                "text": "Shelly Plus Smoke"
+            },
+            {
+                "link": "shelly-plus-wall-dimmer",
+                "text": "Shelly Plus Wall Dimmer"
+            },
+            {
+                "link": "shelly-plus-uni",
+                "text": "Shelly Plus Uni"
+            },
+            {
+                "link": "shelly-plus-0-10v-dimmer",
+                "text": "Shelly Plus 0-10V Dimmer"
+            },
+            {
+                "link": "shelly-plus-rgbw-pm",
+                "text": "Shelly Plus RGBW PM"
+            },
+            {
+                "link": "shelly-mini-devices",
+                "text": "Shelly Mini devices"
+            }
+        ]
+    },
+    {
+        "text": "Shelly Gen3 devices",
+        "items": [
+            {
+                "link": "shelly-1-gen3",
+                "text": "Shelly 1 Gen3"
+            },
+            {
+                "link": "shelly-1pm-gen3",
+                "text": "Shelly 1PM Gen3"
+            },
+            {
+                "link": "shelly-2pm-gen3",
+                "text": "Shelly 2PM Gen3"
+            },
+            {
+                "link": "shelly-1l-gen3",
+                "text": "Shelly 1L Gen3"
+            },
+            {
+                "link": "shelly-2l-gen3",
+                "text": "Shelly 2L Gen3"
+            },
+            {
+                "link": "shelly-i4-gen3",
+                "text": "Shelly i4 Gen3"
+            },
+            {
+                "link": "shelly-h-t-gen3",
+                "text": "Shelly H&T Gen3"
+            },
+            {
+                "link": "shelly-dimmer-0-1-10v-pm-gen3",
+                "text": "Shelly Dimmer 0/1-10V PM Gen3"
+            },
+            {
+                "link": "shelly-plug-s-mtr-gen3",
+                "text": "Shelly Plug S MTR Gen3"
+            },
+            {
+                "link": "outdoor-plug-s-gen3",
+                "text": "Shelly Outdoor Plug S Gen3"
+            },
+            {
+                "link": "shelly-dimmer-gen3",
+                "text": "Shelly Dimmer Gen3"
+            },
+            {
+                "link": "shelly-dali-dimmer-gen3-1",
+                "text": "Shelly DALI Dimmer Gen3"
+            },
+            {
+                "link": "shelly-em-gen3",
+                "text": "Shelly EM Gen3"
+            },
+            {
+                "link": "shelly-3em-63-gen3",
+                "text": "Shelly 3EM-63 Gen3"
+            },
+            {
+                "link": "shelly-mini-gen3-devices",
+                "text": "Shelly Mini Gen3 devices"
+            },
+            {
+                "link": "shelly-shutter",
+                "text": "Shelly Shutter"
+            },
+            {
+                "link": "setting-up-gen3-devices-via-matter",
+                "text": "Setting up Gen3 devices via Matter"
+            }
+        ]
+    },
+    {
+        "text": "Shelly Gen4 devices",
+        "items": [
+            {
+                "link": "shelly-1-gen4",
+                "text": "Shelly 1 Gen4"
+            },
+            {
+                "link": "shelly-1-gen4-anz",
+                "text": "Shelly 1 Gen4 ANZ"
+            },
+            {
+                "link": "shelly-1pm-gen4",
+                "text": "Shelly 1PM Gen4"
+            },
+            {
+                "link": "shelly-1pm-gen4-anz",
+                "text": "Shelly 1PM Gen4 ANZ"
+            },
+            {
+                "link": "shelly-2pm-gen4",
+                "text": "Shelly 2PM Gen4"
+            },
+            {
+                "link": "shelly-2pm-gen4-anz",
+                "text": "Shelly 2PM Gen4 ANZ"
+            },
+            {
+                "link": "shelly-flood-gen4",
+                "text": "Shelly Flood Gen4"
+            },
+            {
+                "link": "shelly-leak-sensor-cable",
+                "text": "Shelly Leak Sensor Cable"
+            },
+            {
+                "link": "shelly-mini-gen4-devices",
+                "text": "Shelly Mini Gen4 devices"
+            }
+        ]
+    }
+]

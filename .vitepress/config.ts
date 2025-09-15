@@ -6,7 +6,7 @@ import {
 } from "vitepress-plugin-group-icons";
 import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
 import { createFileSystemTypesCache } from "@shikijs/vitepress-twoslash/cache-fs";
-import { sidebarProducts, sidebarsDoc } from "./sidebar";
+import { sidebarProducts, sidebarsDoc, sidebarsDocEn } from "./sidebar";
 
 const algoliaContent = "020BBEB17492C015";
 const algoAppId = "LEF12KSIJN";
@@ -111,7 +111,7 @@ export default defineConfig({
           },
         ],
         sidebar: {
-          "/en/": sidebarsDoc(),
+          "/en/docs/": sidebarsDocEn(),
           "/en/examples/": sidebarProducts(),
         },
         editLink: {

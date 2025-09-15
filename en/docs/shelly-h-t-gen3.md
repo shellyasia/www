@@ -4,8 +4,8 @@
 
 ## Device Identification
 
-- **Device Name:** Shelly H&T Gen3  
-- **Device Model:** S3SN-0U12A  
+- **Device name:** Shelly H&T Gen3  
+- **Device model:** S3SN-0U12A  
 - **Device SSID:** ShellyHTG3-XXXXXXXXXXXX  
 - **Device Bluetooth ID:** 0x1809  
 
@@ -16,20 +16,20 @@ The **Shelly H&T Gen3** is a Wi-Fi smart humidity and temperature sensor featuri
 ## Main Features
 
 - **Wi-Fi Connectivity:** Connects to your home Wi-Fi network for remote monitoring via smartphone apps or compatible devices.
-- **Large E-Paper Graphic Display:** Provides high-contrast, energy-efficient visual feedback of temperature and humidity.
+- **Large E-Paper Graphic Display:** Provides high-contrast, glare-free visualization of temperature and humidity readings.
 - **Digital Clock:** NTP-synchronized real-time clock with automatic time updates.
 - **Smart Home Integration:** Compatible with Google Assistant, Amazon Alexa, and Samsung SmartThings for voice control and automation.
-- **USB Type-C Port:** Used for continuous power supply; does not charge internal batteries.
-- **Bluetooth Connectivity:** Available during setup for device configuration (Bluetooth 4.2).
-- **User-Friendly Interface:** Includes a reset button (behind the back cover) for manual operations.
-- **Battery Operation:** In battery mode, the device wakes every minute to measure conditions. It reports changes exceeding thresholds (default: 0.5 °C or 5% RH), and unconditionally reports status if no report is sent within two hours.
-- **USB-Powered Operation:** When powered via USB, the device wakes every 5 minutes, performs measurements, updates the display, and sends data unconditionally.
-- **Environmental Specifications:** Operates in temperatures from 0 °C to 40 °C (32 °F to 105 °F); recommended humidity range: 30% to 70% RH.
-- **Power Supply Options:** Powered by 4 AA alkaline batteries (not included) or USB Type-C connection.
-- **Wireless Connectivity:** Supports Wi-Fi (802.11 b/g/n) and Bluetooth 4.2 with indoor range up to 30 m (100 ft) and outdoor up to 50 m (160 ft).
-- **Microcontroller Unit (MCU):** ESP-Shelly-C38F with 8 MB flash memory.
+- **USB Type-C Port:** Used for continuous power supply. Not suitable for charging internal batteries.
+- **Bluetooth Connectivity:** Supports Bluetooth 4.2 for setup assistance and local configuration.
+- **User-Friendly Interface:** Includes a reset button (behind the back cover) for manual interaction and device management.
+- **Battery Operation:** In battery mode, the device wakes every minute to measure conditions. It reports changes only if thresholds are exceeded (0.5 °C or 5% RH), but unconditionally reports after two hours without update. A 5-minute cooldown period prevents self-heating.
+- **USB-Powered Operation:** When powered via USB, the device wakes every 5 minutes, measures, updates the display, and sends data unconditionally to connected channels.
+- **Environmental Specifications:** Operates in temperatures from 0 °C to 40 °C (32 °F to 105 °F) and relative humidity of 30% to 70% RH.
+- **Power Supply Options:** Powered by 4 × AA batteries (LR6, 1.5 V, not included) or via USB Type-C.
+- **Wireless Connectivity:** Supports Wi-Fi (802.11 b/g/n) and Bluetooth 4.2 with indoor range up to 30 m (100 ft) and outdoor up to 50 m (160 ft).
+- **Microcontroller Unit (MCU):** ESP-Shelly-C38F with 8 MB flash memory.
 
-These features make the Shelly H&T Gen3 ideal for residential, multi-dwelling units, light commercial, university/college, and other environments—offering seamless integration, long battery life, and intuitive operation.
+These features make the Shelly H&T Gen3 ideal for residential, multi-dwelling units (MDUs), light commercial, university/college, and other environments requiring reliable, low-maintenance environmental monitoring with smart home integration.
 
 ## Main Applications
 
@@ -40,20 +40,20 @@ These features make the Shelly H&T Gen3 ideal for residential, multi-dwelling un
 
 ## Integrations
 
-### Amazon Alexa Supported Capabilities  
+### Amazon Alexa Supported Capabilities
 Yes
 
-### Google Smart Home Supported Traits  
+### Google Smart Home Supported Traits
 Yes
 
-### Samsung SmartThings Supported Capabilities  
+### Samsung SmartThings Supported Capabilities
 Yes
 
 ## Device Electrical Interfaces
 
 ### USB Type-C Port
 
-![USB Type-C Port](https://kb.shelly.cloud/__attachments/231604493/Plus%20H&T%20USB%20Port.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
+![USB Type-C port](https://kb.shelly.cloud/__attachments/231604493/Plus%20H&T%20USB%20Port.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 
 - Supplies power to the device  
 - Cannot be used to charge internal batteries  
@@ -67,25 +67,25 @@ Yes
 
 ### Inputs
 
-- Reset button (located behind the back cover)
+- **Reset Button:** Located behind the back cover
 
 ![](https://kb.shelly.cloud/__attachments/265977877/Plus%20H&T%20Reset%20Button.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 
-### Reset Button Actions
+#### Reset Button Actions
 
-- **Brief press (1–2 seconds):**
-  - If in Sleep mode → enters Setup mode
-  - If in Setup mode → returns to Sleep mode
+- **Brief press:**
+  - If in Sleep mode → enters Setup mode  
+  - If in Setup mode → returns to Sleep mode  
 
 - **Hold for 5 seconds:**
-  - If in Setup mode → enables the device’s access point (AP)
+  - If in Setup mode → enables the device’s access point  
 
 - **Hold for 10 seconds:**
-  - If in Setup mode → performs a factory reset
+  - If in Setup mode → performs factory reset  
 
 ### Outputs
 
-- E-paper graphic display
+- **E-Paper Graphic Display**
 
 ![](https://kb.shelly.cloud/__attachments/265977877/Interface%20H&TGen3-1.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 
@@ -96,7 +96,7 @@ Yes
 *Device is in Setup mode*
 
 ![AP.png](https://kb.shelly.cloud/__attachments/265977877/AP.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Device access point enabled*
+*Device access point is enabled*
 
 ![Humidity.png](https://kb.shelly.cloud/__attachments/265977877/Humidity.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *Humidity readings*
@@ -105,19 +105,19 @@ Yes
 *Receiving over-the-air firmware update – progress shown as percentage*
 
 ![Globe.png](https://kb.shelly.cloud/__attachments/265977877/Globe.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Device has reported current readings to the Cloud. If missing, displayed values may differ from cloud data.*
+*Device has reported current readings to the Cloud. If missing, displayed values may differ from Cloud data.*
 
 ![Wi-Fi.png](https://kb.shelly.cloud/__attachments/265977877/Wi-Fi.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *Wi-Fi signal strength indicator*
 
 ![battery.png](https://kb.shelly.cloud/__attachments/265977877/battery.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Battery level indicator. Shows empty when powered via USB.*
+*Battery level indicator. Shows empty when USB-powered.*
 
 ![BT.png](https://kb.shelly.cloud/__attachments/265977877/BT.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *Bluetooth connectivity is enabled*
 
 ![OtA error.png](https://kb.shelly.cloud/__attachments/265977877/OtA%20error.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Firmware update error occurred*
+*Error during firmware update*
 
 ## Measuring and Reporting
 
@@ -125,14 +125,9 @@ Yes
 
 When operating on battery power:
 
-1. Wakes every minute to take measurements.  
-   - Screen updates only if temperature changes by ≥0.2 °C or humidity by ≥3%.  
-   - Default reporting threshold: ≥0.5 °C or ≥5% RH change.  
-   - No report sent if change is below threshold.
-
-2. If no threshold-based report is sent within 2 hours, the device unconditionally reports its status to Shelly Cloud and connected channels.
-
-3. A 5-minute cool-down period follows each measurement to prevent self-heating; during this time, the device remains asleep.
+1. Wakes every minute to take measurements. Updates the screen if there's a change of ≥0.2 °C or ≥3% RH. The default reporting threshold is ≥0.5 °C or ≥5% RH — smaller changes do not trigger a report.
+2. If no threshold-based report is sent within two hours, the device unconditionally reports its status to Shelly Cloud and all connected channels.
+3. A 5-minute cooldown period is enforced after each measurement to prevent self-heating; during this time, the device remains inactive.
 
 ### On USB Power Supply
 
@@ -140,9 +135,9 @@ When powered via USB:
 
 - Wakes every 5 minutes  
 - Performs measurement  
-- Updates display  
+- Updates the display  
 - Unconditionally reports data to all connected channels  
-- Sleeps for 5 minutes
+- Sleeps for 5 minutes  
 
 ### User-Initiated Report
 
@@ -151,16 +146,16 @@ Pressing the reset button (behind the cover) triggers:
 - Measurement  
 - Display update  
 - Unconditional report to all channels  
-- 5-minute sleep cycle
+- 5-minute sleep cycle  
 
 ## Specifications
 
-| Category | Value |
-|--------|-------|
+| **Category** | **Value** |
+|-------------|----------|
 | **Physical** | |
-| Size (H×W×D) | 70 × 70 × 26 mm / 2.76 × 2.76 × 1.02 in (without stand)<br>70 × 70 × 45 mm / 2.76 × 2.76 × 1.77 in (with stand) |
+| Size (H×W×D): | 70 × 70 × 26 mm / 2.76 × 2.76 × 1.02 in (without stand)<br>70 × 70 × 45 mm / 2.76 × 2.76 × 1.77 in (with stand) |
 | Weight | 47 g / 1.66 oz |
-| Mounting | With stand (on flat surface)<br>Wall mounting using screws (head diameter: 5–7 mm / 0.20–0.28 in, max thread depth: 3 mm / 0.12 in)<br>Double-sided foam sticker |
+| Mounting | With stand (on flat surface)<br>Wall mounting using screws (head diameter: 5–7 mm / 0.20–0.28 in, max thread diameter: 3 mm / 0.12 in)<br>Double-sided foam sticker |
 | Shell Material | Plastic |
 | Shell Color | White<br>Mocha: C:0 M:12 Y:28 K:12<br>Ivory: C:3 M:4 Y:14 K:8<br>Black: C:0 M:0 Y:0 K:100 |
 | **Environmental** | |
@@ -168,8 +163,8 @@ Pressing the reset button (behind the cover) triggers:
 | Humidity | 30% to 70% RH |
 | Max. Altitude | 2000 m / 6562 ft |
 | **Electrical** | |
-| Power Supply | Batteries (4 × AA LR6, 1.5 V, not included)<br>USB Type-C (adapter and cable not included) |
-| Estimated Battery Life | ~1 year (varies based on battery type, environmental changes, and network conditions) |
+| Power Supply | Batteries (4 × AA LR6, 1.5 V, not included)<br>USB Type-C (power adapter and cable not included) |
+| Estimated Battery Life | Approx. 1 year (varies based on battery type, environmental conditions, and network strength) |
 | **Sensors & Meters** | |
 | Internal Temperature Sensor | No |
 | Temperature Sensor | Yes |
@@ -179,18 +174,18 @@ Pressing the reset button (behind the cover) triggers:
 | Protocol | 802.11 b/g/n |
 | RF Band | 2401 – 2495 MHz |
 | Max. RF Power | < 20 dBm |
-| Range | Up to 30 m (100 ft) indoors<br>Up to 50 m (160 ft) outdoors<br>(Depends on local conditions) |
+| Range | Up to 30 m / 100 ft (indoor)<br>Up to 50 m / 160 ft (outdoor)<br>(Depends on local conditions) |
 | **Bluetooth** | |
 | Protocol | 4.2 |
 | RF Band | 2400 – 2483.5 MHz |
 | Max. RF Power | < 4 dBm |
-| Range | Up to 10 m (33 ft) indoors<br>Up to 30 m (100 ft) outdoors<br>(Depends on local conditions) |
+| Range | Up to 10 m / 33 ft (indoor)<br>Up to 30 m / 100 ft (outdoor)<br>(Depends on local conditions) |
 | **Microcontroller Unit (MCU)** | |
 | CPU | ESP-Shelly-C38F |
 | Flash Memory | 8 MB |
 | **Firmware Capabilities** | |
 | Schedules | No |
-| Webhooks (URL Actions) | 10 hooks, up to 2 URLs per hook |
+| Webhooks (URL actions) | 10 hooks, up to 2 URLs per hook |
 | Scripting | No |
 | MQTT | Yes |
 
@@ -204,22 +199,22 @@ Pressing the reset button (behind the cover) triggers:
 
 ## Troubleshooting
 
-...
+…
 
 ## Components and APIs
 
-- [This Device API Reference](https://shelly-api-docs.shelly.cloud/gen2/Devices/Gen3/ShellyHTG3)
+- [This Device API Documentation](https://shelly-api-docs.shelly.cloud/gen2/Devices/Gen3/ShellyHTG3)
 - [All Shelly Devices and Services](https://shelly-api-docs.shelly.cloud/)
 
 ## Compliance
 
 - [Shelly H&T Gen3 Multilingual EU Declaration of Conformity (2025-07-22)](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen3%20multilingual%20EU%20declaration%20of%20conformity%202025-07-22.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
-- [Shelly H&T Gen3 Matte Black UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen%203%20Matte%20Black%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
-- [Shelly H&T Gen3 Matte White UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen%203%20Matte%20White%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
-- [Shelly H&T Gen3 Mocha UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen%203%20Mocha%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
-- [Shelly H&T Gen3 Ivory UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen%203%20Ivory%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
+- [Shelly H&T Gen 3 Matte Black UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen%203%20Matte%20Black%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
+- [Shelly H&T Gen 3 Matte White UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen%203%20Matte%20White%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
+- [Shelly H&T Gen 3 Mocha UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen%203%20Mocha%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
+- [Shelly H&T Gen 3 Ivory UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%20H&T%20Gen%203%20Ivory%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 
-**Compliance Archive**
+**Compliance Archive:**
 - [Shelly H&T Gen3 Multilingual EU Declaration of Conformity (28, 2023-12-29)](https://kb.shelly.cloud/__attachments/309329921/Shelly%20H&T%20Gen3%20multilingual%20EU%20declaration%20of%20conformity%2028%202023-12-29.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 
 ## Printed User Guide

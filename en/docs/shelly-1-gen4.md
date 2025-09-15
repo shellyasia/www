@@ -11,47 +11,45 @@
 
 ## Short Description
 
-The Shelly 1 Gen4 is a compact smart switch with potential-free contacts, enabling remote control of electric appliances via smartphone, tablet, PC, or home automation systems. It operates standalone within a local Wi-Fi network or integrates with cloud-based home automation services.
+The Shelly 1 Gen4 is a compact smart switch with potential-free contacts, enabling remote control of electrical appliances via smartphone, tablet, PC, or home automation systems. It operates standalone within a local Wi-Fi network or integrates with cloud-based home automation services.
 
-With an internet connection, users can access, control, and monitor the device from anywhere, provided it remains connected to a Wi-Fi router.
+Users can access, control, and monitor the device remotely from anywhere with internet connectivity, provided the device is connected to a Wi-Fi router and the Internet.
 
-Designed for retrofit installation, it fits into standard electrical wall boxes, behind power sockets, light switches, or other space-constrained locations.
+Designed for retrofit installation, it fits into standard electrical wall boxes, behind power outlets, light switches, or other space-constrained locations.
 
-The device features an embedded web interface for monitoring, control, and configuration. It includes a multi-protocol wireless MCU supporting Zigbee and Bluetooth connectivity, ensuring secure and reliable communication.
-
-This device is Matter-compatible.
+The device features an embedded web interface for real-time monitoring, configuration, and control. Equipped with a multi-protocol wireless MCU, it supports Zigbee and Bluetooth connectivity, ensuring secure and reliable communication. The Shelly 1 Gen4 is also Matter-compatible.
 
 ## Main Features
 
-- **Wi-Fi Connectivity:** Connects to your home Wi-Fi network for remote monitoring and control via mobile apps or compatible devices.
+- **Wi-Fi Connectivity:** Connects to your home Wi-Fi network (802.11 b/g/n/ax), enabling remote monitoring and control via mobile apps or compatible devices.
 - **Smart Home Integration:** Compatible with Google Assistant, Amazon Alexa, and Samsung SmartThings for voice control and automation.
-- **Local and Cloud Control:** Functions independently on a local network or remotely via cloud services.
-- **Bluetooth Connectivity:** Supports Bluetooth and BLE gateways, useful during initial setup and device pairing.
-- **Zigbee Connectivity:** Enables inclusion in Zigbee networks, ideal for advanced automation setups.
+- **Local & Cloud Control:** Operates independently on a local network or via cloud-based platforms.
+- **Bluetooth Connectivity:** Supports Bluetooth and BLE gateways, useful during initial setup.
+- **Zigbee Connectivity:** Enables inclusion into Zigbee networks, ideal for advanced automation setups.
 - **User-Friendly Interface:** Includes a physical reset button for manual operations and diagnostics.
-- **Improved Processor:** Equipped with enhanced processing capabilities and native Zigbee support.
-- **Embedded Web Interface:** Provides full control and configuration through a built-in web UI.
-- **Wireless Protocols:** Supports Wi-Fi (802.11 b/g/n/ax) and Bluetooth 5.0 with specified indoor and outdoor range performance.
+- **Improved Processor:** Upgraded hardware for enhanced performance and support for Zigbee.
+- **Embedded Web Interface:** Full-featured web UI for configuration, monitoring, and settings adjustment.
+- **Wireless Protocols:** Supports Wi-Fi (802.11 b/g/n/ax) and Bluetooth 5.0 with defined indoor/outdoor range capabilities.
 - **Dry Contact Switching:** Designed for switching low-voltage devices safely.
-- **BLE Gateway:** Acts as a bridge between Shelly BLU devices and the broader Shelly ecosystem—receives Bluetooth signals and forwards them to the cloud or local devices.
-- **Wi-Fi Range Extender:** Enhances Wi-Fi coverage by receiving, boosting, and retransmitting your existing signal across wider areas.
-- **Zigbee Range Extender:** Expands Zigbee network reach by receiving, amplifying, and rebroadcasting signals over extended distances.
-- **Scripting Support:** [Learn more about Shelly Script Language Features](https://shelly-api-docs.shelly.cloud/gen2/Scripts/ShellyScriptLanguageFeatures/)
+- **BLE Gateway Functionality:** Acts as a bridge between Shelly BLU devices and the broader Shelly ecosystem by relaying Bluetooth signals to the cloud or local devices.
+- **Wi-Fi Range Extender:** Enhances Wi-Fi coverage by receiving and retransmitting signals over a wider area.
+- **Zigbee Range Extender:** Expands Zigbee network reach by receiving, boosting, and rebroadcasting signals.
+- **Scripting Support:** [Shelly Script Language Features](https://shelly-api-docs.shelly.cloud/gen2/Scripts/ShellyScriptLanguageFeatures/)
 - **Extensive Integrations:** Supports third-party systems via HTTP API, MQTT(s), Webhooks (HTTP/HTTPS), and UDP.
-- **Scheduling Capabilities:** Define complex time-based operations using customizable time windows based on date, time, weekdays, hours, minutes, and seconds.
-- **Virtual Components:** Create virtual devices for advanced automation logic. [Documentation available here](https://shelly-api-docs.shelly.cloud/gen2/DynamicComponents/Virtual/)
-- **KNXnet/IP Support:** Integrate with KNX systems for industrial-grade building automation. [View integration guide](https://shelly-api-docs.shelly.cloud/gen2/Integrations/KNX/)
+- **Scheduling:** Create complex schedules based on date, time, weekdays, hours, minutes, and seconds.
+- **Virtual Components:** [Virtual Dynamic Components Documentation](https://shelly-api-docs.shelly.cloud/gen2/DynamicComponents/Virtual/)
+- **KNX Net/IP Support:** [KNX Integration Guide](https://shelly-api-docs.shelly.cloud/gen2/Integrations/KNX/)
 
 ## Use Cases
 
 ### Remote Appliance Control
-Turn on or off electrical appliances remotely using a mobile phone, tablet, PC, or home automation platform.
+Turn on/off electrical appliances remotely using a mobile device, tablet, PC, or home automation platform.
 
 ### Internet-Connected Convenience
-Access and manage devices from anywhere with internet access, as long as the Shelly 1 Gen4 is connected to a Wi-Fi router.
+Access and manage the device from any location with internet access, as long as it remains connected to a Wi-Fi router.
 
 ### Home Automation
-Enable automated power management for appliances to enhance comfort, convenience, and energy efficiency.
+Enable automated control of appliances for improved comfort, convenience, and energy efficiency.
 
 ### Home Automation Use Cases
 
@@ -61,55 +59,58 @@ Enable automated power management for appliances to enhance comfort, convenience
 - Integrate with motion sensors (e.g., Shelly BLU Motion) for occupancy-based lighting.
 
 #### Garage Door Automation
-- Act as a smart trigger to open or close garage doors.
+- Serve as a smart trigger to open/close garage doors.
 - Monitor door status using sensor inputs (e.g., Shelly Plus Add-on).
 - Enable voice control via assistants like Alexa or Google Assistant.
 
 #### Fan or Ventilation Control
-- Automate bathroom or kitchen exhaust fans using humidity sensors (e.g., Shelly BLU H&T).
-- Schedule fan operation or activate based on occupancy.
+- Automate bathroom or kitchen exhaust fans based on humidity levels (e.g., using Shelly BLU H&T).
+- Turn on ventilation during specific times or based on occupancy.
 
 #### Heater or Towel Rail Switching
-- Control electric towel warmers or heaters (max switching current: 16A).
+- Control electric towel warmers or heaters (max. switching current: 16A).
 - Schedule operation or link to temperature thresholds via sensors (e.g., Shelly BLU H&T).
 
 ### Commercial Applications
 
 #### Lighting Automation in Small Offices or Shops
-- Manage lighting zones according to business hours.
-- Combine with motion detectors (e.g., Shelly BLU Motion) for energy savings.
+- Control lighting zones according to business hours.
+- Use motion detectors (e.g., Shelly BLU Motion) to reduce energy consumption.
 
 #### Meeting Room Occupancy Management
-- Automatically enable/disable projectors, lights, or AV equipment based on room occupancy.
+- Automatically enable/disable projectors or AV equipment based on room occupancy.
 
 #### Security and Access Systems
 - Remotely unlock gates or doors for deliveries.
 - Monitor the open/closed state of access points.
 
-### Industrial / Utility Use Cases
+### Industrial/Utility Use Cases
 
 #### Equipment Monitoring & Control
 - Perform remote power cycling of routers, modems, or network switches.
 
 #### Pump or Motor Control
-- Automate irrigation pumps in greenhouses or fields (max switching current: 16A).
-- Control valves using external actuators (e.g., Shelly Add-On Mechanical Manipulator).
+- Automate irrigation pumps in greenhouses or fields (max. switching current: 16A).
+- Control valves remotely using compatible add-ons (e.g., Shelly Add-On Mechanical Manipulator).
 
 ## Main Applications
 
 - Residential  
-- MDU (Multi-Dwelling Units – apartments, condominiums, hotels, etc.)  
+- MDU (Multi-Dwelling Units – apartments, condos, hotels, etc.)  
 - Light Commercial (small offices, retail stores, restaurants, gas stations, etc.)  
 - Government/Municipal  
 - University/College  
 
 ## Integrations
 
-| Platform | Supported |
-|--------|-----------|
-| Amazon Alexa | Yes |
-| Google Smart Home | Yes |
-| Samsung SmartThings | Yes |
+### Amazon Alexa Supported Capabilities
+Yes
+
+### Google Smart Home Supported Traits
+Yes
+
+### Samsung SmartThings Supported Capabilities
+Yes
 
 ## Simplified Internal Schematics
 
@@ -141,73 +142,82 @@ Enable automated power management for appliances to enhance comfort, convenience
 ## User Interface
 
 ### Inputs
-- One (Control) Button:
-  - Press and hold for 5 seconds → Enter Access Point mode and enable Bluetooth.
-  - Press and hold for 10 seconds → Factory reset.
-  - Press 5 times consecutively → Switch from Matter firmware to Zigbee.
-  - Press 3 times consecutively → Enter Zigbee inclusion mode (active for 2 minutes; visible in Zigbee hub).
+- One (Control) button  
+  - Press and hold for 5 seconds: Enter Access Point mode and enable Bluetooth connection.  
+  - Press and hold for 10 seconds: Factory reset the device.  
+  - Press 5 times consecutively: Switch firmware from Matter to Zigbee.  
+  - Press 3 times consecutively: Enter Zigbee inclusion mode (active for 2 minutes; device appears in the Zigbee hub).  
 
 ### Outputs
-- LED (monocolor) Indicator:
+- Monochrome LED indicator  
   - AP enabled, Wi-Fi disabled: 1 sec ON / 1 sec OFF  
   - Wi-Fi enabled but not connected: 1 sec ON / 3 sec OFF  
   - Connected to Wi-Fi network: Constantly ON  
   - Cloud enabled but not connected: 1 sec ON / 5 sec OFF  
   - Connected to Shelly Cloud: Constantly ON  
-  - OTA (Over-the-Air Update): 0.5 sec ON / 0.5 sec OFF  
+  - OTA update in progress: 0.5 sec ON / 0.5 sec OFF  
   - Button pressed and held for 5 seconds: 0.5 sec ON / 0.5 sec OFF  
   - Button pressed and held for 10 seconds: 0.25 sec ON / 0.25 sec OFF  
 
-> **Note:** States are processed in order of priority — later states override earlier ones.
+> *Note: States are processed in order of priority—later states override earlier ones.*
 
 ## Specifications
 
-| Category | Value |
+| Quantity | Value |
 |--------|-------|
 | **Physical** | |
 | Size (H×W×D) | 37 × 42 × 16 mm / 1.46 × 1.65 × 0.63 in |
 | Weight | 26 g / 0.92 oz |
-| Screw terminal max torque | 0.4 Nm / 3.5 lbin |
-| Conductor cross-section | 0.2 to 2.5 mm² / 24 to 14 AWG (solid, stranded, bootlace ferrules) |
+| Screw terminals max torque | 0.4 Nm / 3.5 lbin |
+| Conductor cross section | 0.2 to 2.5 mm² / 24 to 14 AWG (solid, stranded, bootlace ferrules) |
 | Conductor stripped length | 6 to 7 mm / 0.24 to 0.28 in |
 | Mounting | Wall console |
 | Shell material | Plastic |
 | Shell color | Blue |
 | Terminals color | Grey |
+
 | **Environmental** | |
 | Ambient working temperature | -20 °C to 40 °C / -5 °F to 105 °F |
-| Humidity | 30% to 70% RH |
+| Humidity | 30 % to 70 % RH |
 | Max. altitude | 2000 m / 6562 ft |
+
 | **Electrical** | |
 | Power supply | 110–240 V~<br>24–48 V⎓<br>12 V⎓ |
 | Power consumption | < 1 W |
 | Neutral required | No |
 | External protection | Cable protection switch per EN60898-1 (tripping characteristic B or C, max. 16 A rated current, min. 6 kA interrupting rating, energy limiting class 3) |
+
 | **Output Circuit Ratings** | |
 | Max. switching voltage | 240 V~<br>30 V⎓ |
 | Max. switching current | 16 A / 240 V~<br>10 A / 30 V⎓ |
+
 | **Sensors, Meters** | |
 | Internal temperature sensor | Yes |
+
 | **Radio** | |
 | **Wi-Fi** | |
 | Protocol | 802.11 b/g/n/ax |
 | RF band | 2412 – 2472 MHz |
 | Max. RF power | < 20 dBm |
 | Range | Up to 30 m / 100 ft indoors<br>Up to 50 m / 160 ft outdoors<br>(Depends on local conditions) |
+
 | **Bluetooth** | |
 | Protocol | 5.0 |
 | RF band | 2402 – 2480 MHz |
 | Max. RF power | < 4 dBm |
 | Range | Up to 10 m / 33 ft indoors<br>Up to 30 m / 100 ft outdoors<br>(Depends on local conditions) |
+
 | **Zigbee** | |
-| Protocol | IEEE 802.15.4 |
+| Protocol | 802.15.4 |
 | Zigbee repeater | Yes |
 | RF bands | 2400 – 2483.5 MHz |
 | Max. RF power | < 20 dBm |
 | Range | Up to 100 m / 328 ft indoors<br>Up to 300 m / 984 ft outdoors<br>(Depends on local conditions) |
+
 | **Microcontroller Unit** | |
 | CPU | ESP-Shelly-C68F |
 | Flash | 8 MB |
+
 | **Firmware Capabilities** | |
 | Schedules | 20 |
 | Webhooks (URL actions) | 20 hooks, up to 5 URLs per hook |
@@ -227,43 +237,42 @@ Enable automated power management for appliances to enhance comfort, convenience
 
 ### Legend
 
-**Terminals**
+**Terminals**  
 - **I**: Load circuit input terminal  
 - **O**: Load circuit output terminal  
 - **L**: Live wire (110–240 V~)  
 - **N**: Neutral wire  
 - **SW**: Switch input terminal (controls O)  
-- **+**: Positive terminal (12/24–48 V⎓)  
+- **+**: Positive wire (12/24–48 V⎓)  
 - **+12V**: 12 V⎓ positive terminal  
-- **GND**: Ground terminal (12/24–48 V⎓)  
+- **GND**: Ground wire (12/24–48 V⎓)  
+- **L**: Live terminal (110–240 V~)  
+- **N**: Neutral terminal  
 - **+**: Positive terminal (24–48 V⎓)  
-- **Ʇ**: Ground terminal (12/24–48 V⎓)
+- **Ʇ**: Ground terminal (12/24–48 V⎓)  
 
-**Wires**
-- **L**: Live wire (110–240 V~)  
-- **N**: Neutral wire  
-- **+**: Positive wire (24–48 V⎓)  
-- **GND**: Ground wire (12/24–48 V⎓)
+**Wires**  
+- Color-coded for clarity and safety compliance.
 
 ## Shelly Smart Control
-- [Adding the device to Shelly Smart Control](../knowledge-base/add-new-device)
+- [Adding the Device to Shelly Smart Control](../knowledge-base/add-new-device)
 
 ## Shelly Web User Interface
 - [Shelly 1 Gen4 Web Interface Guide](../knowledge-base/shelly-1-gen4-web-interface-guide)
 
 ## Components and APIs
-- [This Device API Reference](https://shelly-api-docs.shelly.cloud/gen2/Devices/Gen4/Shelly1G4)
+- [This Device](https://shelly-api-docs.shelly.cloud/gen2/Devices/Gen4/Shelly1G4)
 - [All Shelly Devices and Services](https://shelly-api-docs.shelly.cloud/)
 
 ## Compliance
 
 - [Shelly 1 Gen4 Multilingual EU Declaration of Conformity (2025-07-25)](https://kb.shelly.cloud/__attachments/266174494/Shelly%201%20Gen4%20multilingual%20EU%20declaration%20of%20conformity%202025-07-25.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 - [Shelly 1 Gen4 UK PSTI ACT Statement of Compliance](https://kb.shelly.cloud/__attachments/266174494/Shelly%201%20Gen4%20UK%20PSTI%20ACT%20Statement%20of%20compliance.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
-- [Compliance Archive – Shelly 1 Gen4 EU Declaration (2025-03-10)](https://kb.shelly.cloud/__attachments/974127105/Shelly%201%20Gen4%20multilingual%20EU%20declaration%20of%20conformity%2075%202025-03-10.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
+- [Compliance Archive: Shelly 1 Gen4 EU Declaration (2025-03-10)](https://kb.shelly.cloud/__attachments/974127105/Shelly%201%20Gen4%20multilingual%20EU%20declaration%20of%20conformity%2075%202025-03-10.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 
 ## Printed User Guide
 - [Shelly 1 Gen4 Multilingual Printed User and Safety Guide](https://kb.shelly.cloud/__attachments/391315459/Shelly%201%20Gen4%20multilingual%20printed%20user%20and%20safety%20guide.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
-- [Ръководство за употреба и безопасност](../knowledge-base/--)
+- [Ръководство за употреба и безопасност (Bulgarian)](../knowledge-base/--)
 
 ## Installation Guides
 - *(No content provided)*

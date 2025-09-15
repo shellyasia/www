@@ -1,81 +1,81 @@
 import { DefaultTheme } from "vitepress";
+//import categories.json
 
-export const sidebarsDoc = (): DefaultTheme.SidebarItem[] => [
-  {
-    text: "产品",
-    collapsed: false,
-    items: [
-      { text: "Shelly1Gen3", link: "/docs/shelly-1-gen3" },
-      { text: "Shelly1Gen4", link: "/docs/shelly-1-gen4" },
-      { text: "Shelly1MiniGen3", link: "/docs/shelly-1-mini-gen3" },
-      { text: "Shelly1MiniGen4", link: "/docs/shelly-1-mini-gen4" },
-      { text: "Shelly1PmMiniGen3", link: "/docs/shelly-1pm-mini-gen3" },
-      { text: "Shelly1PmMiniGen4", link: "/docs/shelly-1pm-mini-gen4" },
-    ],
-  },
+import categories from "./categories.json" with { type: "json" };
 
+export const sidebarsDoc = (): DefaultTheme.SidebarItem[] => {
+  const items = categories as DefaultTheme.SidebarItem[];
 
+  items.map((item) => {
+    item.collapsed = false;
+    item.items = item.items?.map((sub) => ({
+      text: sub.text,
+      link: `./${sub.link}`,
+    }));
+  });
 
-
-  {
-    text: "LLM",
-    collapsed: true,
-    items: [
-      {
-        text: "Docs List",
-        link: "/llms.txt",
-      },
-      {
-        text: "Full Docs",
-        link: "/llms-full.txt",
-      },
-      {
-        text: "Tiny Docs",
-        link: "/llms-small.txt",
-      },
-    ],
-  },
-];
+  const llm =
+    {
+      text: "LLM",
+      collapsed: true,
+      items: [
+        {
+          text: "Docs List",
+          link: "/llms.txt",
+        },
+        {
+          text: "Full Docs",
+          link: "/llms-full.txt",
+        },
+        {
+          text: "Tiny Docs",
+          link: "/llms-small.txt",
+        },
+      ],
+    } as DefaultTheme.SidebarItem;
+  items.push(llm);
 
 
-export const sidebarsDocEn = (): DefaultTheme.SidebarItem[] => [
-  {
-    text: "Products",
-    collapsed: false,
-    items: [
-      { text: "Shelly1Gen3", link: "/docs/shelly-1-gen3" },
-      { text: "Shelly1Gen4", link: "/docs/shelly-1-gen4" },
-      { text: "Shelly1MiniGen3", link: "/docs/shelly-1-mini-gen3" },
-      { text: "Shelly1MiniGen4", link: "/docs/shelly-1-mini-gen4" },
-      { text: "Shelly1PmMiniGen3", link: "/docs/shelly-1pm-mini-gen3" },
-      { text: "Shelly1PmMiniGen4", link: "/docs/shelly-1pm-mini-gen4" },
-
-  
-    ],
-  },
+  return items;
+};
 
 
+export const sidebarsDocEn = (): DefaultTheme.SidebarItem[] => {
+  const items = categories as DefaultTheme.SidebarItem[];
+
+  items.map((item) => {
+    item.collapsed = false;
+    item.items = item.items?.map((sub) => ({
+      text: sub.text,
+      link: `./${sub.link}`,
+    }));
+  });
+
+  const llm =
+    {
+      text: "LLM",
+      collapsed: true,
+      items: [
+        {
+          text: "Docs List",
+          link: "/llms.txt",
+        },
+        {
+          text: "Full Docs",
+          link: "/llms-full.txt",
+        },
+        {
+          text: "Tiny Docs",
+          link: "/llms-small.txt",
+        },
+      ],
+    } as DefaultTheme.SidebarItem;
+  items.push(llm);
 
 
-  {
-    text: "LLM",
-    collapsed: true,
-    items: [
-      {
-        text: "Docs List",
-        link: "/llms.txt",
-      },
-      {
-        text: "Full Docs",
-        link: "/llms-full.txt",
-      },
-      {
-        text: "Tiny Docs",
-        link: "/llms-small.txt",
-      },
-    ],
-  },
-];
+  return items;
+};
+
 export const sidebarProducts = (): DefaultTheme.SidebarItem[] => [
   {
     text: "Shelly Gen3",

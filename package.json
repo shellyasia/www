@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vitepress dev --host 0.0.0.0",
     "prebuild": "tsx ./scripts/build-llm-docs.ts",
+    "docfetch": "tsx ./scripts/build-translate-docs.ts",
     "build": "vitepress build",
     "preview": "vitepress preview",
     "format": "yarn prettier --check ./docs ./products ./scripts index.md",

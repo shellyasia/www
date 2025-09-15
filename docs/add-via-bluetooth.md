@@ -2,10 +2,10 @@
 
 ## 先决条件
 
-- **在移动设备上安装 Shelly Smart Control 应用**  
-- **在 Shelly Cloud 中拥有有效账户**。有关如何创建账户的更多信息，请访问 [账户注册](../knowledge-base/account-registration)。  
-- **在移动设备上启用蓝牙连接**  
-- **授予 Shelly Smart Control 应用使用蓝牙的权限**
+- 在您的移动设备上安装 **Shelly Smart Control** 应用  
+- 在 Shelly Cloud 中拥有 **活跃账户**。有关如何创建账户的更多信息，请参阅 [账户注册](../knowledge-base/account-registration)。  
+- 在您的移动设备上启用 **蓝牙连接**  
+- 为 Shelly Smart Control 授予使用蓝牙的 **权限**
 
 ## 通过蓝牙添加设备
 
@@ -26,10 +26,10 @@
 ![Bluetooth Add device.png](https://kb.shelly.cloud/__attachments/1612841107/Bluetooth%20Add%20device.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *图 3*
 
-7. 等待应用检测设备。此过程可能需要几分钟。成功后，将显示确认消息。  
-8. 为设备输入名称并选择图标。点击 **下一步**。  
-9. 选择以下任一选项：  
-   - 从列表中选择一个现有房间，或使用 **搜索** 搜索框查找房间。  
+7. 等待应用检测设备。此过程可能需要几分钟。完成后，将显示成功消息。  
+8. 为设备输入名称并选择其图标。点击 **下一步**。  
+9. 选择以下选项之一：  
+   - 从列表中选择一个现有房间，或使用 **搜索** 栏查找房间。  
    - 点击 **+ 添加房间** 创建一个新房间 _(图 4)_。
 
 ![Add device to a room.jpg](https://kb.shelly.cloud/__attachments/1612841107/Add%20device%20to%20a%20room.jpg?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  

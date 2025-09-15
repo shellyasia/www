@@ -3,9 +3,9 @@
 ## Prerequisites
 
 - **Shelly Smart Control** app installed on your mobile device  
-- **Active account** in Shelly Cloud. For more information on how to create an account, visit [Account Registration](../knowledge-base/account-registration).  
+- **Active account** in Shelly Cloud. For more information on how to create an account, go to [Account Registration](../knowledge-base/account-registration).  
 - **Bluetooth connectivity** enabled on your mobile device  
-- **Permissions** granted for Shelly Smart Control to use Bluetooth  
+- **Permission** granted for Shelly Smart Control to use Bluetooth  
 
 ## Add Device via Bluetooth
 
@@ -26,10 +26,10 @@
 ![Bluetooth Add device.png](https://kb.shelly.cloud/__attachments/1612841107/Bluetooth%20Add%20device.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *Fig. 3*
 
-7. Wait for the app to detect the device. This may take a few minutes. Once successful, a confirmation message will appear.  
-8. Enter a name for the device and choose its icon. Tap **Next**.  
+7. Wait for the app to detect the device. The process may take a few minutes. Once complete, a success message will appear.  
+8. Enter a name for the device and select its icon. Tap **Next**.  
 9. Choose one of the following options:  
-   - Select an existing room from the list, or search for one using the **Search** bar.  
+   - Select an existing room from the list, or search for it using the **Search** bar.  
    - Create a new room by tapping **+ Add room** _(Fig. 4)_.  
 
 ![Add device to a room.jpg](https://kb.shelly.cloud/__attachments/1612841107/Add%20device%20to%20a%20room.jpg?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
