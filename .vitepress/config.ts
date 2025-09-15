@@ -112,7 +112,7 @@ export default defineConfig({
         ],
         sidebar: {
           "/en/docs/": sidebarsDocEn(),
-          "/en/examples/": sidebarProducts(),
+          // "/en/examples/": sidebarProducts(),
         },
         editLink: {
           pattern: "https://github.com/shellyasia/website/www/main/:path",

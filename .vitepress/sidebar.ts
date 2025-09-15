@@ -21,15 +21,15 @@ export const sidebarsDoc = (): DefaultTheme.SidebarItem[] => {
       items: [
         {
           text: "Docs List",
-          link: "/llms.txt",
+          link: "../llms.txt",
         },
         {
           text: "Full Docs",
-          link: "/llms-full.txt",
+          link: "../llms-full.txt",
         },
         {
           text: "Tiny Docs",
-          link: "/llms-small.txt",
+          link: "../llms-small.txt",
         },
       ],
     } as DefaultTheme.SidebarItem;
@@ -51,26 +51,26 @@ export const sidebarsDocEn = (): DefaultTheme.SidebarItem[] => {
     }));
   });
 
-  const llm =
-    {
-      text: "LLM",
-      collapsed: true,
-      items: [
-        {
-          text: "Docs List",
-          link: "/llms.txt",
-        },
-        {
-          text: "Full Docs",
-          link: "/llms-full.txt",
-        },
-        {
-          text: "Tiny Docs",
-          link: "/llms-small.txt",
-        },
-      ],
-    } as DefaultTheme.SidebarItem;
-  items.push(llm);
+  // const llm =
+  //   {
+  //     text: "LLM",
+  //     collapsed: true,
+  //     items: [
+  //       {
+  //         text: "Docs List11",
+  //         link: "../llms.txt",
+  //       },
+  //       {
+  //         text: "Full Docs11",
+  //         link: "../llms-full.txt",
+  //       },
+  //       {
+  //         text: "Tiny Docs11",
+  //         link: "../llms-small.txt",
+  //       },
+  //     ],
+  //   } as DefaultTheme.SidebarItem;
+  // items.push(llm);
 
 
   return items;
