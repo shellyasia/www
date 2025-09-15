@@ -5,13 +5,13 @@ Use this option to add devices that are within your local Wi-Fi network.
 ## Prerequisites
 
 - **Shelly Smart Control** app installed on your mobile device  
-- **Active account** in Shelly Cloud. For more information on how to create an account, visit [Account Registration](../knowledge-base/account-registration).
+- **Active account** in Shelly Cloud. For more information on how to create an account, go to [Account registration](../knowledge-base/account-registration).
 
 ## Add Device via Scan Network
 
 1. Open the **Shelly Smart Control** app.
 
-2. If this is the first device you're adding, tap the **Add Device** button. If you've already added devices to your account, tap the plus sign in the bottom-right corner of the screen. _(Fig. 1)_
+2. If this is the first device you are adding, tap the **Add Device** button. If you have already added devices to your account, tap the plus sign in the bottom-right corner of the screen. _(Fig. 1)_
 
 3. Select the **Scan network** option. _(Fig. 2)_
 
@@ -33,7 +33,7 @@ Use this option to add devices that are within your local Wi-Fi network.
 
 5. Tap **Add device**.
 
-6. Enter a name for the device and choose its icon. Tap **Next**.
+6. Enter a device name and choose a device icon. Tap **Next**.
 
 7. Choose one of the following options to proceed:
 
@@ -43,4 +43,4 @@ Use this option to add devices that are within your local Wi-Fi network.
 ![Add device to a room.jpg](https://kb.shelly.cloud/__attachments/1612775611/Add%20device%20to%20a%20room.jpg?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *Fig. 4*
 
-8. Tap **Save**. The device is now successfully added to the app.
+8. Tap **Save**. The device is now added to the app.

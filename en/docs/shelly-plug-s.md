@@ -18,23 +18,23 @@
 
 ### Wi-Fi Operated Power Outlet
 
-The Shelly Plug S allows you to automatically monitor and control lighting, heating, and any other connected electrical appliance at home—anytime, anywhere. Simply plug a device or lamp into the Shelly Plug S, and you can turn it on or off remotely via the Shelly Cloud app.
+The Shelly Plug S allows you to automatically monitor and control lighting, heating, and any other connected electrical appliance at home—anytime, anywhere. Simply plug your device or lamp into the Shelly Plug S, and you can turn it on or off remotely using the Shelly Cloud app.
 
 ### Features
 
 - No hub required  
 - Control a wide range of devices and appliances  
 - Integrated precise power meter  
-- Seamlessly integrates with all other Shelly devices  
-- Compatible with Android, iOS, Amazon Alexa, Google Assistant, and home automation servers using MQTT, CoAP, and REST API  
-- Easily bring your Arduino projects into real-world automation workflows  
+- Seamless integration with all other Shelly devices  
+- Compatible with Android, iOS, Amazon Alexa, Google Assistant, and home automation servers via MQTT, CoAP, and REST API  
+- Easily integrate with Arduino projects for smart automation
 
 ### Specification
 
 **POWER**
 
 - Power supply (AC): 110–230 V ±10%, 50/60 Hz  
-- Power supply (DC): Not supported  
+- Power supply (DC): Not applicable  
 
 **SPECIAL FUNCTIONS**
 
@@ -45,18 +45,18 @@ The Shelly Plug S allows you to automatically monitor and control lighting, heat
 **FEATURES**
 
 - Maximum load: 10 A  
-- Operating temperature: -10 °C to +50 °C  
+- Operational temperature: -10 °C to +50 °C  
 - Device power consumption: < 1 W  
 - Intelligent On/Off: Yes  
 - Local and remote control: Yes  
-- Sunrise/Sunset support: Yes  
-- Weekly scheduling: Yes  
+- Sunrise/Sunset scheduling: Yes  
+- Weekly schedule: Yes  
 
 **CONNECTIVITY**
 
 - Wireless/WiFi Protocol: IEEE 802.11 b/g/n  
 - Radio frequency: 2400 – 2484 MHz  
-- Range: Up to 50 m outdoors, up to 30 m indoors (varies based on building materials)  
+- Range: Up to 50 m outdoors, up to 30 m indoors (depending on building materials)  
 
 **DIMENSIONS**
 

@@ -18,10 +18,10 @@ hero:
     src: /images/hero.webp
     alt: "shelly group products example"
   actions:
+    # - theme: brand
+    #   text: 产品中心
+    #   link: /products/
     - theme: brand
-      text: 产品中心
-      link: /products/
-    - theme: alt
       text: 帮助文档
       link: /docs/
 features:

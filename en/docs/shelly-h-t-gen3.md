@@ -15,21 +15,21 @@ The **Shelly H&T Gen3** is a Wi-Fi smart humidity and temperature sensor featuri
 
 ## Main Features
 
-- **Wi-Fi Connectivity:** Connects to your home Wi-Fi network for remote monitoring via smartphone app or compatible devices.
-- **Large E-Paper Graphic Display:** High-contrast, energy-efficient display showing real-time temperature and humidity readings.
+- **Wi-Fi Connectivity:** Connects to your home Wi-Fi network for remote monitoring via smartphone apps or compatible devices.
+- **Large E-Paper Graphic Display:** Provides high-contrast, energy-efficient visual feedback of temperature and humidity.
 - **Digital Clock:** NTP-synchronized real-time clock with automatic time updates.
 - **Smart Home Integration:** Compatible with Google Assistant, Amazon Alexa, and Samsung SmartThings for voice control and automation.
-- **USB Type-C Port:** Used for continuous power supply; not for charging internal batteries.
-- **Bluetooth Connectivity:** Available during setup for device configuration and diagnostics.
-- **User-Friendly Interface:** Includes a reset button (behind the back cover) for manual interaction and mode switching.
-- **Battery Operation:** In battery mode, the device wakes every minute to measure temperature and humidity. It reports changes only if thresholds are exceeded (default: 0.5 °C or 5% RH), and unconditionally reports status after two hours without updates. A 5-minute cooldown period prevents self-heating interference.
-- **USB-Powered Operation:** When connected via USB, the device wakes every 5 minutes, takes measurements, updates the display, and sends data to all connected channels immediately.
-- **Environmental Specifications:** Operates within 0 °C to 40 °C (32 °F to 105 °F) and 30% to 70% RH (recommended).
-- **Power Supply Options:** Powered by 4 × AA batteries (LR6, 1.5 V, not included) or USB Type-C connection.
-- **Wireless Connectivity:** Supports Wi-Fi (802.11 b/g/n) and Bluetooth 4.2 with indoor range up to 30 m (100 ft) and outdoor up to 50 m (160 ft).
+- **USB Type-C Port:** Used for continuous power supply; does not charge internal batteries.
+- **Bluetooth Connectivity:** Available during setup for device configuration (Bluetooth 4.2).
+- **User-Friendly Interface:** Includes a reset button (behind the back cover) for manual operations.
+- **Battery Operation:** In battery mode, the device wakes every minute to measure conditions. It reports changes exceeding thresholds (default: 0.5 °C or 5% RH), and unconditionally reports status if no report is sent within two hours.
+- **USB-Powered Operation:** When powered via USB, the device wakes every 5 minutes, performs measurements, updates the display, and sends data unconditionally.
+- **Environmental Specifications:** Operates in temperatures from 0 °C to 40 °C (32 °F to 105 °F); recommended humidity range: 30% to 70% RH.
+- **Power Supply Options:** Powered by 4 AA alkaline batteries (not included) or USB Type-C connection.
+- **Wireless Connectivity:** Supports Wi-Fi (802.11 b/g/n) and Bluetooth 4.2 with indoor range up to 30 m (100 ft) and outdoor up to 50 m (160 ft).
 - **Microcontroller Unit (MCU):** ESP-Shelly-C38F with 8 MB flash memory.
 
-These features make the Shelly H&T Gen3 ideal for residential, multi-dwelling units (MDUs), light commercial, university/college, and other environments requiring reliable, low-power environmental monitoring with seamless smart home integration.
+These features make the Shelly H&T Gen3 ideal for residential, multi-dwelling units, light commercial, university/college, and other environments—offering seamless integration, long battery life, and intuitive operation.
 
 ## Main Applications
 
@@ -41,13 +41,13 @@ These features make the Shelly H&T Gen3 ideal for residential, multi-dwelling un
 ## Integrations
 
 ### Amazon Alexa Supported Capabilities  
-Yes  
+Yes
 
 ### Google Smart Home Supported Traits  
-Yes  
+Yes
 
 ### Samsung SmartThings Supported Capabilities  
-Yes  
+Yes
 
 ## Device Electrical Interfaces
 
@@ -67,25 +67,25 @@ Yes
 
 ### Inputs
 
-- **Reset Button** (located behind the back cover)
+- Reset button (located behind the back cover)
 
 ![](https://kb.shelly.cloud/__attachments/265977877/Plus%20H&T%20Reset%20Button.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 
 ### Reset Button Actions
 
-- **Brief press (≤1 sec):**
+- **Brief press (1–2 seconds):**
   - If in Sleep mode → enters Setup mode
   - If in Setup mode → returns to Sleep mode
 
 - **Hold for 5 seconds:**
-  - If in Setup mode → enables access point (AP mode)
+  - If in Setup mode → enables the device’s access point (AP)
 
 - **Hold for 10 seconds:**
-  - If in Setup mode → performs factory reset
+  - If in Setup mode → performs a factory reset
 
 ### Outputs
 
-- **E-Paper Graphic Display**
+- E-paper graphic display
 
 ![](https://kb.shelly.cloud/__attachments/265977877/Interface%20H&TGen3-1.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
 
@@ -96,16 +96,16 @@ Yes
 *Device is in Setup mode*
 
 ![AP.png](https://kb.shelly.cloud/__attachments/265977877/AP.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Access Point enabled*
+*Device access point enabled*
 
 ![Humidity.png](https://kb.shelly.cloud/__attachments/265977877/Humidity.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Humidity reading*
+*Humidity readings*
 
 ![OtA.png](https://kb.shelly.cloud/__attachments/265977877/OtA.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Receiving over-the-air update — progress shown as percentage*
+*Receiving over-the-air firmware update – progress shown as percentage*
 
 ![Globe.png](https://kb.shelly.cloud/__attachments/265977877/Globe.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Data has been reported to Cloud. If missing, displayed values may differ from Cloud.*
+*Device has reported current readings to the Cloud. If missing, displayed values may differ from cloud data.*
 
 ![Wi-Fi.png](https://kb.shelly.cloud/__attachments/265977877/Wi-Fi.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
 *Wi-Fi signal strength indicator*
@@ -117,54 +117,59 @@ Yes
 *Bluetooth connectivity is enabled*
 
 ![OtA error.png](https://kb.shelly.cloud/__attachments/265977877/OtA%20error.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)  
-*Error occurred during firmware update*
+*Firmware update error occurred*
 
 ## Measuring and Reporting
 
 ### On Batteries
 
-When operating on batteries:
+When operating on battery power:
 
-1. Wakes every minute to take measurements. Updates the screen if there’s a change of ≥0.2 °C or ≥3% RH. By default, reports only if change exceeds 0.5 °C or 5% RH.
-2. If no threshold-based report is sent within 2 hours, the device unconditionally reports its current status to Shelly Cloud and connected channels.
-3. A mandatory 5-minute cooldown period is enforced after each measurement to prevent self-heating effects.
+1. Wakes every minute to take measurements.  
+   - Screen updates only if temperature changes by ≥0.2 °C or humidity by ≥3%.  
+   - Default reporting threshold: ≥0.5 °C or ≥5% RH change.  
+   - No report sent if change is below threshold.
+
+2. If no threshold-based report is sent within 2 hours, the device unconditionally reports its status to Shelly Cloud and connected channels.
+
+3. A 5-minute cool-down period follows each measurement to prevent self-heating; during this time, the device remains asleep.
 
 ### On USB Power Supply
 
 When powered via USB:
 
-- Wakes every 5 minutes
-- Performs measurement
-- Updates display
-- Unconditionally reports data to all connected channels
+- Wakes every 5 minutes  
+- Performs measurement  
+- Updates display  
+- Unconditionally reports data to all connected channels  
 - Sleeps for 5 minutes
 
 ### User-Initiated Report
 
 Pressing the reset button (behind the cover) triggers:
-- Wake-up
-- Measurement
-- Display update
-- Immediate unconditional report to all channels
+- Wake-up  
+- Measurement  
+- Display update  
+- Unconditional report to all channels  
 - 5-minute sleep cycle
 
 ## Specifications
 
-| **Category** | **Value** |
-|-------------|----------|
+| Category | Value |
+|--------|-------|
 | **Physical** | |
-| Size (H×W×D): | 70×70×26 mm / 2.76×2.76×1.02 in (without stand)<br>70×70×45 mm / 2.76×2.76×1.77 in (with stand) |
+| Size (H×W×D) | 70 × 70 × 26 mm / 2.76 × 2.76 × 1.02 in (without stand)<br>70 × 70 × 45 mm / 2.76 × 2.76 × 1.77 in (with stand) |
 | Weight | 47 g / 1.66 oz |
-| Mounting | With stand (on flat surface)<br>Wall mounting using screws (head diameter: 5–7 mm / 0.20–0.28 in, max thread diameter: 3 mm / 0.12 in)<br>Double-sided foam sticker |
+| Mounting | With stand (on flat surface)<br>Wall mounting using screws (head diameter: 5–7 mm / 0.20–0.28 in, max thread depth: 3 mm / 0.12 in)<br>Double-sided foam sticker |
 | Shell Material | Plastic |
-| Shell Color | White<br><br>Mocha: C:0 M:12 Y:28 K:12<br>Ivory: C:3 M:4 Y:14 K:8<br>Black: C:0 M:0 Y:0 K:100 |
+| Shell Color | White<br>Mocha: C:0 M:12 Y:28 K:12<br>Ivory: C:3 M:4 Y:14 K:8<br>Black: C:0 M:0 Y:0 K:100 |
 | **Environmental** | |
 | Ambient Working Temperature | 0 °C to 40 °C / 32 °F to 105 °F |
-| Humidity | 30% to 70% RH (recommended) |
-| Max Altitude | 2000 m / 6562 ft |
+| Humidity | 30% to 70% RH |
+| Max. Altitude | 2000 m / 6562 ft |
 | **Electrical** | |
-| Power Supply | Batteries: 4 × AA (LR6) 1.5 V (not included)<br>USB Type-C (adapter and cable not included) |
-| Estimated Battery Life | Approx. 1 year (depends on battery type, environmental conditions, and network activity) |
+| Power Supply | Batteries (4 × AA LR6, 1.5 V, not included)<br>USB Type-C (adapter and cable not included) |
+| Estimated Battery Life | ~1 year (varies based on battery type, environmental changes, and network conditions) |
 | **Sensors & Meters** | |
 | Internal Temperature Sensor | No |
 | Temperature Sensor | Yes |
@@ -173,19 +178,19 @@ Pressing the reset button (behind the cover) triggers:
 | **Wi-Fi** | |
 | Protocol | 802.11 b/g/n |
 | RF Band | 2401 – 2495 MHz |
-| Max RF Power | < 20 dBm |
-| Range | Up to 30 m / 100 ft (indoor)<br>Up to 50 m / 160 ft (outdoor)<br>(Depends on local conditions) |
+| Max. RF Power | < 20 dBm |
+| Range | Up to 30 m (100 ft) indoors<br>Up to 50 m (160 ft) outdoors<br>(Depends on local conditions) |
 | **Bluetooth** | |
 | Protocol | 4.2 |
 | RF Band | 2400 – 2483.5 MHz |
-| Max RF Power | < 4 dBm |
-| Range | Up to 10 m / 33 ft (indoor)<br>Up to 30 m / 100 ft (outdoor)<br>(Depends on local conditions) |
+| Max. RF Power | < 4 dBm |
+| Range | Up to 10 m (33 ft) indoors<br>Up to 30 m (100 ft) outdoors<br>(Depends on local conditions) |
 | **Microcontroller Unit (MCU)** | |
 | CPU | ESP-Shelly-C38F |
 | Flash Memory | 8 MB |
 | **Firmware Capabilities** | |
 | Schedules | No |
-| Webhooks (URL actions) | 10 hooks, 2 URLs per hook |
+| Webhooks (URL Actions) | 10 hooks, up to 2 URLs per hook |
 | Scripting | No |
 | MQTT | Yes |
 
@@ -220,6 +225,7 @@ Pressing the reset button (behind the cover) triggers:
 ## Printed User Guide
 
 - [Shelly H&T Gen3 Multilingual Printed User and Safety Guide](https://kb.shelly.cloud/__attachments/391315459/Shelly%20H&T%20Gen3%20multilingual%20printed%20user%20and%20safety%20guide.pdf?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
+
 - [Ръководство за употреба и безопасност](../knowledge-base/shelly-h-t-gen3-1)
 
 ## Installation Guides

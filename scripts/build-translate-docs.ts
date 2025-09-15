@@ -24,10 +24,10 @@ async function ai(sys: string, user: string): Promise<string> {
         throw new Error("Please set ALI_API_KEY in your environment variables.");
     }
     const openai = new OpenAI(
-    {
-        apiKey: apiKey,
-        baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1",
-    })
+        {
+            apiKey: apiKey,
+            baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        })
     const completion = await openai.chat.completions.create({
         // 模型列表：https://help.aliyun.com/zh/model-studio/getting-started/models
         model: "qwen-flash",  // qwen-plus 属于 qwen3 模型，如需开启思考模式，请参见：https://help.aliyun.com/zh/model-studio/deep-thinking
@@ -85,17 +85,23 @@ const names = [
     'add-via-wi-fi-ap-scan',
     'add-via-scan-network',
 
-    'shelly-plug-s', 
-    'shelly-2l-gen3', 
-    'shelly-1pm-gen3', 
-    'shelly-2pm-gen3',
+    'shelly-plug-s',
+    'shelly-2l-gen3',
     'shelly-h-t-gen3',
     'shelly-dimmer-gen3',
 
     'shelly-1-gen3',
     'shelly-1-gen4',
+    'shelly-1-mini-gen3',
     'shelly-1-mini-gen4',
+    'shelly-1pm-gen3',
+    'shelly-1pm-gen4',
+    'shelly-1pm-mini-gen3',
+    'shelly-1pm-mini-gen4',
+
+    'shelly-2pm-gen3',
     'shelly-2pm-gen4',
+    
     'shelly-pro-3em',
 
 ];//add more
@@ -108,8 +114,8 @@ async function main() {
     await Promise.all(names.map(async (name) => {
         const doc = await fetchDoc(name);
         // Save to file mkdir by nodejs
-        fs.writeFileSync(path.join("./docs", name + '.md'), "# "+doc.title + '\n\n' + doc.contentMarkdownZh);
-        fs.writeFileSync(path.join("./en/docs", name + '.md'), "# "+doc.title + '\n\n' + doc.contentMarkdown);
+        fs.writeFileSync(path.join("./docs", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdownZh);
+        fs.writeFileSync(path.join("./en/docs", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdown);
     }));
 }
 

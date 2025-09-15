@@ -1,12 +1,49 @@
-# Shelly Smart Home
+---
+title: Shelly Smart Home
+titleTemplate: ':title'
+head:
+  - [
+      'meta',
+      {
+        property: 'og:description',
+        content: 'Shelly Smart Home (Shenzhen) Co., Ltd. brand. Parent company is the German listed company Shelly Group',
+      },
+    ]
+layout: home
+hero:
+  name: Shelly Smart Home
+  text: Voice control, smarter life more convenient
+  tagline: Shelly Smart Home (Shenzhen) Co., Ltd. brand. Parent company is the German listed company Shelly Group.
+  image:
+    src: /images/hero.webp
+    alt: "shelly group products example"
+  actions:
+    # - theme: brand
+    #   text: Product Center
+    #   link: /products/
+    - theme: brand
+      text: Help Documentation
+      link: /en/docs/
+features:
+  - icon: 🏠
+    title: Smart Home Control
+    details: One-key control of all home devices, easily achieve intelligent management of lights, air conditioning, security, etc.
+  - icon: 📱
+    title: Mobile Remote Control
+    details: Control home devices remotely anytime, anywhere via mobile App, enjoy convenient life.
+  - icon: 🔐
+    title: Security Guardian
+    details: Real-time monitoring and alerts, ensure family safety, peace of mind.
+  - icon: 🤖
+    title: Smart Linkage
+    details: Multi-device smart linkage, automated scene switching, enhance home experience.
+---
 
-Welcome to Shelly Smart Home documentation.
+<script setup>
+// Heavily inspired by React
+// https://github.com/reactjs/react.dev/pull/6817
+import { onMounted } from 'vue'
+onMounted(() => {
 
-Shelly Group is a group of five companies delivering innovation through
-designing, producing and distributing high quality IoT products, driven by the
-inspiration of the end consumer's dream to live calmly and happily.
-
-Founded in Bulgaria and operating with a team of young talented developers
-devoted to producing competitive and easy-to-use products that change our world
-for the better, Shelly's products have already conquered over 100 markets, with
-branch offices located in Germany, Slovenia, USA and China.
+})
+</script>

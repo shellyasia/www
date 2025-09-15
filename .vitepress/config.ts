@@ -63,7 +63,7 @@ export default defineConfig({
         "雪莉智能家居（深圳）有限公司旗下品牌。母公司是德国上市公司。",
       themeConfig: {
         nav: [
-          { text: "产品", link: "/products/" },
+          // { text: "产品", link: "/products/" },
           { text: "文档", link: "/docs/" },
           {
             text: "讨论",
@@ -103,7 +103,7 @@ export default defineConfig({
         "Shelly Smart Home (Shenzhen) Co., Ltd. brand. Parent company is a German listed company.",
       themeConfig: {
         nav: [
-          { text: "Products", link: "/en/products/" },
+          // { text: "Products", link: "/en/products/" },
           { text: "Docs", link: "/en/docs/" },
           {
             text: "Community",
@@ -129,7 +129,7 @@ export default defineConfig({
           label: "On this page",
         },
         footer: {
-          message: "ICP Filing System Website",
+          message: "Powered by <a href=\"https://shelly.cloud\" target=\"_blank\">Shelly Smart Home</a>",
           copyright: "Copyright © 2021-present Shelly Smart Home (Shenzhen)",
         },
       },
