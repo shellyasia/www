@@ -24,7 +24,7 @@ export const themeEn= {
           "/en/products/": sidebarsProductsEn(),
         },
         socialLinks: [
-
+          { icon: "linkedin", link: "https://www.linkedin.com/company/shellygroup" },
           { icon: "x", link: "https://x.com/shelly_IoT" },
           { icon: "youtube", link: "https://www.youtube.com/@Shelly_IoT" },
           { icon: "facebook", link: "https://www.facebook.com/Shelly.IoT" },
