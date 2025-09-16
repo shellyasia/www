@@ -2,7 +2,7 @@
 
 要控制或获取设备的状态，您需要其 `id`。该 ID 可在 Shelly Cloud App 中的 **设备** → **设置** → **设备信息** → **设备 ID** 查看。
 
-您还需要一个 `AUTH_KEY` 和一个 `HOST` —— 请参考 [快速入门](/cloud-control-api/) 章节。
+您还需要一个 `AUTH_KEY` 和一个 `HOST` —— 请参考 [快速入门](/docs/cloud-control-api) 章节。
 
 > **注意**：本节中的所有请求均限制为 **每秒最多 1 次**。
 

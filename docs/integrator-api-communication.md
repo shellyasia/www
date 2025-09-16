@@ -10,9 +10,9 @@
 wss://<HOST>:6113/shelly/wss/hk_sock?t=<JWT>
 ```
 
-集成商通过 [用户授权/权限授予](/integrator-api/users) 流程获取所需的主机地址，该信息来自集成商回调 URL 中提供的 `host` 参数。
+集成商通过 [用户授权/权限授予](/docs/integrator-api-users) 流程获取所需的主机地址，该信息来自集成商回调 URL 中提供的 `host` 参数。
 
-`<JWT>` token 的获取方式参见 [快速入门](/integrator-api/#request-access-token)。
+`<JWT>` token 的获取方式参见 [快速入门](/docs/integrator-api#request-access-token)。
 
 ## 事件
 

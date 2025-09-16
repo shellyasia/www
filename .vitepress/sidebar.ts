@@ -62,7 +62,7 @@ export const sidebarDocsZh = (): DefaultTheme.SidebarItem[] => [
     text: "Cloud Control API",
     items: [
       {
-        text: "开始使用",
+        text: "快速入门",
         link: "/docs/cloud-control-api",
       },
       {
@@ -81,7 +81,7 @@ export const sidebarDocsZh = (): DefaultTheme.SidebarItem[] => [
     text: "Integrator API",
     items: [
       {
-        text: "开始使用",
+        text: "快速入门",
         link: "/docs/integrator-api",
       },
       {

@@ -6,7 +6,7 @@
 
 ## 适用场景与实现示例
 
-该 API 适用于第三方集成商提供的用户级服务集成，或 DIY 爱好者进行复杂自动化脚本实验。**不适用于**需要监控多个用户账户设备状态事件的云到云集成场景。如果你的服务需要从单一接入点维护多个实时事件 WebSocket 连接，请强烈考虑使用以云为中心的 [集成商 API](/integrator-api/)。
+该 API 适用于第三方集成商提供的用户级服务集成，或 DIY 爱好者进行复杂自动化脚本实验。**不适用于**需要监控多个用户账户设备状态事件的云到云集成场景。如果你的服务需要从单一接入点维护多个实时事件 WebSocket 连接，请强烈考虑使用以云为中心的 [集成商 API](/docs/integrator-api)。
 
 一个可用的 Node.js/TypeScript 示例代码可在以下地址获取：[https://github.com/ALLTERCO/ushelly](https://github.com/ALLTERCO/ushelly)
 

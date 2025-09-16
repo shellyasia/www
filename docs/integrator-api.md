@@ -8,7 +8,7 @@
 
 希望使用集成商服务的设备所有者，需登录其 Shelly Cloud 账户，并授权将指定设备共享给集成商。该授权可随时撤销。
 
-如果您更关注 **以 Shelly 账户为中心** 的使用场景，建议使用 [实时事件 (Real Time Events)](/cloud-control-api/real-time-events) API，它提供类似功能，通过 Shelly 账户所有者的 OAuth 凭证进行身份验证。
+如果您更关注 **以 Shelly 账户为中心** 的使用场景，建议使用 [实时事件 (Real Time Events)](/docs/cloud-control-api-real-time-events) API，它提供类似功能，通过 Shelly 账户所有者的 OAuth 凭证进行身份验证。
 
 若您希望 **完全脱离 Shelly Cloud**，且正在使用 Gen 2 设备，推荐使用 [Shelly Fleet Management](https://github.com/ALLTERCO/fleet-management)。
 

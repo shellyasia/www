@@ -4,7 +4,7 @@
 
 我们现已提供通过云服务控制 Shelly 设备的安全 API。所有注册了 Shelly Cloud 应用的用户均可使用此 API 来控制自己的设备。
 
-访问 [http://control.shelly.cloud](http://control.shelly.cloud) 创建账户并添加设备，或使用移动版 Shelly Cloud 应用。
+访问 [https://control.shellyiot.cn](https://control.shellyiot.cn) 创建账户并添加设备，或使用移动版 Shelly Cloud 应用。
 
 借助该 API，您可以执行命令并更改设备设置。
 
@@ -34,4 +34,4 @@
 
 ### OAuth 认证
 
-也支持基于 OAuth 的认证方式。详情请参阅 [实时事件](/cloud-control-api/real-time-events) 章节。
+也支持基于 OAuth 的认证方式。详情请参阅 [实时事件](/docs/cloud-control-api-real-time-events) 章节。

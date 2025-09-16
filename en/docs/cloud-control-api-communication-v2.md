@@ -2,7 +2,7 @@
 
 For controlling or fetching the state of a device, you will need its `id`. It can be found in the Shelly Cloud App under **Device** → **Settings** → **Device Information** → **Device Id**.
 
-You will also need an `AUTH_KEY` and a `HOST` — refer to the [Getting started](/cloud-control-api/) section.
+You will also need an `AUTH_KEY` and a `HOST` — refer to the [Getting started](/docs/cloud-control-api) section.
 
 > **Note**: All requests in this section are limited to **1 request per second**.
 
