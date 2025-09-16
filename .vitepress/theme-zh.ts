@@ -16,6 +16,7 @@ export const themeZh = {
         socialLinks: [
             { icon: "wechat", link: "https://mp.weixin.qq.com/s/OPFw9A6wBbjMOVUjiDN12g" },
             { icon: "shopify", link: "https://mall.jd.com/index-20140293.html" },
+            { icon: "github", link: "https://github.com/shellyasia/www" },
         ],
         sidebar: {
             "/docs/": sidebarDocsZh(),
