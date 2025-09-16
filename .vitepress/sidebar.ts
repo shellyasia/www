@@ -3,6 +3,27 @@ import { DefaultTheme } from "vitepress";
 
 import categories from "./categories.json" with { type: "json" };
 
+
+  const llm =
+    {
+      text: "LLM",
+      collapsed: false,
+      items: [
+        {
+          text: "AI Docs",
+          link: "/llms.txt",
+        },
+        {
+          text: "Full AI Docs",
+          link: "/llms-full.txt",
+        },
+        {
+          text: "Tiny AI Docs",
+          link: "/llms-small.txt",
+        },
+      ],
+    } as DefaultTheme.SidebarItem;
+
 export const sidebarsProductsZh = (): DefaultTheme.SidebarItem[] => {
   const items = [...(categories as DefaultTheme.SidebarItem[])];
   
@@ -14,27 +35,7 @@ export const sidebarsProductsZh = (): DefaultTheme.SidebarItem[] => {
     }));
   });
 
-  const llm =
-    {
-      text: "LLM",
-      collapsed: true,
-      items: [
-        {
-          text: "Docs List",
-          link: "../llms.txt",
-        },
-        {
-          text: "Full Docs",
-          link: "../llms-full.txt",
-        },
-        {
-          text: "Tiny Docs",
-          link: "../llms-small.txt",
-        },
-      ],
-    } as DefaultTheme.SidebarItem;
   items.push(llm);
-
 
   return items;
 };
@@ -51,25 +52,7 @@ export const sidebarsProductsEn = (): DefaultTheme.SidebarItem[] => {
     }));
   });
 
-  const llm =
-    {
-      text: "LLM",
-      collapsed: true,
-      items: [
-        {
-          text: "Docs List",
-          link: "/llms.txt",
-        },
-        {
-          text: "Full Docs",
-          link: "/llms-full.txt",
-        },
-        {
-          text: "Tiny Docs",
-          link: "/llms-small.txt",
-        },
-      ],
-    } as DefaultTheme.SidebarItem;
+
   items.push(llm);
 
 

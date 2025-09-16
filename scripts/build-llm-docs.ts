@@ -5,7 +5,7 @@ import { execSync } from "child_process";
 
 const frontmatterRegex = /^\n*---(\n.+)*?\n---\n/;
 
-const docsDir = path.resolve("docs");
+const docsDir = path.resolve("en/products");
 
 const sliceExt = (file: string) => {
   return file.split(".").slice(0, -1).join(".");
