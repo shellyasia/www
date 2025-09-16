@@ -39,14 +39,7 @@ async function ai(sys: string, user: string): Promise<string> {
     });
     return completion.choices[0].message.content || '';
 }
-// interface Link {
-//     link: string
-//     text: string
-// }
-// interface Category {
-//     text: string
-//     items: Link[]
-// }
+
 
 async function fetchCategory(name: string): Promise<DefaultTheme.SidebarItem> {
     const docURL = `https://kb.shelly.cloud/knowledge-base/${encodeURIComponent(name)}`
