@@ -23,7 +23,7 @@ hero:
       link: /en/products/
     - theme: alt
       text: Help Documentation
-      link: /en/docs/
+      link: https://shelly-api-docs.shelly.cloud/
 features:
   - icon: 🏠
     title: Smart Home Control

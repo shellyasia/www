@@ -13,7 +13,7 @@ export const themeEn= {
         siteTitle: "Shelly Asia",
         nav: [
           { text: "Products", link: "/en/products/" },
-          { text: "Docs", link: "/en/docs/" },
+          { text: "Docs", link: "https://shelly-api-docs.shelly.cloud/" },
           {
             text: "Community",
             link: "https://community.shelly.cloud/",
