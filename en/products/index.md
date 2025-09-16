@@ -2,10 +2,9 @@
 import { data } from './menu.data.ts'
 </script>
 
-# Examples
+# Shelly Smart Home Products
 
-In this section, you can see practical examples to create your application with
-Hono.
+Brand under Shelly Smart Home (Shenzhen) Co., Ltd. Below are some product displays. For more products, please visit the [Product Center](https://www.shelly.com/collections/all-products).
 
 <div v-for="sections of data">
   <section v-for="category of sections">
@@ -16,7 +15,6 @@ Hono.
   </section>
 </div>
 
-## GitHub repository
-
-You can also see the examples in the GitHub repository:
-[Hono Examples](https://github.com/honojs/examples)
+## Feedback
+If you encounter any issues during use, feel free to submit an issue via GitHub. We will handle it as soon as possible. Thank you for your support!
+[GitHub Issues](https://github.com/shellyasia/www/issues)

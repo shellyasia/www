@@ -138,7 +138,7 @@ async function generateContent(
   docsDir: string,
   header: string,
 ): Promise<string> {
-  let content = header + "# Start of Hono documentation\n";
+  let content = header + "# Start of ShellyIoT documentation\n";
 
   for await (const file of files) {
     console.log(`> Writing '${file}' `);

@@ -6,7 +6,8 @@ import {
 } from "vitepress-plugin-group-icons";
 import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
 import { createFileSystemTypesCache } from "@shikijs/vitepress-twoslash/cache-fs";
-import { sidebarProducts, sidebarsDoc, sidebarsDocEn } from "./sidebar";
+import { themeZh } from "./theme-zh";
+import { themeEn } from "./theme-en";
 
 const algoliaContent = "020BBEB17492C015";
 const algoAppId = "LEF12KSIJN";
@@ -55,85 +56,8 @@ export default defineConfig({
   ignoreDeadLinks: true,
   cleanUrls: true,
   locales: {
-    root: {
-      label: "简体中文",
-      lang: "zh-CN",
-      title: "雪莉智能家居",
-      description:
-        "雪莉智能家居（深圳）有限公司旗下品牌。母公司是德国上市公司。",
-      themeConfig: {
-        nav: [
-          // { text: "产品", link: "/products/" },
-          { text: "文档", link: "/docs/" },
-          {
-            text: "讨论",
-            link: "https://community.shelly.cloud/",
-          },
-        ],
-        sidebar: {
-          "/docs/": sidebarsDoc(),
-          "/products/": sidebarProducts(),
-        },
-        editLink: {
-          pattern: "https://github.com/shellyasia/www/blob/main/:path",
-          text: "编辑此页",
-        },
-        docFooter: {
-          prev: "上一页",
-          next: "下一页",
-        },
-        lastUpdated: {
-          text: "更新时间",
-        },
-        outline: {
-          label: "本页目录",
-        },
-        footer: {
-          message:
-            '<span>工业和信息化部备案管理系统网站</span> <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" id="footer-message">粤ICP备2025380205号</a>',
-          copyright: "Copyright © 2021-present 雪莉智能家居(深圳) <a href=\"mailto:marketing.asia@shelly.com\" title=\"marketing.asia@shelly.com\">联系我们</a>",
-        },
-      },
-    },
-    en: {
-      label: "English",
-      lang: "en-US",
-      title: "Shelly Smart Home",
-      description:
-        "Shelly Smart Home (Shenzhen) Co., Ltd. brand. Parent company is a German listed company.",
-      themeConfig: {
-        nav: [
-          // { text: "Products", link: "/en/products/" },
-          { text: "Docs", link: "/en/docs/" },
-          {
-            text: "Community",
-            link: "https://community.shelly.cloud/",
-          },
-        ],
-        sidebar: {
-          "/en/docs/": sidebarsDocEn(),
-          // "/en/examples/": sidebarProducts(),
-        },
-        editLink: {
-          pattern: "https://github.com/shellyasia/website/www/main/:path",
-          text: "Edit this page",
-        },
-        docFooter: {
-          prev: "Previous page",
-          next: "Next page",
-        },
-        lastUpdated: {
-          text: "Last updated",
-        },
-        outline: {
-          label: "On this page",
-        },
-        footer: {
-          message: "Powered by <a href=\"https://shelly.cloud\" target=\"_blank\">Shelly Smart Home</a>",
-          copyright: "Copyright © 2021-present Shelly Smart Home (Shenzhen)",
-        },
-      },
-    },
+    root: themeZh,
+    en: themeEn,
   },
   markdown: {
     theme: {
@@ -157,20 +81,6 @@ export default defineConfig({
       apiKey: algoAppKey,
       indexName: "shelly",
     },
-
-    // icons https://simpleicons.org/?q=shop
-    socialLinks: [
-      {
-        icon: "wechat",
-        link: "https://mp.weixin.qq.com/s/OPFw9A6wBbjMOVUjiDN12g",
-      },
-      { icon: "x", link: "https://x.com/shelly_IoT" },
-      { icon: "youtube", link: "https://www.youtube.com/@Shelly_IoT" },
-      { icon: "facebook", link: "https://www.facebook.com/Shelly.IoT" },
-      { icon: "shopee", link: "https://shellycloud.en.alibaba.com" },
-      { icon: "shopify", link: "https://mall.jd.com/index-20140293.html" },
-      // { icon: "github", link: "https://github.com/shellyasia/www.git" },
-    ],
   },
   head: htmlHeads,
   titleTemplate: ":title - shelly.asia",

@@ -160,13 +160,13 @@ async function main() {
 
     // console.log(JSON.stringify(categories, null, 2));
 
-    // await Promise.all(devices.map(async (name) => {
-    //     const doc = await fetchDoc(name);
-    //     // Save to file mkdir by nodejs
-    //     fs.writeFileSync(path.join("./docs", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdownZh);
-    //     fs.writeFileSync(path.join("./en/docs", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdown);
-    //     console.log(`Saved document: ${name}`);
-    // }));
+    await Promise.all(devices.map(async (name) => {
+        const doc = await fetchDoc(name);
+        // Save to file mkdir by nodejs
+        fs.writeFileSync(path.join("./products", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdownZh);
+        fs.writeFileSync(path.join("./en/products", name + '.md'), "# " + doc.title + '\n\n' + doc.contentMarkdown);
+        console.log(`Saved document: ${name}`);
+    }));
 }
 
 main().then(() => {

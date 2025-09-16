@@ -1,9 +1,9 @@
-import { sidebarProducts } from "../../.vitepress/sidebar";
+import { sidebarsProductsEn } from "../../.vitepress/sidebar";
 
 export default {
   load() {
     return {
-      sidebarProducts: sidebarProducts(),
+      items: sidebarsProductsEn(),
     };
   },
 };

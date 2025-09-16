@@ -3,9 +3,9 @@ import { DefaultTheme } from "vitepress";
 
 import categories from "./categories.json" with { type: "json" };
 
-export const sidebarsDoc = (): DefaultTheme.SidebarItem[] => {
-  const items = categories as DefaultTheme.SidebarItem[];
-
+export const sidebarsProductsZh = (): DefaultTheme.SidebarItem[] => {
+  const items = [...(categories as DefaultTheme.SidebarItem[])];
+  
   items.map((item) => {
     item.collapsed = false;
     item.items = item.items?.map((sub) => ({
@@ -40,8 +40,8 @@ export const sidebarsDoc = (): DefaultTheme.SidebarItem[] => {
 };
 
 
-export const sidebarsDocEn = (): DefaultTheme.SidebarItem[] => {
-  const items = categories as DefaultTheme.SidebarItem[];
+export const sidebarsProductsEn = (): DefaultTheme.SidebarItem[] => {
+  const items = [...(categories as DefaultTheme.SidebarItem[])];
 
   items.map((item) => {
     item.collapsed = false;
@@ -51,32 +51,32 @@ export const sidebarsDocEn = (): DefaultTheme.SidebarItem[] => {
     }));
   });
 
-  // const llm =
-  //   {
-  //     text: "LLM",
-  //     collapsed: true,
-  //     items: [
-  //       {
-  //         text: "Docs List11",
-  //         link: "../llms.txt",
-  //       },
-  //       {
-  //         text: "Full Docs11",
-  //         link: "../llms-full.txt",
-  //       },
-  //       {
-  //         text: "Tiny Docs11",
-  //         link: "../llms-small.txt",
-  //       },
-  //     ],
-  //   } as DefaultTheme.SidebarItem;
-  // items.push(llm);
+  const llm =
+    {
+      text: "LLM",
+      collapsed: true,
+      items: [
+        {
+          text: "Docs List",
+          link: "/llms.txt",
+        },
+        {
+          text: "Full Docs",
+          link: "/llms-full.txt",
+        },
+        {
+          text: "Tiny Docs",
+          link: "/llms-small.txt",
+        },
+      ],
+    } as DefaultTheme.SidebarItem;
+  items.push(llm);
 
 
   return items;
 };
 
-export const sidebarProducts = (): DefaultTheme.SidebarItem[] => [
+export const sidebarDocsZh = (): DefaultTheme.SidebarItem[] => [
   {
     text: "Shelly Gen3",
     items: [
