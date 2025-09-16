@@ -2,10 +2,9 @@
 import { data } from './menu.data.ts'
 </script>
 
-# Examples
+# API 文档
 
-In this section, you can see practical examples to create your application with
-Hono.
+在本节中，你可以看到使用 Shelly IoT 云服务的各种 API 的文档。
 
 <div v-for="sections of data">
   <section v-for="category of sections">
