@@ -125,9 +125,10 @@ async function generateLLMDocs() {
       `Author: "${gitInfo.author}"`,
       `Commit Time: "${gitInfo.commitTime}"`,
       `Build Date: "${new Date().toISOString()}"`,
+      `Git Message: "${gitInfo.commitMessage}"`,
     ].join("<br>\n");
 
-    const versionFile = path.resolve("public/version");
+    const versionFile = path.resolve("public/version.html");
     fs.writeFileSync(versionFile, versionContent, "utf-8");
     console.log(`< Output '${versionFile}' `);
   }
