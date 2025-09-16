@@ -10,14 +10,12 @@ export const themeEn= {
         "Shelly Asia Co., Ltd. brand. Parent company is a German listed company.",
       themeConfig: {
         logo: "/images/logo_160x.svg",
-        siteTitle: "Shelly Asia",
+        siteTitle: "Asia",
         nav: [
           { text: "Products", link: "/en/products/" },
           { text: "Docs", link: "https://shelly-api-docs.shelly.cloud/" },
-          {
-            text: "Community",
-            link: "https://community.shelly.cloud/",
-          },
+          { text: "Europe", link: "https://www.shelly.com/" },
+          {text: "Community",link: "https://community.shelly.cloud/"},
         ],
         sidebar: {
           "/en/docs/": sidebarDocsZh(),
@@ -29,7 +27,6 @@ export const themeEn= {
           { icon: "youtube", link: "https://www.youtube.com/@Shelly_IoT" },
           { icon: "facebook", link: "https://www.facebook.com/Shelly.IoT" },
           { icon: "shopee", link: "https://shellycloud.en.alibaba.com" },
-          // { icon: "github", link: "https://github.com/shellyasia/www.git" },
         ],
         editLink: {
           pattern: "https://github.com/shellyasia/website/www/main/:path",
