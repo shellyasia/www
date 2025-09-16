@@ -1,6 +1,4 @@
-# Shelly RGBW2
 
-```markdown
 # Shelly RGBW2
 
 ![Shelly RGBW2](https://kb.shelly.cloud/__attachments/229146742/image-20220920-071244.png?inst-v=06e25fb6-1df6-4585-801d-931808676f21)
@@ -119,4 +117,3 @@
 ## 用户评价
 
 - [Shelly RGBW2：售价仅 $22 的多功能 WiFi LED 控制器](https://www.youtube.com/watch?v=B8DQntdtD4E)
-```
