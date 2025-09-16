@@ -25,13 +25,13 @@ const llm =
   } as DefaultTheme.SidebarItem;
 
 export const sidebarsProductsZh = (): DefaultTheme.SidebarItem[] => {
-  const items = [...(categories as DefaultTheme.SidebarItem[])];
+  const items = JSON.parse(JSON.stringify(categories)) as DefaultTheme.SidebarItem[];
 
-  items.map((item) => {
-    item.collapsed = false;
+  items.forEach((item) => {
+    item.collapsed = true;
     item.items = item.items?.map((sub) => ({
       text: sub.text,
-      link: `./${sub.link}`,
+      link: `/products/${sub.link}`,
     }));
   });
 
@@ -41,13 +41,13 @@ export const sidebarsProductsZh = (): DefaultTheme.SidebarItem[] => {
 
 
 export const sidebarsProductsEn = (): DefaultTheme.SidebarItem[] => {
-  const items = [...(categories as DefaultTheme.SidebarItem[])];
+  const items = JSON.parse(JSON.stringify(categories)) as DefaultTheme.SidebarItem[];
 
-  items.map((item) => {
-    item.collapsed = false;
+  items.forEach((item) => {
+    item.collapsed = true;
     item.items = item.items?.map((sub) => ({
       text: sub.text,
-      link: `./${sub.link}`,
+      link: `/en/products/${sub.link}`,
     }));
   });
 
