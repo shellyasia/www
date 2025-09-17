@@ -64,6 +64,9 @@ export default defineConfig({
       light: "github-light",
       dark: "github-dark",
     },
+    image:{
+      lazyLoading: true,
+    },
     config(md) {
       md.use(groupIconMdPlugin);
     },

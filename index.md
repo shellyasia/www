@@ -39,11 +39,117 @@ features:
     details: 多设备智能联动，自动化场景切换，提升居家体验。
 ---
 
-<script setup>
-// Heavily inspired by React
-// https://github.com/reactjs/react.dev/pull/6817
-import { onMounted } from 'vue'
-onMounted(() => {
 
-})
+<script setup>
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers
+} from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: '/images/Dimitar Dimitrov.jpg',
+    name: 'Dimitar Dimitrov',
+    title: 'CEO',
+    links: [
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/allterco/' }
+    ]
+  },
+  {
+    avatar: '/images/Wolfgang Kirsch.jpeg',
+    name: 'Wolfgang Kirsch',
+    title: 'Co-CEO',
+    links: [
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/wolfgang-kirsch/?originalSubdomain=de' },
+    ]
+  },  
+  {
+    avatar: '/images/Svetozar Iliev.jpg',
+    name: 'Svetozar Iliev',
+    title: 'CFO',
+    links: [
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/svetozar-iliev-cfa-9b47126/?originalSubdomain=bg' },
+    ]
+  },
+    {
+    avatar: '/images/Leon Kralj.jpeg',
+    name: 'Leon Kralj',
+    title: 'CTO',
+    links: [
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/leon-kralj-8873876/?originalSubdomain=si' },
+    ]
+  },
+      {
+    avatar: '/images/Mirche Atanasovski.jpg',
+    name: 'Mirche Atanasovski',
+    title: 'CCO',
+    links: [
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/mirche-atanasovski-5835828/' },
+    ]
+  },
+      {
+    avatar: '/images/Ivan Zahov.jpeg',
+    name: 'Ivan Zahov',
+    title: 'CMO',
+    links: [
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/ivantzahov/?originalSubdomain=bg' },
+    ]
+  },
+  
+  ]
 </script>
+
+<style>
+
+</style>
+
+<VPTeamPage>
+  <VPTeamPageTitle>
+    <template #title>
+      Shelly Group
+    </template>
+    <template #lead>
+            母公司Shelly Group集团是一家欧洲国际物联网科技企业，在全球设有6家子公司，分支机构遍布德国、保加利亚、中国、斯洛文尼亚和美国，业务覆盖超过100个国家和地区。截至2016年，集团全球员工人数已超过100人，年营收达25亿元人民币。
+    </template>
+
+  </VPTeamPageTitle>
+  <VPTeamMembers :members />
+</VPTeamPage>
+
+
+<h2 class="title" style="text-align: center;margin-top: 2rem;"> 发展历程</h2 >
+
+
+母公司Shelly Group集团是一家欧洲国际物联网科技企业，在全球设有6家子公司，分支机构遍布德国、保加利亚、中国、斯洛文尼亚和美国，业务覆盖超过100个国家和地区。截至2016年，集团全球员工人数已超过100人，年营收达25亿元人民币。
+
+2003年，Teracomm有限公司致力于移动通信创新；
+
+2005年，Tera Communications运营商计费解决方案（平台与服务）；
+
+2012年，成立Allterco股份有限公司，整合旗下所有业务的控股公司；
+
+2013年，设立物联网（loT）部门；
+
+2015年，设立AlltercoRobotics-专为旗下品牌 Shelly 和MyKi 设计创新产品；
+
+2016年，（股票代码:AlltercoA4L）在保加利亚证券交易所挂牌上市；（这条得新闻，只能试试借助公众号）
+
+2018年，首批Shelly产品全球发售；
+
+2019年，战略调整：出售欧洲电信业务，布局美国市场运营（Shelly USA）；
+
+2021年，德国法兰克福二次上市，Allterco亚洲分公司雪莉智能（深圳）有限公司成立(Shelly Asia)，推出首款低功耗电池供电设备
+
+<h2 class="title" style="text-align: center;margin-top: 2rem;"> 产品及服务</h2 >
+
+
+<img src="/images/products.webp" alt="shelly products" style="display: block; margin: 1rem auto; max-width: 90%; height: auto;"/> 
+
+Shelly的产品组合以继电器为基础，支持远程控制照明、电器、传感器、双向电机等设备。主要产品包括能够通过手机、电脑或第三方家庭自动化系统进行远程控制和自动化的IoT和智能建筑解决方案，以及能源管理功能。同时提供云应用程序订阅服务和房地产管理活动。
+
+<h2 class="title" style="text-align: center;margin-top: 2rem;"> 品牌文化</h2 >
+
+品牌理念：受消费者平静快乐生活梦想启发，专注每一个细节创造设备。
+
+品牌宗旨：成为首选合作伙伴，提供持久智能解决方案，让可持续生活更贴近每个人，开发经济实惠的智能解决方案，让生活更轻松，更高效地利用能源。
