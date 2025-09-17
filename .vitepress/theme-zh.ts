@@ -14,7 +14,7 @@ export const themeZh = {
             {text: "欧洲",link: "https://www.shelly.com/"},
         ],
         socialLinks: [
-            { icon: "wechat", link: "https://mp.weixin.qq.com/s/OPFw9A6wBbjMOVUjiDN12g" },
+            { icon: "wechat", link: "https://mp.weixin.qq.com/s/IAW0FS32txRpHDQhyA25Ww?scene=0&subscene=90" },
             { icon: "shopify", link: "https://mall.jd.com/index-20140293.html" },
             { icon: "github", link: "https://github.com/shellyasia/www" },
         ],
