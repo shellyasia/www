@@ -100,7 +100,7 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: "https://www.shellyiot.cn",
+    hostname:  process.env.BASE_URL ||"https://www.shellyiot.cn",
     lastmodDateOnly: true,
   },
 });

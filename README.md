@@ -19,3 +19,5 @@ use `tsx scripts/build-translate-docs.ts` to fetch and translate docs from offic
 - VitePress: [https://vitepress.dev/](https://vitepress.dev/)
 
 
+## BUILD ENV
+BASE_URL=https://www.shellyiot.cn
