@@ -58,38 +58,47 @@ const members = [
     ]
   },
   {
-    avatar: '/images/John Doe.jpg',
-    name: 'John Doe',
-    title: 'CTO',
+    avatar: '/images/Wolfgang Kirsch.jpeg',
+    name: 'Wolfgang Kirsch',
+    title: 'Co-CEO',
     links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/johndoe/' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/wolfgang-kirsch/?originalSubdomain=de' },
     ]
-  },
+  },  
   {
-    avatar: '/images/Jane Smith.jpg',
-    name: 'Jane Smith',
+    avatar: '/images/Svetozar Iliev.jpg',
+    name: 'Svetozar Iliev',
     title: 'CFO',
     links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/janesmith/' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/svetozar-iliev-cfa-9b47126/?originalSubdomain=bg' },
     ]
   },
-  {
-    avatar: '/images/Alice Johnson.jpg',
-    name: 'Alice Johnson',
-    title: 'COO',
+    {
+    avatar: '/images/Leon Kralj.jpeg',
+    name: 'Leon Kralj',
+    title: 'CTO',
     links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/alicejohnson/' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/leon-kralj-8873876/?originalSubdomain=si' },
     ]
   },
-  {
-    avatar: '/images/Bob Brown.jpg',
-    name: 'Bob Brown',
+      {
+    avatar: '/images/Mirche Atanasovski.jpg',
+    name: 'Mirche Atanasovski',
+    title: 'CCO',
+    links: [
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/mirche-atanasovski-5835828/' },
+    ]
+  },
+      {
+    avatar: '/images/Ivan Zahov.jpeg',
+    name: 'Ivan Zahov',
     title: 'CMO',
     links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/bobbrown/' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/ivantzahov/?originalSubdomain=bg' },
     ]
-  }
-]
+  },
+  
+  ]
 </script>
 
 <style>
