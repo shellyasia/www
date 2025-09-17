@@ -10,8 +10,8 @@ export const themeZh = {
         nav: [
             { text: "产品", link: "/products/" },
             { text: "文档", link: "/docs/" },
-            {text: "讨论",link: "https://community.shelly.cloud/"},
-            {text: "欧洲",link: "https://www.shelly.com/"},
+            { text: "欧洲", link: "https://www.shelly.com/" },
+            { text: "讨论", link: "https://community.shelly.cloud/" },
         ],
         socialLinks: [
             { icon: "wechat", link: "https://mp.weixin.qq.com/s/IAW0FS32txRpHDQhyA25Ww?scene=0&subscene=90" },
