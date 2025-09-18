@@ -82,7 +82,7 @@ export default defineConfig({
     algolia: {
       appId: algoAppId,
       apiKey: algoAppKey,
-      indexName: "shelly",
+      indexName: "www_shelly_asia_lef12ksijn_pages",
     },
   },
   head: htmlHeads,
