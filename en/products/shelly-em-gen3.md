@@ -108,19 +108,15 @@ An embedded web interface enables users to monitor, configure, and control the d
 | | Shell material | Plastic |
 | | Shell color | White, Charcoal gray |
 | | Connectors color | Black |
-
 | **Environmental** | Ambient working temperature | -20 °C to +40 °C / -5 °F to 105 °F |
 | | Humidity | 30 % to 70 % RH |
 | | Max. altitude | 2000 m / 6562 ft |
-
 | **Electrical** | Power supply | 110 – 240 V~ 50/60 Hz |
 | | Power consumption | < 1.2 W |
 | | Neutral required | Yes / No |
 | | External protection | 2 A, tripping characteristic B or C,<br>6 kA interrupting rating,<br>Energy limiting class 3 |
-
 | **Output Circuits Ratings** | Max. switching voltage | 240 V~ |
 | | Max. switching current | 2 A / 240 V~ |
-
 | **Sensors & Meters** | Voltmeter (AC) | 110–240 V~ 50/60 Hz |
 | | Voltmeter accuracy | ±2% |
 | | Ammeter (AC) | 0 – 80 A |
@@ -132,22 +128,18 @@ An embedded web interface enables users to monitor, configure, and control the d
 | | Measurement data storage | At least 10 days of 1-minute resolution data |
 | | Data export | - CSV format for PQ recorded values<br>- JSON format via RPC |
 | | Internal temperature sensor | Yes |
-
 | **Radio** | **Wi-Fi** | |
 | | Protocol | 802.11 b/g/n |
 | | RF band | 2412 – 2472 MHz |
 | | Max. RF power | < 20 dBm |
 | | Range | Up to 30 m / 100 ft indoors<br>Up to 50 m / 160 ft outdoors<br>(Depends on local conditions) |
-
 | | **Bluetooth** | |
 | | Protocol | 4.2 |
 | | RF band | 2402 – 2480 MHz |
 | | Max. RF power | < 4 dBm |
 | | Range | Up to 10 m / 33 ft indoors<br>Up to 30 m / 100 ft outdoors<br>(Depends on local conditions) |
-
 | **Microcontroller Unit** | CPU | ESP-Shelly-C38F |
 | | Flash | 8 MB |
-
 | **Firmware Capabilities** | Schedules | Yes |
 | | Webhooks (URL actions) | 20 hooks, up to 5 URLs per hook |
 | | Scripting | Yes |
