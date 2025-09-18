@@ -133,7 +133,7 @@ const members = [
 
 2015年，设立AlltercoRobotics-专为旗下品牌 Shelly 和MyKi 设计创新产品；
 
-2016年，（股票代码:AlltercoA4L）在保加利亚证券交易所挂牌上市；（这条得新闻，只能试试借助公众号）
+2016年，（股票代码:AlltercoA4L）在保加利亚证券交易所挂牌上市；
 
 2018年，首批Shelly产品全球发售；
 
