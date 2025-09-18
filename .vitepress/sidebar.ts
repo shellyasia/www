@@ -70,7 +70,7 @@ export const sidebarDocsZh = (): DefaultTheme.SidebarItem[] => [
         link: "/docs/cloud-control-api-communication-v2",
       },
       {
-        text: "失序事件",
+        text: "实时事件",
         link: "/docs/cloud-control-api-real-time-events",
       },
 
