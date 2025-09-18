@@ -147,6 +147,10 @@
   --vp-code-tab-active-bar-color: var(--vp-c-shelly-primary);
 
   --vp-code-line-highlight-color: rgba(36, 145, 255, 0.1);
+  
+  /* Local search highlight */
+  --vp-local-search-highlight-bg: rgba(36, 145, 255, 0.2);
+  --vp-local-search-highlight-text: var(--vp-c-text-light-1);
 }
 
 .dark {
@@ -197,6 +201,10 @@
 
   --vp-badge-info-text: var(--vp-c-badge-green-dark);
   --vp-badge-info-bg: var(--vp-c-badge-green-dark-bg);
+  
+  /* Local search highlight for dark theme */
+  --vp-local-search-highlight-bg: rgba(36, 145, 255, 0.3);
+  --vp-local-search-highlight-text: var(--vp-c-text-dark-1);
 }
 
 .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
@@ -317,6 +325,51 @@
     height: 18px !important;
     margin: 0 !important;
   }
+}
+
+/* Local Search Highlight Styles */
+.vp-local-search mark {
+  background-color: var(--vp-local-search-highlight-bg) !important;
+  color: var(--vp-local-search-highlight-text) !important;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.vp-local-search mark:hover {
+  background-color: var(--vp-c-shelly-primary) !important;
+  color: var(--vp-c-white) !important;
+}
+
+/* Local Search Modal Styles */
+.local-search-modal mark {
+  background-color: var(--vp-local-search-highlight-bg) !important;
+  color: var(--vp-local-search-highlight-text) !important;
+  padding: 1px 3px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+/* Search Result Highlights */
+.search-result mark,
+.local-search-result mark {
+  background-color: var(--vp-local-search-highlight-bg) !important;
+  color: var(--vp-local-search-highlight-text) !important;
+  padding: 2px 3px;
+  border-radius: var(--vp-radius-small);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced highlight for better contrast */
+.dark .vp-local-search mark,
+.dark .local-search-modal mark,
+.dark .search-result mark,
+.dark .local-search-result mark {
+  background-color: rgba(36, 145, 255, 0.4) !important;
+  color: var(--vp-c-text-dark-1) !important;
+  box-shadow: 0 1px 3px rgba(36, 145, 255, 0.2);
 }
 
 body {
