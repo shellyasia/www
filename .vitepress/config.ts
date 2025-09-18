@@ -64,7 +64,7 @@ export default defineConfig({
       light: "github-light",
       dark: "github-dark",
     },
-    image:{
+    image: {
       lazyLoading: true,
     },
     config(md) {
@@ -79,11 +79,15 @@ export default defineConfig({
   themeConfig: {
     logo: "/images/logo_160x.svg",
     siteTitle: "雪莉智能家居",
-    algolia: {
-      appId: algoAppId,
-      apiKey: algoAppKey,
-      indexName: "www_shelly_asia_lef12ksijn_pages",
-    },
+
+    search: {
+      provider: 'local',
+      // options: {
+      //   appId: algoAppId,
+      //   apiKey: algoAppKey,
+      //   indexName: "www_shelly_asia_lef12ksijn_pages",
+      // },
+    }
   },
   head: htmlHeads,
   titleTemplate: ":title - shelly.asia",
@@ -100,7 +104,7 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname:  process.env.BASE_URL ||"https://www.shellyiot.cn",
+    hostname: process.env.BASE_URL || "https://www.shellyiot.cn",
     lastmodDateOnly: true,
   },
 });
