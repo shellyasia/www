@@ -138,7 +138,7 @@ In 2016, it was listed on the Bulgarian Stock Exchange (Stock Code: AlltercoA4L)
 
 In 2018, the first batch of Shelly products was launched globally;
 
-In 2019, the strategic adjustment was made: selling the European telecommunications business and布局美国市场运营（Shelly USA）;
+In 2019, strategic adjustment: sold the European telecommunications business and laid out operations in the U.S. market (Shelly USA);
 
 In 2021, it was listed for the second time in Frankfurt, Germany, and Shelly Asia (Shenzhen) Co., Ltd. was established, launching the first low-power battery-powered device.
 
