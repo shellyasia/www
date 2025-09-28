@@ -14,7 +14,7 @@ export const themeZh = {
             { text: "讨论", link: "https://community.shelly.cloud/" },
         ],
         socialLinks: [
-            { icon: "wechat", link: "https://mp.weixin.qq.com/s/IAW0FS32txRpHDQhyA25Ww?scene=0&subscene=90" },
+            { icon: "wechat", link: "https://mp.weixin.qq.com/s/VnC3Dw_O-kmL3qI-sWCiHw" },
             { icon: "shopify", link: "https://mall.jd.com/index-20140293.html" },
             { icon: "github", link: "https://github.com/shellyasia/www" },
         ],
