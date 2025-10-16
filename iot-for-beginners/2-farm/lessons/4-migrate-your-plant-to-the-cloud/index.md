@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "4d8e7a066d75b625e7a979c14157041d",
   "translation_date": "2025-08-24T22:41:43+00:00",
-  "source_file": "2-farm/lessons/4-migrate-your-plant-to-the-cloud/README.md",
+  "source_file": "2-farm/lessons/4-migrate-your-plant-to-the-cloud/index.md",
   "language_code": "zh"
 }
 -->

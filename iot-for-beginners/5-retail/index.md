@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "22a1d6e49f2a689fe5bfa7802a7241fc",
   "translation_date": "2025-08-24T21:05:47+00:00",
-  "source_file": "5-retail/README.md",
+  "source_file": "5-retail/index.md",
   "language_code": "zh"
 }
 -->
@@ -21,8 +21,8 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 主题
 
-1. [训练一个库存检测器](./lessons/1-train-stock-detector/README.md)
-1. [从物联网设备检查库存](./lessons/2-check-stock-device/README.md)
+1. [训练一个库存检测器](./lessons/1-train-stock-detector/index.md)
+1. [从物联网设备检查库存](./lessons/2-check-stock-device/index.md)
 
 ## 致谢
 

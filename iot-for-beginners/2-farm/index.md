@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "428bda82d9e6016ecea7c797564bf081",
   "translation_date": "2025-08-24T21:56:46+00:00",
-  "source_file": "2-farm/README.md",
+  "source_file": "2-farm/index.md",
   "language_code": "zh"
 }
 -->
@@ -17,12 +17,12 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 主题
 
-1. [使用物联网预测植物生长](lessons/1-predict-plant-growth/README.md)
-1. [检测土壤湿度](lessons/2-detect-soil-moisture/README.md)
-1. [自动化植物浇水](lessons/3-automated-plant-watering/README.md)
-1. [将你的植物迁移到云端](lessons/4-migrate-your-plant-to-the-cloud/README.md)
-1. [将你的应用逻辑迁移到云端](lessons/5-migrate-application-to-the-cloud/README.md)
-1. [保护你的植物安全](lessons/6-keep-your-plant-secure/README.md)
+1. [使用物联网预测植物生长](lessons/1-predict-plant-growth/index.md)
+1. [检测土壤湿度](lessons/2-detect-soil-moisture/index.md)
+1. [自动化植物浇水](lessons/3-automated-plant-watering/index.md)
+1. [将你的植物迁移到云端](lessons/4-migrate-your-plant-to-the-cloud/index.md)
+1. [将你的应用逻辑迁移到云端](lessons/5-migrate-application-to-the-cloud/index.md)
+1. [保护你的植物安全](lessons/6-keep-your-plant-secure/index.md)
 
 ## 致谢
 

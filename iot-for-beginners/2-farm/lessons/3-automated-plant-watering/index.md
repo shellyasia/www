@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "f7bb24ba53fb627ddb38a8b24a05e594",
   "translation_date": "2025-08-24T22:09:20+00:00",
-  "source_file": "2-farm/lessons/3-automated-plant-watering/README.md",
+  "source_file": "2-farm/lessons/3-automated-plant-watering/index.md",
   "language_code": "zh"
 }
 -->
@@ -108,19 +108,19 @@ CO_OP_TRANSLATOR_METADATA:
 
 1. 在你的 `soil-moisture-sensor` 项目中添加相关的 MQTT 库/pip 包和代码以连接到 MQTT。将客户端 ID 命名为 `soilmoisturesensor_client`，并在前面加上你的 ID。
 
-    > ⚠️ 如果需要，可以参考 [项目 1，第 4 课中连接到 MQTT 的说明](../../../1-getting-started/lessons/4-connect-internet/README.md#connect-your-iot-device-to-mqtt)。
+    > ⚠️ 如果需要，可以参考 [项目 1，第 4 课中连接到 MQTT 的说明](../../../1-getting-started/lessons/4-connect-internet/index.md#connect-your-iot-device-to-mqtt)。
 
 1. 添加相关设备代码以发送带有土壤湿度设置的遥测数据。对于遥测消息，将属性命名为 `soil_moisture`。
 
-    > ⚠️ 如果需要，可以参考 [项目 1，第 4 课中发送遥测数据到 MQTT 的说明](../../../1-getting-started/lessons/4-connect-internet/README.md#send-telemetry-from-your-iot-device)。
+    > ⚠️ 如果需要，可以参考 [项目 1，第 4 课中发送遥测数据到 MQTT 的说明](../../../1-getting-started/lessons/4-connect-internet/index.md#send-telemetry-from-your-iot-device)。
 
 1. 在名为 `soil-moisture-sensor-server` 的文件夹中创建一些本地服务器代码，用于订阅遥测数据并发送命令以控制继电器。将命令消息中的属性命名为 `relay_on`，并将客户端 ID 命名为 `soilmoisturesensor_server`，在前面加上你的 ID。保持与项目 1，第 4 课中编写的服务器代码相同的结构，因为你将在本课后续部分中添加到此代码。
 
-    > ⚠️ 如果需要，可以参考 [发送遥测数据到 MQTT 的说明](../../../1-getting-started/lessons/4-connect-internet/README.md#write-the-server-code) 和 [通过 MQTT 发送命令](../../../1-getting-started/lessons/4-connect-internet/README.md#send-commands-to-the-mqtt-broker) 的说明。
+    > ⚠️ 如果需要，可以参考 [发送遥测数据到 MQTT 的说明](../../../1-getting-started/lessons/4-connect-internet/index.md#write-the-server-code) 和 [通过 MQTT 发送命令](../../../1-getting-started/lessons/4-connect-internet/index.md#send-commands-to-the-mqtt-broker) 的说明。
 
 1. 添加相关设备代码以根据接收到的命令控制继电器，使用消息中的 `relay_on` 属性。如果 `soil_moisture` 大于 450，则发送 true 给 `relay_on`，否则发送 false，与之前为物联网设备添加的逻辑相同。
 
-    > ⚠️ 如果需要，可以参考 [项目 1，第 4 课中响应 MQTT 命令的说明](../../../1-getting-started/lessons/4-connect-internet/README.md#handle-commands-on-the-iot-device)。
+    > ⚠️ 如果需要，可以参考 [项目 1，第 4 课中响应 MQTT 命令的说明](../../../1-getting-started/lessons/4-connect-internet/index.md#handle-commands-on-the-iot-device)。
 
 > 💁 你可以在 [code-mqtt](../../../../../2-farm/lessons/3-automated-plant-watering/code-mqtt) 文件夹中找到此代码。
 

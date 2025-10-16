@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "5de7dc1e2ddc402d415473bb795568d4",
   "translation_date": "2025-08-24T23:48:01+00:00",
-  "source_file": "6-consumer/README.md",
+  "source_file": "6-consumer/index.md",
   "language_code": "zh"
 }
 -->
@@ -21,10 +21,10 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 主题
 
-1. [使用物联网设备识别语音](./lessons/1-speech-recognition/README.md)
-1. [理解语言](./lessons/2-language-understanding/README.md)
-1. [设置计时器并提供语音反馈](./lessons/3-spoken-feedback/README.md)
-1. [支持多语言](./lessons/4-multiple-language-support/README.md)
+1. [使用物联网设备识别语音](./lessons/1-speech-recognition/index.md)
+1. [理解语言](./lessons/2-language-understanding/index.md)
+1. [设置计时器并提供语音反馈](./lessons/3-spoken-feedback/index.md)
+1. [支持多语言](./lessons/4-multiple-language-support/index.md)
 
 ## 致谢
 

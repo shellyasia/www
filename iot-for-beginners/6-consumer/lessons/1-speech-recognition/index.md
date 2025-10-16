@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "6d6aa1be033625d201a190fc9c5cbfb4",
   "translation_date": "2025-08-25T00:18:26+00:00",
-  "source_file": "6-consumer/lessons/1-speech-recognition/README.md",
+  "source_file": "6-consumer/lessons/1-speech-recognition/index.md",
   "language_code": "zh"
 }
 -->
@@ -88,7 +88,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 数字音频使用脉冲编码调制（PCM）进行采样。PCM 通过读取信号的电压，并根据定义的大小选择最接近该电压的离散值。
 
-> 💁 您可以将 PCM 看作是传感器版本的脉宽调制（PWM）。PWM 是将数字信号转换为模拟信号，而 PCM 是将模拟信号转换为数字信号。（PWM 在[入门项目的第3课](../../../1-getting-started/lessons/3-sensors-and-actuators/README.md#pulse-width-modulation)中讲解过。）
+> 💁 您可以将 PCM 看作是传感器版本的脉宽调制（PWM）。PWM 是将数字信号转换为模拟信号，而 PCM 是将模拟信号转换为数字信号。（PWM 在[入门项目的第3课](../../../1-getting-started/lessons/3-sensors-and-actuators/index.md#pulse-width-modulation)中讲解过。）
 
 例如，大多数流媒体音乐服务提供 16 位或 24 位音频。这意味着它们将电压转换为一个适合 16 位整数或 24 位整数的值。16 位音频的值范围是 -32,768 到 32,767，24 位音频的范围是 −8,388,608 到 8,388,607。位数越多，采样越接近我们耳朵实际听到的声音。
 

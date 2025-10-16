@@ -23,9 +23,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 1. 使用 PlatformIO 创建一个全新的 Wio Terminal 项目。将此项目命名为 `stock-counter`。
 
-1. 按照[制造项目第2课](../../../4-manufacturing/lessons/2-check-fruit-from-device/README.md#task---capture-an-image-using-an-iot-device)中的步骤，从摄像头捕获图像。
+1. 按照[制造项目第2课](../../../4-manufacturing/lessons/2-check-fruit-from-device/index.md#task---capture-an-image-using-an-iot-device)中的步骤，从摄像头捕获图像。
 
-1. 按照[制造项目第2课](../../../4-manufacturing/lessons/2-check-fruit-from-device/README.md#task---classify-images-from-your-iot-device)中的步骤调用图像分类器。大部分代码将被重复使用来检测对象。
+1. 按照[制造项目第2课](../../../4-manufacturing/lessons/2-check-fruit-from-device/index.md#task---classify-images-from-your-iot-device)中的步骤调用图像分类器。大部分代码将被重复使用来检测对象。
 
 ## 将代码从分类器更改为图像检测器
 

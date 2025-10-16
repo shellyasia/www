@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "52ed2bd997d08040f79a1a6ef2bac958",
   "translation_date": "2025-08-25T00:47:03+00:00",
-  "source_file": "3-transport/lessons/1-location-tracking/README.md",
+  "source_file": "3-transport/lessons/1-location-tracking/index.md",
   "language_code": "zh"
 }
 -->
@@ -137,7 +137,7 @@ GPS 曾经受到美国军方强制限制，精度约为 5 米。该限制在 200
 
 大多数GPS传感器通过UART发送GPS数据。
 
-> ⚠️ UART在[项目2，课程2](../../../2-farm/lessons/2-detect-soil-moisture/README.md#universal-asynchronous-receiver-transmitter-uart)中已经介绍过。如果需要，可以回顾该课程。
+> ⚠️ UART在[项目2，课程2](../../../2-farm/lessons/2-detect-soil-moisture/index.md#universal-asynchronous-receiver-transmitter-uart)中已经介绍过。如果需要，可以回顾该课程。
 
 您可以在物联网设备上使用GPS传感器来获取GPS数据。
 

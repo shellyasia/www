@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "078ae664c7b686bf069545e9a5fc95b2",
   "translation_date": "2025-08-25T00:36:23+00:00",
-  "source_file": "3-transport/lessons/4-geofences/README.md",
+  "source_file": "3-transport/lessons/4-geofences/index.md",
   "language_code": "zh"
 }
 -->
@@ -340,7 +340,7 @@ API 调用返回的结果中包含一个 `distance` 值，表示到地理围栏�
 
 1. 为你在之前课程中创建的 `gps-trigger` Functions应用添加一个新的IoT Hub事件触发器。将此函数命名为 `geofence-trigger`。
 
-    > ⚠️ 如果需要，可以参考[项目2，课程5中创建IoT Hub事件触发器的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#create-an-iot-hub-event-trigger)。
+    > ⚠️ 如果需要，可以参考[项目2，课程5中创建IoT Hub事件触发器的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#create-an-iot-hub-event-trigger)。
 
 1. 在 `function.json` 文件中配置IoT Hub连接字符串。`local.settings.json` 在Functions应用中的所有触发器之间共享。
 
@@ -454,9 +454,9 @@ API 调用返回的结果中包含一个 `distance` 值，表示到地理围栏�
 
 1. 准备好后，将此代码部署到云端的Functions应用。别忘了部署新的应用程序设置。
 
-    > ⚠️ 如果需要，可以参考[项目2，课程5中上传应用程序设置的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#task---upload-your-application-settings)。
+    > ⚠️ 如果需要，可以参考[项目2，课程5中上传应用程序设置的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#task---upload-your-application-settings)。
 
-    > ⚠️ 如果需要，可以参考[项目2，课程5中部署Functions应用的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#task---deploy-your-functions-app-to-the-cloud)。
+    > ⚠️ 如果需要，可以参考[项目2，课程5中部署Functions应用的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#task---deploy-your-functions-app-to-the-cloud)。
 
 > 💁 你可以在 [code/functions](../../../../../3-transport/lessons/4-geofences/code/functions) 文件夹中找到此代码。
 

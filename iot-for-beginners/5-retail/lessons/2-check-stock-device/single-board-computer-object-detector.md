@@ -24,9 +24,9 @@ CO_OP_TRANSLATOR_METADATA:
     * 如果你使用的是树莓派，需要安装 PiCamera。你可能还需要将摄像头固定在一个位置，例如，将电缆挂在一个盒子或罐子上，或者用双面胶将摄像头固定在一个盒子上。
     * 如果你使用的是虚拟物联网设备，则需要安装 CounterFit 和 CounterFit PyCamera shim。如果你打算使用静态图像，请捕获一些对象检测器尚未见过的图像；如果你打算使用网络摄像头，请确保摄像头的位置能够看到你要检测的库存。
 
-1. 复制[制造项目第 2 课](../../../4-manufacturing/lessons/2-check-fruit-from-device/README.md#task---capture-an-image-using-an-iot-device)中的步骤，从摄像头捕获图像。
+1. 复制[制造项目第 2 课](../../../4-manufacturing/lessons/2-check-fruit-from-device/index.md#task---capture-an-image-using-an-iot-device)中的步骤，从摄像头捕获图像。
 
-1. 复制[制造项目第 2 课](../../../4-manufacturing/lessons/2-check-fruit-from-device/README.md#task---classify-images-from-your-iot-device)中的步骤，调用图像分类器。大部分代码将被重用来检测对象。
+1. 复制[制造项目第 2 课](../../../4-manufacturing/lessons/2-check-fruit-from-device/index.md#task---classify-images-from-your-iot-device)中的步骤，调用图像分类器。大部分代码将被重用来检测对象。
 
 ## 将代码从分类器更改为图像检测器
 

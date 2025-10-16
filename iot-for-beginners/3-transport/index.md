@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "e978534a245b000725ed2a048f943213",
   "translation_date": "2025-08-25T00:35:23+00:00",
-  "source_file": "3-transport/README.md",
+  "source_file": "3-transport/index.md",
   "language_code": "zh"
 }
 -->
@@ -23,10 +23,10 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 主题
 
-1. [位置追踪](lessons/1-location-tracking/README.md)
-1. [存储位置信息](lessons/2-store-location-data/README.md)
-1. [可视化位置信息](lessons/3-visualize-location-data/README.md)
-1. [地理围栏](lessons/4-geofences/README.md)
+1. [位置追踪](lessons/1-location-tracking/index.md)
+1. [存储位置信息](lessons/2-store-location-data/index.md)
+1. [可视化位置信息](lessons/3-visualize-location-data/index.md)
+1. [地理围栏](lessons/4-geofences/index.md)
 
 ## 致谢
 

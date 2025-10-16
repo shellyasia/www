@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "557f4ee96b752e0651d2e6e74aa6bd14",
   "translation_date": "2025-08-24T21:25:38+00:00",
-  "source_file": "4-manufacturing/lessons/2-check-fruit-from-device/README.md",
+  "source_file": "4-manufacturing/lessons/2-check-fruit-from-device/index.md",
   "language_code": "zh"
 }
 -->
@@ -132,7 +132,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 1. 在 Custom Vision 门户中，使用 *预测* 选项卡上的图像重新训练模型。
 
-    > ⚠️ 如果需要，可以参考 [第 1 课中重新训练分类器的说明](../1-train-fruit-detector/README.md#retrain-your-image-classifier)。
+    > ⚠️ 如果需要，可以参考 [第 1 课中重新训练分类器的说明](../1-train-fruit-detector/index.md#retrain-your-image-classifier)。
 
 1. 如果你的图像与用于训练的原始图像差异很大，可以通过在 *训练图像* 选项卡中选择它们并点击 **删除** 按钮删除所有原始图像。将光标移到图像上会出现一个勾选框，点击勾选框即可选择或取消选择图像。
 

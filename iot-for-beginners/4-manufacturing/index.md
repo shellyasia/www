@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "3764e089adf2d5801272bc0895f8498b",
   "translation_date": "2025-08-24T21:19:05+00:00",
-  "source_file": "4-manufacturing/README.md",
+  "source_file": "4-manufacturing/index.md",
   "language_code": "zh"
 }
 -->
@@ -23,10 +23,10 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 主题
 
-1. [训练一个水果质量检测器](./lessons/1-train-fruit-detector/README.md)
-1. [从物联网设备检查水果质量](./lessons/2-check-fruit-from-device/README.md)
-1. [在边缘设备上运行水果检测器](./lessons/3-run-fruit-detector-edge/README.md)
-1. [通过传感器触发水果质量检测](./lessons/4-trigger-fruit-detector/README.md)
+1. [训练一个水果质量检测器](./lessons/1-train-fruit-detector/index.md)
+1. [从物联网设备检查水果质量](./lessons/2-check-fruit-from-device/index.md)
+1. [在边缘设备上运行水果检测器](./lessons/3-run-fruit-detector-edge/index.md)
+1. [通过传感器触发水果质量检测](./lessons/4-trigger-fruit-detector/index.md)
 
 ## 致谢
 

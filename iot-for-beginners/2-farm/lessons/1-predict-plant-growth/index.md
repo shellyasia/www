@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "d105b44deae539165855c976dcdeca99",
   "translation_date": "2025-08-24T21:57:31+00:00",
-  "source_file": "2-farm/lessons/1-predict-plant-growth/README.md",
+  "source_file": "2-farm/lessons/1-predict-plant-growth/index.md",
   "language_code": "zh"
 }
 -->
@@ -170,7 +170,7 @@ CSV 文件将有两列——*日期* 和 *温度*。*日期* 列设置为服务�
 
     * 编写代码以监听发布到遥测主题的 MQTT 消息
 
-      > ⚠️ 如果需要，可以参考 [第 4 课中创建 Python 应用程序以接收遥测数据的说明](../../../1-getting-started/lessons/4-connect-internet/README.md#receive-telemetry-from-the-mqtt-broker)。
+      > ⚠️ 如果需要，可以参考 [第 4 课中创建 Python 应用程序以接收遥测数据的说明](../../../1-getting-started/lessons/4-connect-internet/index.md#receive-telemetry-from-the-mqtt-broker)。
 
     将此项目的文件夹命名为 `temperature-sensor-server`。
 

@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "9bae08314d8487cb76ddf3d8797e1544",
   "translation_date": "2025-08-24T23:26:16+00:00",
-  "source_file": "1-getting-started/lessons/1-introduction-to-iot/README.md",
+  "source_file": "1-getting-started/lessons/1-introduction-to-iot/index.md",
   "language_code": "zh"
 }
 -->

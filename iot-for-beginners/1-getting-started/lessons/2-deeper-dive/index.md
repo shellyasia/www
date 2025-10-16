@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "9dd7f645ad1c6f20b72fee512987f772",
   "translation_date": "2025-08-24T23:40:38+00:00",
-  "source_file": "1-getting-started/lessons/2-deeper-dive/README.md",
+  "source_file": "1-getting-started/lessons/2-deeper-dive/index.md",
   "language_code": "zh"
 }
 -->
@@ -235,7 +235,7 @@ Pi Zero更小，功耗更低。它拥有一个单核1GHz CPU，512MB的RAM，WiF
 如果你在这些课程中使用树莓派，请阅读板上的不同硬件组件。
 
 * 你可以在[树莓派硬件文档页面](https://www.raspberrypi.org/documentation/hardware/raspberrypi/)上找到处理器的详细信息。阅读你正在使用的树莓派的处理器信息。
-* 找到GPIO引脚。在[树莓派GPIO文档](https://www.raspberrypi.org/documentation/hardware/raspberrypi/gpio/README.md)中阅读更多相关内容。使用[GPIO引脚使用指南](https://www.raspberrypi.org/documentation/usage/gpio/README.md)识别树莓派上的不同引脚。
+* 找到GPIO引脚。在[树莓派GPIO文档](https://www.raspberrypi.org/documentation/hardware/raspberrypi/gpio/index.md)中阅读更多相关内容。使用[GPIO引脚使用指南](https://www.raspberrypi.org/documentation/usage/gpio/index.md)识别树莓派上的不同引脚。
 
 ### 编程单板计算机
 

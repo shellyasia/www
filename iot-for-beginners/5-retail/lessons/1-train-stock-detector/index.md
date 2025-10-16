@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "8df310a42f902139a01417dacb1ffbef",
   "translation_date": "2025-08-24T21:14:49+00:00",
-  "source_file": "5-retail/lessons/1-train-stock-detector/README.md",
+  "source_file": "5-retail/lessons/1-train-stock-detector/index.md",
   "language_code": "zh"
 }
 -->
@@ -110,7 +110,7 @@ CO_OP_TRANSLATOR_METADATA:
 
     > 💁 每个账户只能有一个免费的训练和预测资源，因此请确保清理了之前课程中的项目。
 
-    > ⚠️ 如果需要，可以参考 [项目4，第1课中创建训练和预测资源的说明](../../../4-manufacturing/lessons/1-train-fruit-detector/README.md#task---create-a-cognitive-services-resource)。
+    > ⚠️ 如果需要，可以参考 [项目4，第1课中创建训练和预测资源的说明](../../../4-manufacturing/lessons/1-train-fruit-detector/index.md#task---create-a-cognitive-services-resource)。
 
 1. 打开 [CustomVision.ai](https://customvision.ai) 的 Custom Vision 门户，并使用你的 Azure 账户关联的 Microsoft 账户登录。
 

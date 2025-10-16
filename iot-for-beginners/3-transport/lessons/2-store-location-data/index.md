@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "e345843ccfeb7261d81500d19c64d476",
   "translation_date": "2025-08-25T01:00:18+00:00",
-  "source_file": "3-transport/lessons/2-store-location-data/README.md",
+  "source_file": "3-transport/lessons/2-store-location-data/index.md",
   "language_code": "zh"
 }
 -->
@@ -104,7 +104,7 @@ NoSQL 数据库没有预定义的模式来限制数据的存储方式，你可�
 
 1. 使用免费层创建一个新的 IoT Hub。
 
-    > ⚠️ 如果需要，可以参考 [项目 2，第 4 课中创建 IoT Hub 的说明](../../../2-farm/lessons/4-migrate-your-plant-to-the-cloud/README.md#create-an-iot-service-in-the-cloud)。
+    > ⚠️ 如果需要，可以参考 [项目 2，第 4 课中创建 IoT Hub 的说明](../../../2-farm/lessons/4-migrate-your-plant-to-the-cloud/index.md#create-an-iot-service-in-the-cloud)。
 
     记得创建一个新的资源组。将新资源组命名为 `gps-sensor`，并为新的 IoT Hub 取一个基于 `gps-sensor` 的唯一名称，例如 `gps-sensor-<你的名字>`。
 
@@ -114,7 +114,7 @@ NoSQL 数据库没有预定义的模式来限制数据的存储方式，你可�
 
 1. 更新你的设备代码，使用上一步中的设备连接字符串将 GPS 数据发送到新的 IoT Hub。
 
-    > ⚠️ 如果需要，可以参考 [项目 2，第 4 课中将设备连接到 IoT 的说明](../../../2-farm/lessons/4-migrate-your-plant-to-the-cloud/README.md#connect-your-device-to-the-iot-service)。
+    > ⚠️ 如果需要，可以参考 [项目 2，第 4 课中将设备连接到 IoT 的说明](../../../2-farm/lessons/4-migrate-your-plant-to-the-cloud/index.md#connect-your-device-to-the-iot-service)。
 
 1. 发送 GPS 数据时，请以以下 JSON 格式发送：
 
@@ -185,10 +185,10 @@ message = Message(json.dumps(message_json))
 ### 任务 - 使用无服务器代码处理 GPS 事件
 
 1. 使用 Azure Functions CLI 创建一个 Azure Functions 应用。使用 Python 运行时，并在名为 `gps-trigger` 的文件夹中创建它，同时将 Functions App 项目名称也命名为 `gps-trigger`。确保创建一个虚拟环境以供使用。
-> ⚠️ 如果需要，可以参考[从项目 2，第 5 课创建 Azure Functions 项目的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#create-a-serverless-application)。
+> ⚠️ 如果需要，可以参考[从项目 2，第 5 课创建 Azure Functions 项目的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#create-a-serverless-application)。
 1. 添加一个 IoT Hub 事件触发器，使用 IoT Hub 的 Event Hub 兼容端点。
 
-    > ⚠️ 如果需要，可以参考[项目 2，第 5 课中创建 IoT Hub 事件触发器的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#create-an-iot-hub-event-trigger)。
+    > ⚠️ 如果需要，可以参考[项目 2，第 5 课中创建 IoT Hub 事件触发器的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#create-an-iot-hub-event-trigger)。
 
 1. 在 `local.settings.json` 文件中设置 Event Hub 兼容端点的连接字符串，并在 `function.json` 文件中使用该条目的键。
 
@@ -261,7 +261,7 @@ Azure 存储账户是一种通用存储服务，可以以多种方式存储数�
 
 1. 创建一个 Azure 存储账户。命名为类似 `gps<你的名字>` 的名称。
 
-    > ⚠️ 如果需要，可以参考[项目 2，第 5 课中创建存储账户的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#task---create-the-cloud-resources)。
+    > ⚠️ 如果需要，可以参考[项目 2，第 5 课中创建存储账户的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#task---create-the-cloud-resources)。
 
     如果你在之前的项目中已经创建了存储账户，可以重复使用。
 
@@ -442,14 +442,14 @@ Azure 存储账户是一种通用存储服务，可以以多种方式存储数�
 
 1. 创建一个新的 Azure Functions 应用，使用你之前创建的存储账户。命名为类似 `gps-sensor-` 的名称，并在末尾添加一个唯一标识符，例如一些随机单词或你的名字。
 
-    > ⚠️ 如果需要，可以参考[项目 2，第 5 课中创建 Functions 应用的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#task---create-the-cloud-resources)。
+    > ⚠️ 如果需要，可以参考[项目 2，第 5 课中创建 Functions 应用的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#task---create-the-cloud-resources)。
 
 1. 将 `IOT_HUB_CONNECTION_STRING` 和 `STORAGE_CONNECTION_STRING` 值上传到应用程序设置。
 
-    > ⚠️ 如果需要，可以参考[项目 2，第 5 课中上传应用程序设置的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#task---upload-your-application-settings)。
+    > ⚠️ 如果需要，可以参考[项目 2，第 5 课中上传应用程序设置的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#task---upload-your-application-settings)。
 
 1. 将本地 Functions 应用部署到云端。
-> ⚠️ 如果需要，可以参考[项目2，第5课中关于部署Functions应用的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/README.md#task---deploy-your-functions-app-to-the-cloud)。
+> ⚠️ 如果需要，可以参考[项目2，第5课中关于部署Functions应用的说明](../../../2-farm/lessons/5-migrate-application-to-the-cloud/index.md#task---deploy-your-functions-app-to-the-cloud)。
 ## 🚀 挑战
 
 GPS 数据并非完全准确，检测到的位置可能会有几米的误差，尤其是在隧道和高楼密集的区域。

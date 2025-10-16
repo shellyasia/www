@@ -3,7 +3,7 @@ CO_OP_TRANSLATOR_METADATA:
 {
   "original_hash": "e2b1b891b08ef7633d285547fbe73290",
   "translation_date": "2025-08-24T22:59:18+00:00",
-  "source_file": "1-getting-started/README.md",
+  "source_file": "1-getting-started/index.md",
   "language_code": "zh"
 }
 -->
@@ -14,10 +14,10 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 主题
 
-1. [物联网简介](lessons/1-introduction-to-iot/README.md)
-1. [深入了解物联网](lessons/2-deeper-dive/README.md)
-1. [使用传感器和执行器与物理世界交互](lessons/3-sensors-and-actuators/README.md)
-1. [将您的设备连接到互联网](lessons/4-connect-internet/README.md)
+1. [物联网简介](lessons/1-introduction-to-iot/index.md)
+1. [深入了解物联网](lessons/2-deeper-dive/index.md)
+1. [使用传感器和执行器与物理世界交互](lessons/3-sensors-and-actuators/index.md)
+1. [将您的设备连接到互联网](lessons/4-connect-internet/index.md)
 
 ## 致谢
 
