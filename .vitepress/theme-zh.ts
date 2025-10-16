@@ -21,6 +21,7 @@ export const themeZh = {
         sidebar: {
             "/docs/": sidebarDocsZh(),
             "/products/": sidebarsProductsZh(),
+            "/iot-for-beginners/": sidebarDocsZh(),
         },
         editLink: {
             pattern: "https://github.com/shellyasia/www/blob/main/:path",

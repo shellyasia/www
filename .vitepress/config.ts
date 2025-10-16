@@ -59,7 +59,7 @@ export default defineConfig({
     root: themeZh,
     en: themeEn,
   },
-  srcExclude: ["README.md","shelly-theme-demo.md"],
+  srcExclude: ["README.md","shelly-theme-demo.md","**/lesson-template/**"],
   markdown: {
     theme: {
       light: "github-light",
