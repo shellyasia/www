@@ -59,6 +59,7 @@ export const sidebarsProductsEn = (): DefaultTheme.SidebarItem[] => {
 const learnIotItems: DefaultTheme.SidebarItem[] = [
   {
     text: "简介",
+    link: "/iot-for-beginners/",
     items: [
       { text: "1.物联网简介", link: "/iot-for-beginners/1-getting-started/lessons/1-introduction-to-iot/index.md" },
       { text: "2.深入了解物联网", link: "/iot-for-beginners/1-getting-started/lessons/2-deeper-dive/index.md" },
@@ -68,6 +69,7 @@ const learnIotItems: DefaultTheme.SidebarItem[] = [
   },
   {
     text: "农场",
+    link: "/iot-for-beginners/2-farm/",
     items: [
       { text: "5.预测植物生长", link: "/iot-for-beginners/2-farm/lessons/1-predict-plant-growth/index.md" },
       { text: "6.检测土壤湿度", link: "/iot-for-beginners/2-farm/lessons/2-detect-soil-moisture/index.md" },
@@ -79,6 +81,7 @@ const learnIotItems: DefaultTheme.SidebarItem[] = [
   },
   {
     text: "交通",
+    link: "/iot-for-beginners/3-transport/",
     items: [
       { text: "11.位置追踪", link: "/iot-for-beginners/3-transport/lessons/1-location-tracking/index.md" },
       { text: "12.存储位置数据", link: "/iot-for-beginners/3-transport/lessons/2-store-location-data/index.md" },
@@ -88,6 +91,7 @@ const learnIotItems: DefaultTheme.SidebarItem[] = [
   },
   {
     text: "制造业",
+    link: "/iot-for-beginners/4-manufacturing/",
     items: [
       { text: "15.训练水果检测器", link: "/iot-for-beginners/4-manufacturing/lessons/1-train-fruit-detector/index.md" },
       { text: "16.检查设备中的水果", link: "/iot-for-beginners/4-manufacturing/lessons/2-check-fruit-from-device/index.md" },
@@ -97,6 +101,7 @@ const learnIotItems: DefaultTheme.SidebarItem[] = [
   },
   {
     text: "零售",
+    link: "/iot-for-beginners/5-retail/",
     items: [
       { text: "19.训练库存检测器", link: "/iot-for-beginners/5-retail/lessons/1-train-stock-detector/index.md" },
       { text: "20.检查设备中的库存", link: "/iot-for-beginners/5-retail/lessons/2-check-stock-device/index.md" },
@@ -104,6 +109,7 @@ const learnIotItems: DefaultTheme.SidebarItem[] = [
   },
   {
     text: "消费者",
+    link: "/iot-for-beginners/6-consumer/",
     items: [
       { text: "21.语音识别", link: "/iot-for-beginners/6-consumer/lessons/1-speech-recognition/index.md" },
       { text: "22.语言理解", link: "/iot-for-beginners/6-consumer/lessons/2-language-understanding/index.md" },
