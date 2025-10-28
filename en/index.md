@@ -231,17 +231,17 @@ const members = [
   padding-bottom: 1rem;
 }
 
-.section-title::after {
+/* .section-title::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
+  width: 11rem;
   height: 4px;
   background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
   border-radius: 2px;
-}
+} */
 
 /* Intro Text */
 .intro-text {
