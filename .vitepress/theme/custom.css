@@ -689,10 +689,6 @@ body {
   }
 }
 
-.shelly-pulse {
-  animation: pulse 2s infinite;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
