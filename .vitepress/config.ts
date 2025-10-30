@@ -40,6 +40,7 @@ const htmlHeads: HeadConfig[] = [
     { property: "twitter:card", content: "summary_large_image" },
   ],
   ["link", { rel: "shortcut icon", href: "/images/favicon.ico" }],
+  ["link", { rel: "icon", href: "/images/favicon.ico" }],
   [
     "script",
     {},
