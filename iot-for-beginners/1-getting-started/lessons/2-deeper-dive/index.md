@@ -1,12 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9dd7f645ad1c6f20b72fee512987f772",
-  "translation_date": "2025-08-24T23:40:38+00:00",
-  "source_file": "1-getting-started/lessons/2-deeper-dive/index.md",
-  "language_code": "zh"
-}
--->
+
 # 深入了解物联网
 
 ![本课的手绘笔记概览](../../../../translated_images/lesson-2.324b0580d620c25e0a24fb7fddfc0b29a846dd4b82c08e7a9466d580ee78ce51.zh.jpg)
@@ -21,19 +13,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 > 🎥 点击上方图片观看视频
 
-## 课前测验
 
-[课前测验](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/3)
-
-## 简介
-
-本课程将深入探讨上一课中介绍的一些概念。
-
-在本课程中，我们将学习：
-
-* [物联网应用的组成部分](../../../../../1-getting-started/lessons/2-deeper-dive)
-* [深入了解微控制器](../../../../../1-getting-started/lessons/2-deeper-dive)
-* [深入了解单板计算机](../../../../../1-getting-started/lessons/2-deeper-dive)
 
 ## 物联网应用的组成部分
 
@@ -115,11 +95,6 @@ CPU 依赖时钟以每秒数百万或数十亿次的频率进行计时。每次�
 
 ✅ 做一些研究：阅读[Wikipedia CPU 文章](https://wikipedia.org/wiki/Central_processing_unit)了解更多关于 CPU 的信息。
 
-#### 任务
-
-调查 Wio Terminal。
-
-如果你正在使用 Wio Terminal 学习这些课程，试着找到 CPU。在 [Wio Terminal 产品页面](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)的 *硬件概览* 部分找到内部图片，并通过背面的透明塑料窗口找到 CPU。
 
 ### 内存
 
@@ -151,11 +126,7 @@ RAM 是程序运行时使用的内存，包含程序分配的变量和从外设�
 
 ✅ 你将在后续课程中学习更多相关内容。
 
-#### 任务
 
-研究Wio Terminal。
-
-如果你在这些课程中使用Wio Terminal，请找到GPIO引脚。在[Wio Terminal产品页面](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)的*引脚图*部分，了解每个引脚的功能。Wio Terminal附带一个可以贴在背面的贴纸，上面标有引脚编号，如果还没贴上，请现在贴上。
 
 ### 物理尺寸
 
@@ -198,11 +169,6 @@ Arduino提供了与微控制器和I/O引脚交互的标准库，底层有不同�
 
 Arduino还有一个庞大的第三方库生态系统，允许你为Arduino项目添加额外功能，例如使用传感器和执行器或连接到云端IoT服务。
 
-##### 任务
-
-研究Wio Terminal。
-
-如果你在这些课程中使用Wio Terminal，请重新阅读你在上一课中编写的代码。找到`setup`和`loop`函数。监控串口输出，观察`loop`函数被反复调用。尝试在`setup`函数中添加代码以写入串口，并观察这些代码在每次重启时只被调用一次。尝试使用侧面的电源开关重启设备，观察这些代码在每次设备重启时都会被调用。
 
 ## 深入了解单板计算机
 
@@ -228,14 +194,6 @@ Pi Zero更小，功耗更低。它拥有一个单核1GHz CPU，512MB的RAM，WiF
 
 所有树莓派型号都运行一个基于Debian Linux的操作系统，称为树莓派OS。它有一个精简版，没有桌面，非常适合不需要屏幕的“无头”项目，也有一个完整版，带有完整的桌面环境，包括网页浏览器、办公应用、编程工具和游戏。由于操作系统是Debian Linux的一个版本，你可以安装任何运行在Debian上的应用或工具，只要它们是为树莓派的ARM处理器构建的。
 
-#### 任务
-
-研究树莓派。
-
-如果你在这些课程中使用树莓派，请阅读板上的不同硬件组件。
-
-* 你可以在[树莓派硬件文档页面](https://www.raspberrypi.org/documentation/hardware/raspberrypi/)上找到处理器的详细信息。阅读你正在使用的树莓派的处理器信息。
-* 找到GPIO引脚。在[树莓派GPIO文档](https://www.raspberrypi.org/documentation/hardware/raspberrypi/gpio/index.md)中阅读更多相关内容。使用[GPIO引脚使用指南](https://www.raspberrypi.org/documentation/usage/gpio/index.md)识别树莓派上的不同引脚。
 
 ### 编程单板计算机
 
@@ -247,25 +205,3 @@ Pi Zero更小，功耗更低。它拥有一个单核1GHz CPU，512MB的RAM，WiF
 ### 单板计算机在专业物联网部署中的应用
 
 单板计算机不仅仅作为开发套件，还被用于专业的物联网部署。它们可以提供强大的功能来控制硬件并运行复杂任务，例如运行机器学习模型。例如，[Raspberry Pi 4计算模块](https://www.raspberrypi.org/blog/raspberry-pi-compute-module-4/)提供了Raspberry Pi 4的全部性能，但采用了更紧凑、更便宜的形式，没有大多数端口，专为安装到定制硬件中而设计。
-
----
-
-## 🚀 挑战
-
-上一课的挑战是列出尽可能多的你家里、学校或工作场所中的物联网设备。对于这个列表中的每个设备，你认为它们是基于微控制器、单板计算机，还是两者的混合？
-
-## 课后测验
-
-[课后测验](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/4)
-
-## 复习与自学
-
-* 阅读 [Arduino入门指南](https://www.arduino.cc/en/Guide/Introduction)，了解更多关于Arduino平台的信息。
-* 阅读 [Raspberry Pi 4简介](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)，学习更多关于Raspberry Pi的知识。
-* 在《[什么是CPU、MPU、MCU和GPU？](https://www.eejournal.com/article/what-the-faq-are-cpus-mpus-mcus-and-gpus/)》这篇文章中，了解更多相关概念和缩略词。
-
-✅ 使用这些指南，以及通过[硬件指南](../../../hardware.md)中的链接显示的成本，决定你想使用什么硬件平台，或者是否更愿意使用虚拟设备。
-
-## 作业
-
-[比较和对比微控制器与单板计算机](assignment.md)
