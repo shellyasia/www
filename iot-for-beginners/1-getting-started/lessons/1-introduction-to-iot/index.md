@@ -21,22 +21,6 @@ CO_OP_TRANSLATOR_METADATA:
 
 > 🎥 点击上方图片观看视频
 
-## 课前测验
-
-[课前测验](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/1)
-
-## 简介
-
-本课程涵盖了物联网的一些基础知识，并帮助你开始设置硬件。
-
-在本课程中，我们将讨论以下内容：
-
-* [什么是“物联网”？](../../../../../1-getting-started/lessons/1-introduction-to-iot)
-* [物联网设备](../../../../../1-getting-started/lessons/1-introduction-to-iot)
-* [设置你的设备](../../../../../1-getting-started/lessons/1-introduction-to-iot)
-* [物联网的应用](../../../../../1-getting-started/lessons/1-introduction-to-iot)
-* [你身边可能存在的物联网设备示例](../../../../../1-getting-started/lessons/1-introduction-to-iot)
-
 ## 什么是“物联网”？
 
 “物联网”这一术语由 [Kevin Ashton](https://wikipedia.org/wiki/Kevin_Ashton) 于 1999 年提出，用来描述通过传感器将互联网与物理世界连接起来。从那时起，这个术语被用来描述任何与周围物理世界交互的设备，无论是通过传感器收集数据，还是通过执行器（例如打开开关或点亮 LED 的设备）提供现实世界的交互，这些设备通常连接到其他设备或互联网。
@@ -212,24 +196,6 @@ Raspberry Pi 是最受欢迎的单板计算机之一。
 所有这些设备都配备了传感器和/或执行器，并与互联网通信。我可以通过手机查看车库门是否打开，并通过智能音箱关闭它。我甚至可以设置定时器，如果晚上车库门仍然打开，它会自动关闭。当门铃响起时，无论我身在何处，我都可以通过手机看到是谁，并通过门铃内置的扬声器和麦克风与他们对话。我可以监测我的血糖、心率和睡眠模式，通过数据模式改善健康状况。我可以通过云端控制灯光，但如果网络连接中断，我可能会坐在黑暗中。
 
 ---
-
-## 🚀 挑战
-
-列出您家中、学校或工作场所中的所有物联网设备——可能比您想象的还要多！
-
-## 课后测验
-
-[课后测验](https://black-meadow-040d15503.1.azurestaticapps.net/quiz/2)
-
-## 复习与自学
-
-阅读有关消费级物联网项目的优缺点。查看新闻网站上的文章，了解物联网项目失败的案例，例如隐私问题、硬件问题或因缺乏连接性导致的问题。
-
-一些示例：
-
-* 查看 Twitter 账号 **[Internet of Sh*t](https://twitter.com/internetofshit)** *(含粗俗语言警告)*，了解消费级物联网失败的有趣案例。  
-* [c|net - 我的 Apple Watch 救了我的命：5 人分享他们的故事](https://www.cnet.com/news/apple-watch-lifesaving-health-features-read-5-peoples-stories/)  
-* [c|net - ADT 技术员承认多年来偷窥客户摄像头画面](https://www.cnet.com/news/adt-home-security-technician-pleads-guilty-to-spying-on-customer-camera-feeds-for-years/) *(触发警告 - 非自愿偷窥)*  
 
 ## 作业
 
