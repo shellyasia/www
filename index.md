@@ -19,6 +19,9 @@ hero:
     alt: "shelly group products example"
   actions:
     - theme: brand
+      text: 家居控制
+      link: https://control.shellyiot.cn
+    - theme: alt
       text: 产品中心
       link: /products/
     - theme: alt

@@ -20,6 +20,9 @@ hero:
     alt: "shelly group products example"
   actions:
     - theme: brand
+      text: Home Control
+      link: https://control.shelly.cloud
+    - theme: alt
       text: Product Center
       link: /products/
     - theme: alt
