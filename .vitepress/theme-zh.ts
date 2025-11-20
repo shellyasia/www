@@ -15,9 +15,10 @@ export const themeZh = {
         ],
         socialLinks: [
             { icon: "wechat", link: "https://mp.weixin.qq.com/s/VnC3Dw_O-kmL3qI-sWCiHw" },
+            { icon: "bilibili", link: "https://space.bilibili.com/3546614780135600"},
+            { icon: "tiktok", link: "https://www.douyin.com/user/MS4wLjABAAAAsJqejFVW1srKkUaksa1lM72mMHO1lCcJS3KAXQuJmZM"},
             { icon: "shopify", link: "https://mall.jd.com/index-20140293.html" },
             { icon: "alipay", link: "https://shellycloud.en.alibaba.com" },
-            { icon: "github", link: "https://github.com/shellyasia/www" },
             { icon: "docsdotrs", link: "https://control.shellyiot.cn" },
         ],
         sidebar: {
