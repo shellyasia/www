@@ -16,7 +16,6 @@ export const themeEn = {
       { text: "Docs", link: "https://shelly-api-docs.shelly.cloud/" },
       { text: "Europe", link: "https://www.shelly.com/" },
       { text: "Community", link: "https://community.shelly.cloud/" },
-      { icon: "xcode", link: "https://control.shelly.cloud" },
 
     ],
     sidebar: {
@@ -28,8 +27,9 @@ export const themeEn = {
       { icon: "x", link: "https://x.com/shelly_IoT" },
       { icon: "youtube", link: "https://www.youtube.com/@Shelly_IoT" },
       { icon: "facebook", link: "https://www.facebook.com/Shelly.IoT" },
-      { icon: "shopee", link: "https://shellycloud.en.alibaba.com" },
+      { icon: "alipay", link: "https://shellycloud.en.alibaba.com" },
       { icon: "shopify", link: "https://mall.jd.com/index-20140293.html" },
+      { icon: "docsdotrs", link: "https://control.shelly.cloud" },
 
     ],
     editLink: {
