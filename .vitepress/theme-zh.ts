@@ -10,7 +10,7 @@ export const themeZh = {
         nav: [
             { text: "产品", link: "/products/" },
             { text: "文档", link: "/docs/" },
-            { text: "欧洲", link: "https://www.shelly.com/" },
+            { text: "亚洲", link: "https://asia.shelly.com/" },
             { text: "讨论", link: "https://community.shelly.cloud/" },
         ],
         socialLinks: [

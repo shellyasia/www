@@ -14,7 +14,8 @@ export const themeEn = {
     nav: [
       { text: "Products", link: "/en/products/" },
       { text: "Docs", link: "https://shelly-api-docs.shelly.cloud/" },
-      { text: "Europe", link: "https://www.shelly.com/" },
+      { text: "HQ", link: "https://www.shelly.com/" },
+      { text: "Asia", link: "https://asia.shelly.com/" },
       { text: "Community", link: "https://community.shelly.cloud/" },
 
     ],

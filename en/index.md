@@ -17,7 +17,7 @@ hero:
   tagline: Shelly Smart Home (Shenzhen) Co., Ltd. is a subsidiary brand. The parent company is the German listed company Shelly Group。
   image:
     src: /images/hero.webp
-    alt: "shelly group products example"
+    alt: 'shelly group products example'
   actions:
     - theme: brand
       text: Home Control
@@ -43,7 +43,6 @@ features:
     details: Multi-device intelligent interaction, automated scene switching, enhancing home experience.
 ---
 
-
 <script setup>
 import {
   VPTeamPage,
@@ -57,7 +56,7 @@ const members = [
     name: 'Dimitar Dimitrov',
     title: 'CEO',
     links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/allterco/' }
+      // { icon: 'linkedin', link: 'https://www.linkedin.com/in/allterco/' }
     ]
   },
   {
@@ -65,42 +64,19 @@ const members = [
     name: 'Wolfgang Kirsch',
     title: 'Co-CEO',
     links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/wolfgang-kirsch/?originalSubdomain=de' },
+      // { icon: 'linkedin', link: 'https://www.linkedin.com/in/wolfgang-kirsch/?originalSubdomain=de' },
     ]
   },  
-  {
-    avatar: '/images/Svetozar Iliev.jpg',
-    name: 'Svetozar Iliev',
-    title: 'CFO',
-    links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/svetozar-iliev-cfa-9b47126/?originalSubdomain=bg' },
-    ]
-  },
+
     {
     avatar: '/images/Leon Kralj.jpeg',
     name: 'Leon Kralj',
     title: 'CTO',
     links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/leon-kralj-8873876/?originalSubdomain=si' },
+      // { icon: 'linkedin', link: 'https://www.linkedin.com/in/leon-kralj-8873876/?originalSubdomain=si' },
     ]
   },
-      {
-    avatar: '/images/Mirche Atanasovski.jpg',
-    name: 'Mirche Atanasovski',
-    title: 'CCO',
-    links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/mirche-atanasovski-5835828/' },
-    ]
-  },
-      {
-    avatar: '/images/Ivan Zahov.jpeg',
-    name: 'Ivan Zahov',
-    title: 'CMO',
-    links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/ivantzahov/?originalSubdomain=bg' },
-    ]
-  },
-  
+    
   ]
 </script>
 
@@ -120,7 +96,6 @@ const members = [
   </VPTeamPageTitle>
   <VPTeamMembers :members />
 </VPTeamPage>
-
 
 <div class="company-history-section">
   <h2 class="section-title">Development History</h2>
