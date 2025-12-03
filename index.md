@@ -160,6 +160,18 @@ const members = [
         <p>德国法兰克福二次上市，Allterco亚洲分公司雪莉智能（深圳）有限公司成立（Shelly Asia），推出首款低功耗电池供电设备</p>
       </div>
     </div>
+    <div class="timeline-item highlight">
+      <div class="timeline-year">2023</div>
+      <div class="timeline-content">
+        <p>发布 Shelly Pro 系列，进军能源管理与专业市场​</p>
+      </div>
+    </div>
+       <div class="timeline-item highlight">
+      <div class="timeline-year">2024</div>
+      <div class="timeline-content">
+        <p>公司正式更名为 Shelly Group AD，突出 Shelly 品牌主导地位​​</p>
+      </div>
+    </div>
   </div>
 </div>
 
