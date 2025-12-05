@@ -27,19 +27,6 @@ hero:
     - theme: alt
       text: 帮助文档
       link: /docs/
-features:
-  - icon: 🏠
-    title: 智能家居控制
-    details: 一键掌控全屋设备，轻松实现灯光、空调、安防等智能化管理。
-  - icon: 📱
-    title: 手机远程操控
-    details: 随时随地通过手机App远程控制家中设备，享受便捷生活。
-  - icon: 🔐
-    title: 安全守护
-    details: 实时监控与告警，保障家庭安全，安心无忧。
-  - icon: 🤖
-    title: 智能联动
-    details: 多设备智能联动，自动化场景切换，提升居家体验。
 ---
 
 <script setup>
@@ -48,6 +35,13 @@ import {
   VPTeamPageTitle,
   VPTeamMembers
 } from 'vitepress/theme'
+
+const icons = {
+  home: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/><circle cx="12" cy="8" r="1" fill="currentColor"/></svg>`,
+  mobile: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/><path d="M9 6h6"/><path d="M9 10h6"/><circle cx="12" cy="13" r="2" stroke-dasharray="2 1"/></svg>`,
+  security: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1" fill="currentColor"/><line x1="12" y1="17" x2="12" y2="19"/></svg>`,
+  automation: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/></svg>`
+}
 
 const members = [
   {
@@ -83,13 +77,42 @@ const members = [
 
 </style>
 
+
+
+<div class="features-section">
+  <h2 class="section-title">核心功能</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon" v-html="icons.home"></div>
+      <h3 class="feature-title">智能家居控制</h3>
+      <p class="feature-description">一键掌控全屋设备，轻松实现灯光、空调、安防等智能化管理。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" v-html="icons.mobile"></div>
+      <h3 class="feature-title">手机远程操控</h3>
+      <p class="feature-description">随时随地通过手机App远程控制家中设备，享受便捷生活。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" v-html="icons.security"></div>
+      <h3 class="feature-title">安全守护</h3>
+      <p class="feature-description">实时监控与告警，保障家庭安全，安心无忧。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" v-html="icons.automation"></div>
+      <h3 class="feature-title">智能联动</h3>
+      <p class="feature-description">多设备智能联动，自动化场景切换，提升居家体验。</p>
+    </div>
+  </div>
+</div>
+
+
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
       雪莉智能家居
     </template>
     <template #lead>
-            雪莉智能家居（深圳）有限公司（简称“雪莉智能家居”）成立于2021年3月9日，是Shelly Group集团旗下专注于物联网一体化服务的中国子公司。公司总部位于深圳，业务涵盖智能家居与建筑自动化领域的供应链管理、IT技术支持、电子商务零售与批发以及自有品牌网站运营。
+            雪莉智能家居（深圳）有限公司（简称"雪莉智能家居"）成立于2021年3月9日，是Shelly Group集团旗下专注于物联网一体化服务的中国子公司。公司总部位于深圳，业务涵盖智能家居与建筑自动化领域的供应链管理、IT技术支持、电子商务零售与批发以及自有品牌网站运营。
     </template>
 
   </VPTeamPageTitle>
@@ -200,6 +223,140 @@ const members = [
 </div>
 
 <style scoped>
+/* Features Section */
+.features-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+  background: var(--vp-c-bg-soft);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--vp-c-divider);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: var(--vp-c-brand-soft);
+  background: var(--vp-c-bg);
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--vp-c-brand-soft) 0%, transparent 100%);
+  border-radius: 20px;
+  color: var(--vp-c-brand-1);
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: linear-gradient(135deg, var(--vp-c-brand-1) 0%, var(--vp-c-brand-2) 100%);
+  color: #fff;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 24px rgba(36, 145, 255, 0.3);
+}
+
+.feature-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-title {
+  color: var(--vp-c-brand-1);
+}
+
+.feature-description {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+  margin: 0;
+}
+
+/* Responsive Design for Features */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .features-section {
+    padding: 0 1rem;
+    margin: 3rem auto;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .feature-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+  }
+  
+  .feature-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature-title {
+    font-size: 1.125rem;
+  }
+  
+  .feature-description {
+    font-size: 0.875rem;
+  }
+}
+
 /* Section Containers */
 .company-history-section,
 .products-services-section,
