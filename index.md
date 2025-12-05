@@ -79,9 +79,7 @@ const members = [
 
 
 
-<div class="features-section">
-  <h2 class="section-title">核心功能</h2>
-  <div class="features-grid">
+<div class="features-section features-grid">
     <div class="feature-card">
       <div class="feature-icon" v-html="icons.home"></div>
       <h3 class="feature-title">智能家居控制</h3>
@@ -102,7 +100,6 @@ const members = [
       <h3 class="feature-title">智能联动</h3>
       <p class="feature-description">多设备智能联动，自动化场景切换，提升居家体验。</p>
     </div>
-  </div>
 </div>
 
 
@@ -226,7 +223,7 @@ const members = [
 /* Features Section */
 .features-section {
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 4rem auto 0 auto;
   padding: 0 2rem;
 }
 

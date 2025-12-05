@@ -1,46 +1,32 @@
 ---
 title: Shelly Smart Home
-
 titleTemplate: ':title'
 head:
   - [
       'meta',
       {
         property: 'og:description',
-        content: 'Shelly Smart Home (Shenzhen) Co., Ltd. is a subsidiary brand. The parent company is the German listed company Shelly Group',
+        content: 'Shelly Smart Home (Shenzhen) Co., Ltd. (referred to as "Shelly Smart Home") was established on March 9, 2021, and is a Chinese subsidiary of Shelly Group focused on providing comprehensive IoT services. Headquartered in Shenzhen, the company covers supply chain management, IT technical support, e-commerce retail and wholesale, and self-branded website operations in the smart home and building automation sectors.',
       },
     ]
 layout: home
 hero:
   name: Shelly Smart Home
-  text: Control with a call, smarter living made easier
-  tagline: Shelly Smart Home (Shenzhen) Co., Ltd. is a subsidiary brand. The parent company is the German listed company Shelly Group。
+  text: One Call Away, Smarter Home Living
+  tagline: A brand under Shelly Smart Home (Shenzhen) Co., Ltd. The parent company is German-listed Shelly Group.
   image:
     src: /images/hero.webp
     alt: 'shelly group products example'
   actions:
     - theme: brand
       text: Home Control
-      link: https://control.shelly.cloud
+      link: https://control.shellyiot.cn
     - theme: alt
-      text: Product Center
+      text: Products
       link: /products/
     - theme: alt
-      text: Help Documentation
+      text: Documentation
       link: /docs/
-features:
-  - icon: 🏠
-    title: Smart Home Control
-    details: One-click control of all devices in the house, easily achieving intelligent management of lighting, air conditioning, security, etc.
-  - icon: 📱
-    title: Mobile Remote Control
-    details: Control home devices remotely through the mobile app anytime, anywhere, enjoying a convenient life.
-  - icon: 🔐
-    title: Safety Protection
-    details: Real-time monitoring and alerts to ensure home safety, providing peace of mind.
-  - icon: 🤖
-    title: Intelligent Interaction
-    details: Multi-device intelligent interaction, automated scene switching, enhancing home experience.
 ---
 
 <script setup>
@@ -49,6 +35,13 @@ import {
   VPTeamPageTitle,
   VPTeamMembers
 } from 'vitepress/theme'
+
+const icons = {
+  home: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/><circle cx="12" cy="8" r="1" fill="currentColor"/></svg>`,
+  mobile: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/><path d="M9 6h6"/><path d="M9 10h6"/><circle cx="12" cy="13" r="2" stroke-dasharray="2 1"/></svg>`,
+  security: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1" fill="currentColor"/><line x1="12" y1="17" x2="12" y2="19"/></svg>`,
+  automation: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/></svg>`
+}
 
 const members = [
   {
@@ -75,8 +68,8 @@ const members = [
     links: [
       // { icon: 'linkedin', link: 'https://www.linkedin.com/in/leon-kralj-8873876/?originalSubdomain=si' },
     ]
-  },
-    
+  }
+  
   ]
 </script>
 
@@ -84,13 +77,39 @@ const members = [
 
 </style>
 
+
+
+<div class="features-section features-grid">
+    <div class="feature-card">
+      <div class="feature-icon" v-html="icons.home"></div>
+      <h3 class="feature-title">Smart Home Control</h3>
+      <p class="feature-description">Control all home devices with one click, easily manage lighting, air conditioning, security and more intelligently.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" v-html="icons.mobile"></div>
+      <h3 class="feature-title">Remote Mobile Control</h3>
+      <p class="feature-description">Control your home devices anytime, anywhere through mobile app for convenient living.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" v-html="icons.security"></div>
+      <h3 class="feature-title">Security Protection</h3>
+      <p class="feature-description">Real-time monitoring and alerts protect your home safety with peace of mind.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" v-html="icons.automation"></div>
+      <h3 class="feature-title">Smart Automation</h3>
+      <p class="feature-description">Multi-device smart linkage with automatic scenario switching for enhanced living experience.</p>
+    </div>
+</div>
+
+
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
       Shelly Smart Home
     </template>
     <template #lead>
-            Shelly Smart Home (Shenzhen) Co., Ltd. (hereinafter referred to as "Shelly Smart Home") was established on March 9, 2021, and is a Chinese subsidiary under the Shelly Group, focusing on integrated IoT services. The company is headquartered in Shenzhen, with business covering supply chain management, IT technical support, e-commerce retail and wholesale, and proprietary brand website operations in the smart home and building automation fields.
+      Shelly Smart Home (Shenzhen) Co., Ltd. (referred to as "Shelly Smart Home") was established on March 9, 2021, and is a Chinese subsidiary of Shelly Group focused on providing comprehensive IoT services. Headquartered in Shenzhen, the company covers supply chain management, IT technical support, e-commerce retail and wholesale, and self-branded website operations in the smart home and building automation sectors.
     </template>
 
   </VPTeamPageTitle>
@@ -102,7 +121,7 @@ const members = [
   
   <div class="culture-content">
     <p class="culture-text">
-      The parent company Shelly Group is a European international IoT technology enterprise, with <strong>6 subsidiaries</strong> worldwide and branches in Germany, Bulgaria, China, Slovenia, and the United States, covering more than <strong>100 countries and regions</strong>. As of 2016, the group has more than 100 employees worldwide, with an annual revenue of <strong>2.5 billion RMB</strong>.
+      The parent company Shelly Group is a European international IoT technology enterprise with <strong>6 subsidiaries</strong> worldwide, with branches in Germany, Bulgaria, China, Slovenia, and the United States, serving over <strong>100 countries and regions</strong>. As of 2016, the group has over 100 employees globally, with annual revenue reaching <strong>2.5 billion RMB</strong>.
     </p>
   </div>
 
@@ -110,55 +129,67 @@ const members = [
     <div class="timeline-item">
       <div class="timeline-year">2003</div>
       <div class="timeline-content">
-        <p>Teracomm Ltd. was committed to mobile communication innovation</p>
+        <p>Teracomm Ltd. focuses on mobile communications innovation</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2005</div>
       <div class="timeline-content">
-        <p>Tera Communications operated billing solutions (platform and services) for operators</p>
+        <p>Tera Communications operates carrier billing solutions (platform and services)</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2012</div>
       <div class="timeline-content">
-        <p>Allterco Holdings was established as the holding company integrating all its businesses</p>
+        <p>Allterco JSCo. established as a holding company integrating all business operations</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2013</div>
       <div class="timeline-content">
-        <p>The Internet of Things (IoT) department was established</p>
+        <p>Internet of Things (IoT) department established</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2015</div>
       <div class="timeline-content">
-        <p>Allterco Robotics was established to design innovative products for its brands Shelly and MyKi</p>
+        <p>AlltercoRobotics established - designing innovative products for Shelly and MyKi brands</p>
       </div>
     </div>
     <div class="timeline-item highlight">
       <div class="timeline-year">2016</div>
       <div class="timeline-content">
-        <p>(Stock Code: Allterco A4L) Listed on the Bulgarian Stock Exchange</p>
+        <p>(Stock Code: Allterco A4L) Listed on Bulgarian Stock Exchange</p>
       </div>
     </div>
     <div class="timeline-item highlight">
       <div class="timeline-year">2018</div>
       <div class="timeline-content">
-        <p>The first batch of Shelly products was launched globally</p>
+        <p>First Shelly products launched for global distribution</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2019</div>
       <div class="timeline-content">
-        <p>Strategic adjustment: sold the European telecommunications business and laid out operations in the U.S. market (Shelly USA)</p>
+        <p>Strategic shift: Divested European telecom business, expanded US market operations (Shelly USA)</p>
       </div>
     </div>
     <div class="timeline-item highlight">
       <div class="timeline-year">2021</div>
       <div class="timeline-content">
-        <p>Listed for the second time in Frankfurt, Germany, Shelly Asia (Shenzhen) Co., Ltd. was established, launching the first low-power battery-powered device</p>
+        <p>Secondary listing in Frankfurt, Germany. Allterco Asia subsidiary Shelly Asia (Shenzhen) established, launched first low-power battery-powered devices</p>
+      </div>
+    </div>
+    <div class="timeline-item highlight">
+      <div class="timeline-year">2023</div>
+      <div class="timeline-content">
+        <p>Released Shelly Pro series, entering energy management and professional markets</p>
+      </div>
+    </div>
+       <div class="timeline-item highlight">
+      <div class="timeline-year">2024</div>
+      <div class="timeline-content">
+        <p>Company officially rebranded as Shelly Group AD, emphasizing Shelly brand dominance</p>
       </div>
     </div>
   </div>
@@ -173,7 +204,7 @@ const members = [
 
   <div class="culture-content">
     <p class="culture-text">
-      Shelly's product portfolio is based on relays that support remote control of lighting, appliances, sensors, and bidirectional motors. The main products include IoT and smart building solutions that can be remotely controlled and automated via mobile phones, computers, or third-party home automation systems, as well as energy management functions. Cloud application subscription services and real estate management activities are also provided.
+      Shelly's product portfolio is built on relays, supporting remote control of lighting, appliances, sensors, bidirectional motors, and more. Main products include IoT and smart building solutions that can be remotely controlled and automated through mobile phones, computers, or third-party home automation systems, as well as energy management capabilities. Additionally provides cloud application subscription services and property management activities.
     </p>
   </div>
 </div>
@@ -183,12 +214,146 @@ const members = [
   
   <div class="culture-content">
     <p class="culture-text">
-      Shelly Smart Home upholds the group's philosophy of <strong>"Innovation, Reliability, and Connectivity"</strong>, continuously promoting the construction and development of the smart home ecosystem, and is committed to becoming an important force in the field of intelligent automation in the Asia-Pacific region.
+      Shelly Smart Home adheres to the group's philosophy of <strong>"Innovation, Reliability, and Connectivity"</strong>, continuously promoting the construction and development of smart home ecosystems, and is committed to becoming an important force in smart automation across the Asia-Pacific region.
     </p>
   </div>
 </div>
 
 <style scoped>
+/* Features Section */
+.features-section {
+  max-width: 1200px;
+  margin: 4rem auto 0 auto;
+  padding: 0 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+  background: var(--vp-c-bg-soft);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--vp-c-divider);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: var(--vp-c-brand-soft);
+  background: var(--vp-c-bg);
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--vp-c-brand-soft) 0%, transparent 100%);
+  border-radius: 20px;
+  color: var(--vp-c-brand-1);
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: linear-gradient(135deg, var(--vp-c-brand-1) 0%, var(--vp-c-brand-2) 100%);
+  color: #fff;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 24px rgba(36, 145, 255, 0.3);
+}
+
+.feature-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-title {
+  color: var(--vp-c-brand-1);
+}
+
+.feature-description {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+  margin: 0;
+}
+
+/* Responsive Design for Features */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .features-section {
+    padding: 0 1rem;
+    margin: 3rem auto;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .feature-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+  }
+  
+  .feature-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature-title {
+    font-size: 1.125rem;
+  }
+  
+  .feature-description {
+    font-size: 0.875rem;
+  }
+}
+
 /* Section Containers */
 .company-history-section,
 .products-services-section,
