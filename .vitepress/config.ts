@@ -49,6 +49,7 @@ const htmlHeads: HeadConfig[] = [
 ];
 
 export default defineConfig({
+  appearance: "dark",
   lang: "zh-CN",
   title: "雪莉智能家居",
   description:
@@ -81,7 +82,6 @@ export default defineConfig({
   themeConfig: {
     logo: "/images/logo_160x.svg",
     siteTitle: "雪莉智能家居",
-
     search: {
       provider: 'local',
       // options: {
