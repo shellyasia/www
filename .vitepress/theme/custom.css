@@ -88,6 +88,8 @@
 
   --vp-c-text-code: #4a4a4a;
 
+
+  --vp-button-brand-bg:var(--vp-c-shelly-primary);
   /* 使用 Shelly 蓝色作为主色调 */
   --vp-c-brand: var(--vp-c-shelly-primary);
   --vp-c-brand-light: #47a3ff;
@@ -1020,4 +1022,62 @@ body {
   .VPNavBarMenuGroup + .VPNavBarSearch {
     margin-left: 0.5rem;
   }
+}
+
+/* VPButton hover animation */
+.VPButton.medium.alt,
+.VPButton.medium.brand {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.VPButton.medium.alt::before,
+.VPButton.medium.brand::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.VPButton.medium.alt:hover,
+.VPButton.medium.brand:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(36, 145, 255, 0.4), 0 4px 12px rgba(36, 145, 255, 0.2);
+}
+
+.VPButton.medium.alt:hover::before,
+.VPButton.medium.brand:hover::before {
+  left: 100%;
+}
+
+.VPButton.medium.alt:active,
+.VPButton.medium.brand:active {
+  transform: translateY(-2px) scale(1.02);
+  transition: all 0.1s ease;
+}
+
+/* h1 span.name.clip hover animation */
+h1 > span.name.clip {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+:root h1 > span.name.clip:hover {
+  transform: scale(1.05);
+  text-shadow: 
+    0 2px 8px rgba(36, 145, 255, 0.3),
+    0 4px 16px rgba(36, 145, 255, 0.2);
+}
+
+.dark h1 > span.name.clip:hover {
+  transform: scale(1.05);
+  text-shadow: 
+    0 2px 12px rgba(36, 145, 255, 0.5),
+    0 4px 24px rgba(36, 145, 255, 0.3);
 }
